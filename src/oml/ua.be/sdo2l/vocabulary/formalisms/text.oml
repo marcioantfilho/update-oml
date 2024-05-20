@@ -1,0 +1,27 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/text#> as text {
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+    extends <http://ua.be/sdo2l/vocabulary/formalisms/file#> as file
+
+
+    concept TextData :> file:Data, file:File
+    concept TextLine :> file:Data
+
+    scalar property isOnLine [
+        domain TextLine
+        range xsd:int
+        functional
+    ]
+
+    scalar property holdsTextData [
+        domain TextLine
+        range xsd:string
+    ]
+
+    relation entity HasTextLine [
+        from TextData
+        to TextLine
+        forward hasTextLine
+        reverse isInTextFile
+    ]
+}

@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/RecPM_pm#"
+     xml:base="http://ua.be/sdo2l/description/artifacts/RecPM_pm"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:pm="http://ua.be/sdo2l/vocabulary/formalisms/pm#"
+     xmlns:oml="http://opencaesar.io/oml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#">
+    <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm">
+        <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://opencaesar.io/oml#hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://opencaesar.io/oml#hasSource"/>
+    
+
+
+    <!-- http://opencaesar.io/oml#hasTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://opencaesar.io/oml#hasTarget"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#inModel -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#inModel"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#hasType -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasType"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Activity"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:isTransformation rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Sketch"/>
+        <pm:hasName>sketch</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_0 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_0">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlInputPort"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:ofActivity rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0"/>
+        <pm:hasName>cin</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_1">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlInputPort"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:ofActivity rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0"/>
+        <pm:hasName>cinRec</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_2">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlOutputPort"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:ctrlTo rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_0"/>
+        <pm:ofActivity rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0"/>
+        <pm:hasName>cout</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_3">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataOutputPort"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:dataTo rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#artifact_0"/>
+        <pm:ofActivity rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0"/>
+        <pm:hasName>sketch</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Activity"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:isTransformation rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_LookAtSketch"/>
+        <pm:hasName>look_at_sketch</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_0 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_0">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlInputPort"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:ofActivity rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1"/>
+        <pm:hasName>cin</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_1">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlOutputPort"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:ctrlTo rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#final"/>
+        <pm:ofActivity rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1"/>
+        <pm:hasName>cout</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_2">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlOutputPort"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:ctrlTo rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_1"/>
+        <pm:ofActivity rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1"/>
+        <pm:hasName>coutRec</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_3">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataInputPort"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:ofActivity rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1"/>
+        <pm:hasName>sketch</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#artifact_0 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#artifact_0">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Artifact"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:dataTo rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_3"/>
+        <pm:hasType rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp"/>
+        <pm:hasName>sketch</pm:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#ctrl_flow_0 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#ctrl_flow_0">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlFlow"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#initial"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_0"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#ctrl_flow_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#ctrl_flow_1">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlFlow"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_2"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_0"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#ctrl_flow_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#ctrl_flow_2">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlFlow"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_1"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#final"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#ctrl_flow_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#ctrl_flow_3">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlFlow"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_2"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_1"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#data_flow_0 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#data_flow_0">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataFlow"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#artifact_0"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_1_port_3"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#data_flow_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#data_flow_1">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataFlow"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_3"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#artifact_0"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#final -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#final">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Final"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#initial -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#initial">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Initial"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model"/>
+        <pm:ctrlTo rdf:resource="http://ua.be/sdo2l/description/artifacts/RecPM_pm#activity_0_port_0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#model -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Model"/>
+        <object_diagram:hasName>RecPM_pm</object_diagram:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

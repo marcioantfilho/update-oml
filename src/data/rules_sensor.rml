@@ -1,0 +1,58 @@
+prefixes:
+  ex: http://example.com/table/table/
+  dbo: http://dbpedia.org/ontology/
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  dc: http://purl.org/dc/elements/1.1/
+  rev: http://purl.org/stuff/rev#
+  gtfs: http://vocab.gtfs.org/terms#
+  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+
+mappings:
+  sensor_readings:
+    sources:
+      - [sensor.csv~csv]
+    s: ex:$(index)
+    po:
+      - [a, ex:SensorReading]
+      - [ex:occuredIndex, $(index)]
+      - [ex:occuredTime, $(microsec)]
+      - p: ex:Value
+          o:
+            value: $(sense_00)
+            datatype: xsd:double
+      - p: ex:Value
+          o:
+            value: $(sense_01)
+            datatype: xsd:double
+      - p: ex:Value
+          o:
+            value: $(sense_02)
+            datatype: xsd:double
+      - p: ex:Value
+          o:
+            value: $(sense_03)
+            datatype: xsd:double
+      - p: ex:Value
+          o:
+            value: $(sense_10)
+            datatype: xsd:double
+      - p: ex:Value
+          o:
+            value: $(sense_11)
+            datatype: xsd:double
+      - p: ex:Value
+          o:
+            value: $(sense_12)
+            datatype: xsd:double
+      - p: ex:Value
+          o:
+            value: $(sense_13)
+            datatype: xsd:double

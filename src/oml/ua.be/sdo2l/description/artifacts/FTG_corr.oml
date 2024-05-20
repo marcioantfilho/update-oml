@@ -1,0 +1,173 @@
+// Warning: Generated Code! Do not edit!
+// Input: http://localhost:5000/files/drawio/FTG:ftg
+// Generator: https://msdl.uantwerpen.be/git/jexelmans/drawio2oml/drawio2oml/ftg/oml_generator.py
+
+// This file contains the correspondence links between concrete syntax (Drawio) and abstract syntax (FTG).
+description <http://ua.be/sdo2l/description/artifacts/FTG_corr#> as FTG_corr {
+
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#> as cs_as
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+
+  extends <http://ua.be/sdo2l/description/artifacts/FTG_drawio#> as my_drawio
+  extends <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as my_ftg
+
+  ci model : cs_as:CorrespondenceModel [
+    object_diagram:hasName "FTG_corr"
+  ]
+
+  ri trace_drawio_DT2_XpkoWL6Mp4KuCbJF-10_f_TextDocument : cs_as:CS_AS_Link [
+    from my_drawio:cell_DT2_XpkoWL6Mp4KuCbJF-10
+    to my_ftg:f_TextDocument
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_DT2_XpkoWL6Mp4KuCbJF-16_f_Profile : cs_as:CS_AS_Link [
+    from my_drawio:cell_DT2_XpkoWL6Mp4KuCbJF-16
+    to my_ftg:f_Profile
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_DT2_XpkoWL6Mp4KuCbJF-19_f_TabularData : cs_as:CS_AS_Link [
+    from my_drawio:cell_DT2_XpkoWL6Mp4KuCbJF-19
+    to my_ftg:f_TabularData
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_DT2_XpkoWL6Mp4KuCbJF-21_f_Code : cs_as:CS_AS_Link [
+    from my_drawio:cell_DT2_XpkoWL6Mp4KuCbJF-21
+    to my_ftg:f_Code
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_DT2_XpkoWL6Mp4KuCbJF-24_f_Script : cs_as:CS_AS_Link [
+    from my_drawio:cell_DT2_XpkoWL6Mp4KuCbJF-24
+    to my_ftg:f_Script
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_KxyZS9Gs6koL5FBSdZMM-14_f_xopp : cs_as:CS_AS_Link [
+    from my_drawio:cell_KxyZS9Gs6koL5FBSdZMM-14
+    to my_ftg:f_xopp
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_KxyZS9Gs6koL5FBSdZMM-18_f_file : cs_as:CS_AS_Link [
+    from my_drawio:cell_KxyZS9Gs6koL5FBSdZMM-18
+    to my_ftg:f_file
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_Q2omTT1f_mzxMD_8ckub-9_f_CBD : cs_as:CS_AS_Link [
+    from my_drawio:cell_Q2omTT1f_mzxMD_8ckub-9
+    to my_ftg:f_CBD
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_4rE98VZ8RXfWWRRUgjGg-1_t_Preparation : cs_as:CS_AS_Link [
+    from my_drawio:cell_4rE98VZ8RXfWWRRUgjGg-1
+    to my_ftg:t_Preparation
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_4rE98VZ8RXfWWRRUgjGg-9_t_SetupProfile : cs_as:CS_AS_Link [
+    from my_drawio:cell_4rE98VZ8RXfWWRRUgjGg-9
+    to my_ftg:t_SetupProfile
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_4rE98VZ8RXfWWRRUgjGg-16_t_GenerateControlParameters : cs_as:CS_AS_Link [
+    from my_drawio:cell_4rE98VZ8RXfWWRRUgjGg-16
+    to my_ftg:t_GenerateControlParameters
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_4rE98VZ8RXfWWRRUgjGg-22_t_VerifyData : cs_as:CS_AS_Link [
+    from my_drawio:cell_4rE98VZ8RXfWWRRUgjGg-22
+    to my_ftg:t_VerifyData
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_4rE98VZ8RXfWWRRUgjGg-28_t_RunExperiment : cs_as:CS_AS_Link [
+    from my_drawio:cell_4rE98VZ8RXfWWRRUgjGg-28
+    to my_ftg:t_RunExperiment
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_4rE98VZ8RXfWWRRUgjGg-35_t_BuildControlSettings : cs_as:CS_AS_Link [
+    from my_drawio:cell_4rE98VZ8RXfWWRRUgjGg-35
+    to my_ftg:t_BuildControlSettings
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_KxyZS9Gs6koL5FBSdZMM-1_t_InitialDesign : cs_as:CS_AS_Link [
+    from my_drawio:cell_KxyZS9Gs6koL5FBSdZMM-1
+    to my_ftg:t_InitialDesign
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_KxyZS9Gs6koL5FBSdZMM-6_t_CheckDesign : cs_as:CS_AS_Link [
+    from my_drawio:cell_KxyZS9Gs6koL5FBSdZMM-6
+    to my_ftg:t_CheckDesign
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_KxyZS9Gs6koL5FBSdZMM-19_t_CreateRequirements : cs_as:CS_AS_Link [
+    from my_drawio:cell_KxyZS9Gs6koL5FBSdZMM-19
+    to my_ftg:t_CreateRequirements
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_KxyZS9Gs6koL5FBSdZMM-24_t_Sketch : cs_as:CS_AS_Link [
+    from my_drawio:cell_KxyZS9Gs6koL5FBSdZMM-24
+    to my_ftg:t_Sketch
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_KxyZS9Gs6koL5FBSdZMM-28_t_LookAtSketch : cs_as:CS_AS_Link [
+    from my_drawio:cell_KxyZS9Gs6koL5FBSdZMM-28
+    to my_ftg:t_LookAtSketch
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_Q2omTT1f_mzxMD_8ckub-2_t_DefineCBDModel : cs_as:CS_AS_Link [
+    from my_drawio:cell_Q2omTT1f_mzxMD_8ckub-2
+    to my_ftg:t_DefineCBDModel
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_Q2omTT1f_mzxMD_8ckub-11_t_RunCBDSimulation : cs_as:CS_AS_Link [
+    from my_drawio:cell_Q2omTT1f_mzxMD_8ckub-11
+    to my_ftg:t_RunCBDSimulation
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_KRsiIsXFRB6VWgrfomc8-1_t_ValidateCBDSimulationResults : cs_as:CS_AS_Link [
+    from my_drawio:cell_KRsiIsXFRB6VWgrfomc8-1
+    to my_ftg:t_ValidateCBDSimulationResults
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_TtVDsBY8pM9m622MFL7I-1_t_Initialization : cs_as:CS_AS_Link [
+    from my_drawio:cell_TtVDsBY8pM9m622MFL7I-1
+    to my_ftg:t_Initialization
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_sis9WW2FUQbvP1viyk8t-1_t_DetectParallelRails : cs_as:CS_AS_Link [
+    from my_drawio:cell_sis9WW2FUQbvP1viyk8t-1
+    to my_ftg:t_DetectParallelRails
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_tniXIvkimBol-GNhVY2x-2_t_FailuresResolved : cs_as:CS_AS_Link [
+    from my_drawio:cell_tniXIvkimBol-GNhVY2x-2
+    to my_ftg:t_FailuresResolved
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_Sk1S-HC682LsTowornEU-1_t_RedesignAlgorithm : cs_as:CS_AS_Link [
+    from my_drawio:cell_Sk1S-HC682LsTowornEU-1
+    to my_ftg:t_RedesignAlgorithm
+    object_diagram:inModel model
+  ]
+}

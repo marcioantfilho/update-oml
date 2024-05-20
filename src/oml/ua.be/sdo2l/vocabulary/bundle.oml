@@ -1,0 +1,28 @@
+vocabulary bundle <http://ua.be/sdo2l/vocabulary/bundle#> as ^bundle {
+	includes <http://ua.be/sdo2l/vocabulary/base/acyclic#>
+	includes <http://ua.be/sdo2l/vocabulary/base/base#>
+	
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/file#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/ftg#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/shaclproperty#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/system#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/violation#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/code#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/component#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/cbd#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/dict#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/drawio#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/pm#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/requirement#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/richtext#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/script#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/tabular#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/text#>
+	includes <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#>
+    includes <http://ua.be/sdo2l/vocabulary/formalisms/xopp#>
+    
+   	includes <http://ua.be/sdo2l/vocabulary/federation#>
+}

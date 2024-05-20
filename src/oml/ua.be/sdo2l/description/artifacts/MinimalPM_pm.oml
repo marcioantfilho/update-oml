@@ -1,0 +1,33 @@
+// Warning: Generated Code! Do not edit!
+// Input: http://localhost:5000/files/drawio/MinimalPM:pm
+// Generator: https://msdl.uantwerpen.be/git/jexelmans/drawio2oml/drawio2oml/pm/oml_generator.py
+
+description <http://ua.be/sdo2l/description/artifacts/MinimalPM_pm#> as MinimalPM_pm {
+
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg
+
+  extends <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as ftg_instance
+
+  ci model : pm:Model [
+    object_diagram:hasName "MinimalPM_pm"
+  ]
+
+  ci initial : pm:Initial [
+    object_diagram:inModel model
+    pm:ctrlTo final // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci final : pm:Final [
+    object_diagram:inModel model
+    //pm:ctrlFrom initial // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ri ctrl_flow_0 : pm:CtrlFlow [
+    from initial
+    to final
+    object_diagram:inModel model
+  ]
+
+}

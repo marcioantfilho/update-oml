@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/FTG_corr#"
+     xml:base="http://ua.be/sdo2l/description/artifacts/FTG_corr"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#">
+    <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr">
+        <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://opencaesar.io/oml#hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://opencaesar.io/oml#hasSource"/>
+    
+
+
+    <!-- http://opencaesar.io/oml#hasTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://opencaesar.io/oml#hasTarget"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#inModel -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#inModel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#model -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#model">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CorrespondenceModel"/>
+        <object_diagram:hasName>FTG_corr</object_diagram:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-16_t_GenerateControlParameters -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-16_t_GenerateControlParameters">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_4rE98VZ8RXfWWRRUgjGg-16"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_GenerateControlParameters"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-1_t_Preparation -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-1_t_Preparation">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_4rE98VZ8RXfWWRRUgjGg-1"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Preparation"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-22_t_VerifyData -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-22_t_VerifyData">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_4rE98VZ8RXfWWRRUgjGg-22"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_VerifyData"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-28_t_RunExperiment -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-28_t_RunExperiment">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_4rE98VZ8RXfWWRRUgjGg-28"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunExperiment"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-35_t_BuildControlSettings -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-35_t_BuildControlSettings">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_4rE98VZ8RXfWWRRUgjGg-35"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_BuildControlSettings"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-9_t_SetupProfile -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_4rE98VZ8RXfWWRRUgjGg-9_t_SetupProfile">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_4rE98VZ8RXfWWRRUgjGg-9"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_SetupProfile"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-10_f_TextDocument -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-10_f_TextDocument">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_DT2_XpkoWL6Mp4KuCbJF-10"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-16_f_Profile -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-16_f_Profile">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_DT2_XpkoWL6Mp4KuCbJF-16"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Profile"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-19_f_TabularData -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-19_f_TabularData">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_DT2_XpkoWL6Mp4KuCbJF-19"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-21_f_Code -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-21_f_Code">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_DT2_XpkoWL6Mp4KuCbJF-21"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Code"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-24_f_Script -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_DT2_XpkoWL6Mp4KuCbJF-24_f_Script">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_DT2_XpkoWL6Mp4KuCbJF-24"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Script"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KRsiIsXFRB6VWgrfomc8-1_t_ValidateCBDSimulationResults -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KRsiIsXFRB6VWgrfomc8-1_t_ValidateCBDSimulationResults">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_KRsiIsXFRB6VWgrfomc8-1"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_ValidateCBDSimulationResults"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-14_f_xopp -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-14_f_xopp">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_KxyZS9Gs6koL5FBSdZMM-14"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-18_f_file -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-18_f_file">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_KxyZS9Gs6koL5FBSdZMM-18"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-19_t_CreateRequirements -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-19_t_CreateRequirements">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_KxyZS9Gs6koL5FBSdZMM-19"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_CreateRequirements"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-1_t_InitialDesign -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-1_t_InitialDesign">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_KxyZS9Gs6koL5FBSdZMM-1"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_InitialDesign"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-24_t_Sketch -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-24_t_Sketch">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_KxyZS9Gs6koL5FBSdZMM-24"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Sketch"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-28_t_LookAtSketch -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-28_t_LookAtSketch">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_KxyZS9Gs6koL5FBSdZMM-28"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_LookAtSketch"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-6_t_CheckDesign -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_KxyZS9Gs6koL5FBSdZMM-6_t_CheckDesign">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_KxyZS9Gs6koL5FBSdZMM-6"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_CheckDesign"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_Q2omTT1f_mzxMD_8ckub-11_t_RunCBDSimulation -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_Q2omTT1f_mzxMD_8ckub-11_t_RunCBDSimulation">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_Q2omTT1f_mzxMD_8ckub-11"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunCBDSimulation"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_Q2omTT1f_mzxMD_8ckub-2_t_DefineCBDModel -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_Q2omTT1f_mzxMD_8ckub-2_t_DefineCBDModel">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_Q2omTT1f_mzxMD_8ckub-2"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DefineCBDModel"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_Q2omTT1f_mzxMD_8ckub-9_f_CBD -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_Q2omTT1f_mzxMD_8ckub-9_f_CBD">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_Q2omTT1f_mzxMD_8ckub-9"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_CBD"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_Sk1S-HC682LsTowornEU-1_t_RedesignAlgorithm -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_Sk1S-HC682LsTowornEU-1_t_RedesignAlgorithm">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_Sk1S-HC682LsTowornEU-1"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RedesignAlgorithm"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_TtVDsBY8pM9m622MFL7I-1_t_Initialization -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_TtVDsBY8pM9m622MFL7I-1_t_Initialization">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_TtVDsBY8pM9m622MFL7I-1"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Initialization"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_sis9WW2FUQbvP1viyk8t-1_t_DetectParallelRails -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_sis9WW2FUQbvP1viyk8t-1_t_DetectParallelRails">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_sis9WW2FUQbvP1viyk8t-1"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DetectParallelRails"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_tniXIvkimBol-GNhVY2x-2_t_FailuresResolved -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#trace_drawio_tniXIvkimBol-GNhVY2x-2_t_FailuresResolved">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CS_AS_Link"/>
+        <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_drawio#cell_tniXIvkimBol-GNhVY2x-2"/>
+        <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_FailuresResolved"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_corr#model"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

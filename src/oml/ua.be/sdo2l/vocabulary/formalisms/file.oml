@@ -1,0 +1,13 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/file#> as file {
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+    extends <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces
+
+    aspect Data
+    concept File :> traces:Artifact [key isLocatedAt] 
+
+    scalar property isLocatedAt [
+        domain File
+        range xsd:string
+        functional
+    ]
+}

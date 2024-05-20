@@ -1,0 +1,48 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram {
+	
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	aspect Object []
+		
+	// Compromise:
+	//  - use attributes only for scalar properties
+	//  - if we want to have a reference to an object as an attribute, use a link instead
+	
+	// Supertype of all scalar properties that we consider to be a 'field' of an object
+	// An object can have any number of fields, hence this property is not functional
+	scalar property hasField [
+		domain Object
+		range rdfs:Literal // e.g., string, float, boolean, ...
+	]
+
+	// A link is also an object, meaning:
+	//   - it can have attributes
+	//   - it can be the source/target of another link
+	relation entity Link :> Object [
+		from Object
+		to Object
+	]
+	
+	concept Model [
+		restricts scalar property hasName to exactly 1
+	]
+	
+	// Every model has a name, that we use to identify it.
+	// E.g., when we query for a list of all the process models, we can get their names.
+	scalar property hasName [
+		domain Model
+		range xsd:string
+		functional
+	]
+	
+	relation entity HasObject [
+		from Model
+		to Object
+		forward hasObject
+		reverse inModel
+		inverse functional // every Object can be part of at most one model
+		asymmetric
+		irreflexive
+	]
+}

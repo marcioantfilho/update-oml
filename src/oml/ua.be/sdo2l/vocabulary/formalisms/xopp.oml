@@ -1,0 +1,129 @@
+// Vocabulary for the Xournal++ file format
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
+
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	aspect element :> object_diagram:Object []
+	
+	aspect LayerElement :> element [
+		restricts relation inLayer to exactly 1
+		restricts scalar property hasText to exactly 1
+	]
+	scalar property hasText :> object_diagram:hasField [
+		domain LayerElement
+		range xsd:string
+		functional
+	]
+
+	relation entity HasXMLAttribute :> object_diagram:Link [
+		from LayerElement
+		to XMLAttribute
+		forward hasAttribute
+		reverse ofLayerElement
+		inverse functional
+	]
+	
+	concept XMLAttribute :> element, dict:DictEntry [
+		restricts relation ofLayerElement to exactly 1
+	]
+	
+	concept Text :> LayerElement []
+	concept Stroke :> LayerElement []
+	
+	concept Layer :> element [
+		restricts relation inPage to exactly 1
+	]
+	
+	relation entity HasLayerElement :> object_diagram:Link [
+		from Layer
+		to LayerElement
+		forward hasElement
+		reverse inLayer
+		inverse functional
+		asymmetric
+		irreflexive
+	]
+	
+	concept Page :> element [
+		restricts relation inFile to exactly 1
+		restricts scalar property hasWidth to exactly 1
+		restricts scalar property hasHeight to exactly 1
+		restricts scalar property hasBackgroundType to exactly 1
+		restricts scalar property hasBackgroundColor to exactly 1
+		restricts scalar property hasBackgroundStyle to exactly 1
+	]
+
+	scalar property hasWidth :> object_diagram:hasField [
+		domain Page
+		range xsd:decimal
+		functional
+	]
+	scalar property hasHeight :> object_diagram:hasField [
+		domain Page
+		range xsd:decimal
+		functional
+	]
+	scalar property hasBackgroundType :> object_diagram:hasField [
+		domain Page
+		range xsd:string
+		functional
+	]
+	scalar property hasBackgroundColor :> object_diagram:hasField [
+		domain Page
+		range xsd:string
+		functional
+	]
+	scalar property hasBackgroundStyle :> object_diagram:hasField [
+		domain Page
+		range xsd:string
+		functional
+	]
+	relation entity HasLayer :> object_diagram:Link [
+		from Page
+		to Layer
+		forward hasLayer
+		reverse inPage
+		inverse functional
+		asymmetric
+		irreflexive
+	]
+		
+	scalar property hasCreator :> object_diagram:hasField [
+		domain Model
+		range xsd:string
+		functional
+	]
+	scalar property hasFileVersion :> object_diagram:hasField [
+		domain Model
+		range xsd:integer
+		functional
+	]
+	scalar property hasTitle :> object_diagram:hasField [
+		domain Model
+		range xsd:string
+		functional
+	]
+	scalar property hasPreview :> object_diagram:hasField [
+		domain Model
+//		range xsd:base64Binary // PNG-encoded // Doesn't seem to be working, workaround below
+		range xsd:string // Workaround
+		functional
+	]	
+	
+	relation entity HasPage :> object_diagram:Link [
+		from Model
+		to Page
+		forward hasPage
+		reverse inFile
+		asymmetric
+		irreflexive
+		inverse functional
+	]
+	
+	// A Xournal++ file:
+	concept Model :> object_diagram:Model [
+		restricts all relation object_diagram:hasObject to element
+	]
+}

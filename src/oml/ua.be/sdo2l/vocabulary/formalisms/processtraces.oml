@@ -1,0 +1,135 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+	extends <http://ua.be/sdo2l/vocabulary/base/base#> as base
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+	extends <http://www.w3.org/2002/07/owl#> as owl
+
+	extends <http://ua.be/sdo2l/vocabulary/base/acyclic#> as acyclic
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+
+	// TODO Add time to Event (starting time and ending time of PT events)
+//	@rdfs:comment "The class to represent traces of execution of a given workflow."
+//	concept Trace :> base:IdentifiedThing
+
+	// A process trace element
+	aspect element [
+		restricts relation relatesTo to exactly 1 // every PT element must relate to one PM element
+	]
+	
+	// Supertype for all links from PT to PM
+	relation entity RelatesToPM [
+		from element
+		to pm:element
+		forward relatesTo
+		functional
+	]
+
+	@rdfs:comment "The class to represent an event of a trace."
+	aspect Event :> element, object_diagram:Object
+	
+	scalar property hasTimestamp :> object_diagram:hasField [
+		domain Event
+		range xsd:dateTime
+	]
+	
+	@rdfs:comment "An event signaling the start of a new trace."
+	concept StartTraceEvent :> Event [
+		restricts all relation relatesTo to pm:Model
+		restricts relation isFollowedBy to max 1
+		restricts relation isPrecededBy to max 0
+	]
+	
+	@rdfs:comment "An event signaling the end of a trace."
+	concept EndTraceEvent :> Event [
+		restricts all relation relatesTo to pm:Model
+		restricts relation isFollowedBy to max 0
+		restricts relation isPrecededBy to max 1
+		
+	]
+
+	@rdfs:comment "The class to represent a starting event of a trace."
+	concept StartActivityEvent :> Event [
+		restricts all relation relatesTo to pm:CtrlInputPort
+		restricts relation isFollowedBy to max 1
+		restricts relation isPrecededBy to max 1
+		
+	]
+
+	@rdfs:comment "The class to represent an ending event of a trace."
+	concept EndActivityEvent :> Event [
+		restricts all relation relatesTo to pm:CtrlOutputPort
+		restricts relation isFollowedBy to max 1
+		restricts relation isPrecededBy to max 1
+		
+	]
+	
+	relation entity Follows :> acyclic:Acyclic, object_diagram:Link [
+		from Event
+		to Event
+		forward isFollowedBy
+		reverse isPrecededBy
+		asymmetric
+		irreflexive
+		functional
+		inverse functional
+	]
+
+	relation entity Produces :> element, object_diagram:Link [
+		from EndActivityEvent
+		to Artifact
+		forward produces
+		reverse isProducedBy
+		asymmetric
+		irreflexive
+		inverse functional // every (version of an) artifact can only be produced by one (ended) activity
+		
+		restricts all relation relatesTo to pm:DataOutputPort
+	]
+	
+	relation entity Consumes :> element, object_diagram:Link [
+		from StartActivityEvent
+		to Artifact
+		forward consumes
+		reverse isConsumedBy
+		asymmetric
+		irreflexive
+		
+		restricts all relation relatesTo to pm:DataInputPort
+	]
+	
+	@rdfs:comment "The class of artifacts generated during the system design process. Here we are referring to the concrete artifacts that are created/used during the enactment of a workflow."
+	concept Artifact :> element, base:Versionable [
+		restricts all relation relatesTo to pm:Artifact
+	]
+	
+	scalar property hasLocation :> object_diagram:hasField [
+		domain Artifact
+		range xsd:string
+	]
+
+	scalar property addedAt :> object_diagram:hasField [
+		domain Artifact
+		range xsd:dateTime
+	]
+			
+	// An artifact may be a "model":
+	relation entity IsModel [
+		from Artifact
+		to object_diagram:Model
+		forward isModel
+		reverse isArtifact
+		asymmetric
+		irreflexive
+		functional
+	]
+
+// Joeri: For fine-grained traceability, we use trace models (e.g., my_xopp_to_drawio.oml and my_corr.oml), which are also just models/artifacts.
+//	@rdfs:comment "This relation is used for fine-grained traceability. It can link two concepts in the PT. This should be a many to many relation."
+//	relation entity Represents [
+//		from owl:Thing
+//		to owl:Thing
+//		forward represents
+//		reverse isRepresentedBy
+//	]
+}

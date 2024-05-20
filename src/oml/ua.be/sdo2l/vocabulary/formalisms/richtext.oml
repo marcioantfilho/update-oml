@@ -1,0 +1,51 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/richtext#> as richtext {
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+    extends <http://ua.be/sdo2l/vocabulary/formalisms/text#> as text
+
+
+    concept RichTextData :> text:TextData
+    concept RichTextModifer
+    concept TextPosition
+
+    scalar property onLine [
+        domain TextPosition
+        range xsd:int
+    ]
+
+    scalar property atPosition [
+        domain TextPosition
+        range xsd:int
+    ]
+
+    enumerated scalar RichTextModifierOption [
+        "italic",
+        "bold"
+    ]
+
+    scalar property hasRichTextModifierOption [
+        domain RichTextModifer
+        range RichTextModifierOption
+        functional
+    ]
+
+    relation entity StartsAt [
+        from RichTextModifer
+        to TextPosition
+        forward modifierStartsAt
+    ]
+
+    relation entity StopsAt [
+        from RichTextModifer
+        to TextPosition
+        forward modifierStopsAt
+    ]
+
+    concept ItalicRichTextModifier :> RichTextModifer [
+        restricts scalar property hasRichTextModifierOption to "italic"
+    ]
+
+    concept BoldRichTextModifier :> RichTextModifer [
+        restricts scalar property hasRichTextModifierOption to "bold"
+    ]
+}

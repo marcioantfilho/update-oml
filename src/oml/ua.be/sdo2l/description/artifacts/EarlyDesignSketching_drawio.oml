@@ -1,0 +1,900 @@
+// Warning: Generated code! Do not edit!
+// Input: http://localhost:5000/files/drawio/EarlyDesignSketching:pm
+// Generator: https://msdl.uantwerpen.be/git/jexelmans/drawio2oml/drawio2oml/oml_generator.py
+// Minimal mode enabled: Page/cell attributes, style, and geometries have been omitted (making the drawio-> OML conversion lossy).
+
+description <http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#> as EarlyDesignSketching_drawio {
+
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/drawio#> as drawio
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict
+
+  ci model : drawio:Model [
+    drawio:hasDrawioId "KOVRzJi7c8KNZSDYUXYg"
+    object_diagram:hasName "EarlyDesignSketching:pm_drawio"
+  ]
+
+  
+  ci cell_0 : drawio:Cell [
+    drawio:hasDrawioId "0"
+    drawio:isRootOf model
+    object_diagram:inModel model
+  ]
+  
+
+  
+  ci cell_1 : drawio:Cell [
+    drawio:hasDrawioId "1"
+    drawio:hasParent cell_0
+    object_diagram:inModel model
+  ]
+  
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-1 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-1"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-1_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-1
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-1_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "initial"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-1
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-2 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-2"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-2_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-2_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "activity"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-2_prop_name : drawio:CellProperty [
+    dict:hasKey "name"
+    dict:hasValue "create_requirements"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-2_prop_type : drawio:CellProperty [
+    dict:hasKey "type"
+    dict:hasValue "CreateRequirements"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-2_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-3 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-3"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-3_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-3
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-3_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "start"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-3
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-3_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-3
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-3_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_in"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-3
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-4 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-4"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-4_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-4
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-4_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "cout"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-4
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-4_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-4
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-4_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_out"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-4
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-5 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-5"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-5_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-5
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-5_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "requirements"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-5
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-5_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-5
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-5_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_out"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-5
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-6 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-6"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-2
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-6_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-6
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-6_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "new_iteration"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-6
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-6_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-6
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-6_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_in"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-6
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-7 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-7"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-1
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-3
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-7_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-7
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-7_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-7
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-8 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-8"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-8_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-8
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-8_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "final"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-8
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-9 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-9"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-4
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-17
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-9_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-9
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-9_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-9
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-10 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-10"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-15
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-26
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-10_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-10
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-10_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-10
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-11 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-11"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-5
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-21
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-11_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-11
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-11_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-11
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-12 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-12"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-13
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-27
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-12_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-12
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-12_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-12
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-13 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-13"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-13_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%name% : %type%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-13
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-13_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "artifact"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-13
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-13_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-13
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-13_prop_name : drawio:CellProperty [
+    dict:hasKey "name"
+    dict:hasValue "sketch"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-13
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-13_prop_type : drawio:CellProperty [
+    dict:hasKey "type"
+    dict:hasValue "xopp"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-13
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-14 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-14"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-14_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-14_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "activity"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-14_prop_name : drawio:CellProperty [
+    dict:hasKey "name"
+    dict:hasValue "initial_design"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-14_prop_type : drawio:CellProperty [
+    dict:hasKey "type"
+    dict:hasValue "InitialDesign"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-14_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-15 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-15"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-15_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-15
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-15_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "cout"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-15
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-15_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-15
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-15_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_out"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-15
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-16 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-16"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-16_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-16
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-16_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "requirements"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-16
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-16_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-16
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-16_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_in"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-16
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-17 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-17"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-17_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-17
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-17_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "cin"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-17
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-17_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-17
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-17_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_in"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-17
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-18 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-18"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-14
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-18_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-18
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-18_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "initial_design"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-18
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-18_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-18
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-18_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_out"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-18
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-19 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-19"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-21
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-16
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-19_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-19
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-19_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-19
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-20 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-20"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-21
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-25
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-20_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-20
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-20_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-20
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-21 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-21"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-21_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%name% : %type%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-21
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-21_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "artifact"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-21
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-21_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-21
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-21_prop_name : drawio:CellProperty [
+    dict:hasKey "name"
+    dict:hasValue "requirements"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-21
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-21_prop_type : drawio:CellProperty [
+    dict:hasKey "type"
+    dict:hasValue "file"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-21
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-22 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-22"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-18
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-13
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-22_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-22
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-22_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-22
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-23 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-23"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-23_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-23_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "activity"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-23_prop_name : drawio:CellProperty [
+    dict:hasKey "name"
+    dict:hasValue "check_design"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-23_prop_type : drawio:CellProperty [
+    dict:hasKey "type"
+    dict:hasValue "CheckDesign"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-23_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-24 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-24"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-24_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-24
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-24_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "good"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-24
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-24_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-24
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-24_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_out"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-24
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-25 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-25"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-25_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-25
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-25_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "requirements"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-25
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-25_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-25
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-25_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_in"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-25
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-26 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-26"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-26_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-26
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-26_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "cin"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-26
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-26_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-26
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-26_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_in"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-26
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-27 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-27"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-27_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-27
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-27_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "initial_design"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-27
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-27_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-27
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-27_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "data_in"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-27
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-28 : drawio:Vertex [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-28"
+    drawio:hasParent cell_u6pOaN9qPa-NTVyj8-pj-23
+    object_diagram:inModel model
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-28_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue "%portname%"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-28
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-28_prop_portname : drawio:CellProperty [
+    dict:hasKey "portname"
+    dict:hasValue "bad"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-28
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-28_prop_placeholders : drawio:CellProperty [
+    dict:hasKey "placeholders"
+    dict:hasValue "1"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-28
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-28_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_out"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-28
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-29 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-29"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-24
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-8
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-29_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-29
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-29_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-29
+    object_diagram:inModel model
+  ]
+
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-30 : drawio:Edge [
+    drawio:hasDrawioId "u6pOaN9qPa-NTVyj8-pj-30"
+    drawio:hasParent cell_1
+    object_diagram:inModel model
+    drawio:hasSource cell_u6pOaN9qPa-NTVyj8-pj-28
+    drawio:hasTarget cell_u6pOaN9qPa-NTVyj8-pj-6
+  ]
+  
+  ci cell_u6pOaN9qPa-NTVyj8-pj-30_prop_label : drawio:CellProperty [
+    dict:hasKey "label"
+    dict:hasValue ""
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-30
+    object_diagram:inModel model
+  ]
+  ci cell_u6pOaN9qPa-NTVyj8-pj-30_prop_pmRole : drawio:CellProperty [
+    dict:hasKey "pmRole"
+    dict:hasValue "ctrl_flow"
+    drawio:propertyOf cell_u6pOaN9qPa-NTVyj8-pj-30
+    object_diagram:inModel model
+  ]
+
+  
+}

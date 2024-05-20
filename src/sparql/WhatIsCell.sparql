@@ -1,0 +1,48 @@
+# This query shows how we can ask any incoming/outgoing traceability links of a drawio cell, and what those links point to
+
+PREFIX object_diagram: <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#>
+PREFIX drawio: <http://ua.be/sdo2l/vocabulary/formalisms/drawio#>
+PREFIX cs_as: <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#>
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oml: <http://opencaesar.io/oml#>
+PREFIX purl: <http://purl.org/dc/elements/1.1/>
+PREFIX trac: <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?cell ?rel_type ?as_element ?as_type 
+WHERE {
+	?cell drawio:hasDrawioId "CvR4PfVCJDiI6bvIUUvl-2" .
+	
+	# Get all incoming and outgoing traceability links for "?cell":
+	{
+		?rel a trac:TraceabilityLink .
+		?rel oml:hasSource ?cell .
+		?rel oml:hasTarget ?as_element .
+	} UNION {
+		?rel a trac:TraceabilityLink .
+		?rel oml:hasTarget ?cell .
+		?rel oml:hasSource ?as_element .
+	}
+	
+	?rel a ?rel_type .
+	?rel_type rdfs:subClassOf trac:TraceabilityLink .
+	
+	# Only interested here in the most concrete type of the traceability link:
+	NOT EXISTS {
+		?more_concrete_type rdfs:subClassOf ?rel_type .
+		?rel a ?more_concrete_type .
+		FILTER(?more_concrete_type != ?rel_type) # needed because every type is its own subclass
+	}
+	
+	?as_element a ?as_type .
+	?as_type rdfs:subClassOf object_diagram:Object . # restrict types to objects
+	
+	# Only get concrete types:
+	NOT EXISTS {
+		?another_more_concrete_type rdfs:subClassOf ?as_type .
+		?as_element a ?another_more_concrete_type
+		FILTER(?another_more_concrete_type != ?as_type)
+		#?as_type purl:type oml:Aspect .
+	}
+}

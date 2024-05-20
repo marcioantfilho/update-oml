@@ -1,0 +1,263 @@
+// Warning: Generated Code! Do not edit!
+// Input: http://localhost:5000/files/drawio/springDamper:pm
+// Generator: https://msdl.uantwerpen.be/git/jexelmans/drawio2oml/drawio2oml/pm/oml_generator.py
+
+// This file contains the correspondence links between concrete syntax (Drawio) and abstract syntax (Process Model).
+description <http://ua.be/sdo2l/description/artifacts/springDamper_corr#> as springDamper_corr {
+
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#> as cs_as
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+
+  extends <http://ua.be/sdo2l/description/artifacts/springDamper_drawio#> as my_drawio
+  extends <http://ua.be/sdo2l/description/artifacts/springDamper_pm#> as my_pm
+
+  ci model : cs_as:CorrespondenceModel [
+    object_diagram:hasName "springDamper_corr"
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-2_initial : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-2
+    to my_pm:initial
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-35_final : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-35
+    to my_pm:final
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-4_activity_0_port_0 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-4
+    to my_pm:activity_0_port_0
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-5_activity_0_port_1 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-5
+    to my_pm:activity_0_port_1
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-6_activity_0_port_2 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-6
+    to my_pm:activity_0_port_2
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-3_activity_0 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-3
+    to my_pm:activity_0
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-8_activity_1_port_0 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-8
+    to my_pm:activity_1_port_0
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-9_activity_1_port_1 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-9
+    to my_pm:activity_1_port_1
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-10_activity_1_port_4 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-10
+    to my_pm:activity_1_port_4
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-11_activity_1_port_5 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-11
+    to my_pm:activity_1_port_5
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-12_activity_1_port_3 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-12
+    to my_pm:activity_1_port_3
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_j9tabdb7EQjFiC8vxNGg-1_activity_1_port_2 : cs_as:CS_AS_Link [
+    from my_drawio:cell_j9tabdb7EQjFiC8vxNGg-1
+    to my_pm:activity_1_port_2
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-7_activity_1 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-7
+    to my_pm:activity_1
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-15_artifact_0 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-15
+    to my_pm:artifact_0
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-18_artifact_1 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-18
+    to my_pm:artifact_1
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-21_activity_2_port_0 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-21
+    to my_pm:activity_2_port_0
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-22_activity_2_port_2 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-22
+    to my_pm:activity_2_port_2
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-23_activity_2_port_3 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-23
+    to my_pm:activity_2_port_3
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-24_activity_2_port_1 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-24
+    to my_pm:activity_2_port_1
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-20_activity_2 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-20
+    to my_pm:activity_2
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-27_artifact_2 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-27
+    to my_pm:artifact_2
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-33_activity_3_port_1 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-33
+    to my_pm:activity_3_port_1
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-30_activity_3_port_0 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-30
+    to my_pm:activity_3_port_0
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-31_activity_3_port_4 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-31
+    to my_pm:activity_3_port_4
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-32_activity_3_port_2 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-32
+    to my_pm:activity_3_port_2
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_7aubSDIZ3aql-5XpQAt0-1_activity_3_port_3 : cs_as:CS_AS_Link [
+    from my_drawio:cell_7aubSDIZ3aql-5XpQAt0-1
+    to my_pm:activity_3_port_3
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_bSbNTGvVxcwvyUkA0aUh-1_activity_3 : cs_as:CS_AS_Link [
+    from my_drawio:cell_bSbNTGvVxcwvyUkA0aUh-1
+    to my_pm:activity_3
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-1_ctrl_flow_0 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-1
+    to my_pm:ctrl_flow_0
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-13_ctrl_flow_1 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-13
+    to my_pm:ctrl_flow_1
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-14_data_flow_0 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-14
+    to my_pm:data_flow_0
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-16_data_flow_1 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-16
+    to my_pm:data_flow_1
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-17_data_flow_2 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-17
+    to my_pm:data_flow_2
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-19_data_flow_3 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-19
+    to my_pm:data_flow_3
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-25_ctrl_flow_2 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-25
+    to my_pm:ctrl_flow_2
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_PR43pSw0OvMHOdnO7uKn-1_data_flow_4 : cs_as:CS_AS_Link [
+    from my_drawio:cell_PR43pSw0OvMHOdnO7uKn-1
+    to my_pm:data_flow_4
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_6EwGGpy6rZ522-kh7by9-28_data_flow_5 : cs_as:CS_AS_Link [
+    from my_drawio:cell_6EwGGpy6rZ522-kh7by9-28
+    to my_pm:data_flow_5
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_PR43pSw0OvMHOdnO7uKn-2_ctrl_flow_3 : cs_as:CS_AS_Link [
+    from my_drawio:cell_PR43pSw0OvMHOdnO7uKn-2
+    to my_pm:ctrl_flow_3
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_PR43pSw0OvMHOdnO7uKn-3_ctrl_flow_4 : cs_as:CS_AS_Link [
+    from my_drawio:cell_PR43pSw0OvMHOdnO7uKn-3
+    to my_pm:ctrl_flow_4
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_PR43pSw0OvMHOdnO7uKn-4_ctrl_flow_5 : cs_as:CS_AS_Link [
+    from my_drawio:cell_PR43pSw0OvMHOdnO7uKn-4
+    to my_pm:ctrl_flow_5
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_7aubSDIZ3aql-5XpQAt0-2_ctrl_flow_6 : cs_as:CS_AS_Link [
+    from my_drawio:cell_7aubSDIZ3aql-5XpQAt0-2
+    to my_pm:ctrl_flow_6
+    object_diagram:inModel model
+  ]
+
+  ri trace_drawio_1_model : cs_as:CS_AS_Link [
+    from my_drawio:cell_1
+    to my_pm:model
+    object_diagram:inModel model
+  ]
+}

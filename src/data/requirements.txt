@@ -1,0 +1,4 @@
+We need a drivetrain.
+It needs a sensor.
+This sensor needs to measure values.
+These values need to be between certain limits.

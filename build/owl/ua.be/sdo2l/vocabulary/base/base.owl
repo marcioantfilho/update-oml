@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/base/base#"
+     xml:base="http://ua.be/sdo2l/vocabulary/base/base"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/base/base">
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/base/acyclic"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#BasicType -->
+
+
+    <rdfs:Datatype rdf:about="http://ua.be/sdo2l/vocabulary/base/base#BasicType">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Boolean</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Char</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Double</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Integer</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>String</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#NumericType -->
+
+
+    <rdfs:Datatype rdf:about="http://ua.be/sdo2l/vocabulary/base/base#NumericType">
+        <owl:equivalentClass rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#BasicType"/>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Double</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Integer</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#aggregates -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#aggregates">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#AggregatedThing"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#AggregatedThing"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#contains -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#contains">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/acyclic#acyclicForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#ContainedElement"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#ContainedElement"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#defines -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#defines">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#UsageThing"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#isAggregatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#isAggregatedIn">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#aggregates"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#isContainedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#isContainedIn">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#contains"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#isDefinedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#isDefinedBy">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#defines"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#nextVersionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#nextVersionOf">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#previousVersionOf"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#previousVersionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#previousVersionOf">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/acyclic#acyclicForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#Versionable"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#Versionable"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#hasCanonicalName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#hasCanonicalName">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The has canonical name property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#hasDescription">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The has description property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#hasGUID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#hasGUID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#hasIdentifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#hasIdentifier">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The has identifier property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#hasName">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The has name property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#hasTag -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#hasTag">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#Versionable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The has canonical name property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#hasUsageName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/base/base#hasUsageName">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#UsageThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The has usage name property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#AggregatedThing -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#AggregatedThing">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <rdfs:comment>The class of things that can be aggregated</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#Aggregates -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#Aggregates">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <rdfs:comment>The aggregates relation between aggregated things</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#ContainedElement -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#ContainedElement">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <rdfs:comment>A ContainedElement is a thing that can participate in homomeric containment relationships.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#Contains -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#Contains">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/acyclic#Acyclic"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <rdfs:comment>Contains is a many-to-many relation used to represent homomeric relations that form directed rooted trees.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#Defines -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#Defines">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <rdfs:comment>relationship between definitions and concrete elements</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <rdfs:comment>The class of things that specify definitions of elements</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasIdentifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <rdfs:comment>The class of things having an id and a canonical name</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
+        </owl:hasKey>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#UsageThing -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#UsageThing">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <rdfs:comment>The class of things that are used and are defined by DefinitionThings</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#Versionable -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#Versionable">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/base/base#Versions -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/base/base#Versions">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/acyclic#Acyclic"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>aggregates derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#Aggregates"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#aggregates"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>contains derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#Contains"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#contains"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>defines derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#Defines"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#defines"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>previousVersionOf derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#Versions"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#previousVersionOf"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

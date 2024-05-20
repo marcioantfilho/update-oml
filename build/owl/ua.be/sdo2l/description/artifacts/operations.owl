@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/operations#"
+     xml:base="http://ua.be/sdo2l/description/artifacts/operations"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:federation="http://ua.be/sdo2l/vocabulary/federation#">
+    <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/operations">
+        <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/federation"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#isOperationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#isOperationOf"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#isParameterOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#isParameterOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasCall -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasCall"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasDescription"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasEndPoint -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasEndPoint"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasIndex"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasName"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#get_cell -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#get_cell">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Operation"/>
+        <federation:isOperationOf rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
+        <federation:hasCall>cell</federation:hasCall>
+        <federation:hasDescription>Given a column and a row indexes , it returns the corresponding cell.</federation:hasDescription>
+        <federation:hasEndPoint>http://localhost:8000</federation:hasEndPoint>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#get_cell_artifactIRI -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#get_cell_artifactIRI">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <federation:isParameterOf rdf:resource="http://ua.be/sdo2l/description/artifacts/operations#get_cell"/>
+        <federation:hasIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</federation:hasIndex>
+        <federation:hasName>artifactIRI</federation:hasName>
+        <federation:hasType>String</federation:hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#get_cell_column -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#get_cell_column">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <federation:isParameterOf rdf:resource="http://ua.be/sdo2l/description/artifacts/operations#get_cell"/>
+        <federation:hasIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</federation:hasIndex>
+        <federation:hasName>col</federation:hasName>
+        <federation:hasType>String</federation:hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#get_cell_file -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#get_cell_file">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <federation:isParameterOf rdf:resource="http://ua.be/sdo2l/description/artifacts/operations#get_cell"/>
+        <federation:hasIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</federation:hasIndex>
+        <federation:hasName>file</federation:hasName>
+        <federation:hasType>String</federation:hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#get_cell_row -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#get_cell_row">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <federation:isParameterOf rdf:resource="http://ua.be/sdo2l/description/artifacts/operations#get_cell"/>
+        <federation:hasIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</federation:hasIndex>
+        <federation:hasName>row</federation:hasName>
+        <federation:hasType>String</federation:hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#outlier -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#outlier">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Operation"/>
+        <federation:isOperationOf rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
+        <federation:hasCall>outlier</federation:hasCall>
+        <federation:hasDescription>Given a column with numbers, it returns the cells whose values are outliers compared to the other cells.</federation:hasDescription>
+        <federation:hasEndPoint>http://localhost:8000</federation:hasEndPoint>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#outlierArtifactIRI -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#outlierArtifactIRI">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <federation:isParameterOf rdf:resource="http://ua.be/sdo2l/description/artifacts/operations#outlier"/>
+        <federation:hasIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</federation:hasIndex>
+        <federation:hasName>artifactIRI</federation:hasName>
+        <federation:hasType>String</federation:hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#outlierColumn -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#outlierColumn">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <federation:isParameterOf rdf:resource="http://ua.be/sdo2l/description/artifacts/operations#outlier"/>
+        <federation:hasIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</federation:hasIndex>
+        <federation:hasName>col</federation:hasName>
+        <federation:hasType>String</federation:hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/operations#outlierFile -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/operations#outlierFile">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <federation:isParameterOf rdf:resource="http://ua.be/sdo2l/description/artifacts/operations#outlier"/>
+        <federation:hasIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</federation:hasIndex>
+        <federation:hasName>file</federation:hasName>
+        <federation:hasType>String</federation:hasType>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+
