@@ -1,0 +1,58 @@
+// Vocabulary for Causal Block Diagrams
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/cbd#> as cbd {
+
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	aspect element :> object_diagram:Object []
+	
+	aspect namedElement :> element [
+		restricts scalar property hasName to exactly 1
+	]
+	scalar property hasName [
+		domain namedElement
+		range xsd:string
+		functional
+	]
+	
+	concept Block :> namedElement []
+	scalar property hasKind [
+		domain Block
+		range xsd:string
+		functional
+	]
+	
+	relation entity HasPort [
+		from Block
+		to port
+		forward hasPort
+		reverse ofBlock
+		inverse functional
+		asymmetric
+		irreflexive
+	]
+	
+	aspect port :> namedElement [
+		restricts relation ofBlock to exactly 1
+	]
+	
+	concept InputPort :> port [
+		restricts relation incomingConnection to min 1
+	]
+	concept OutputPort :> port [
+		restricts relation outgoingConnection to min 1
+	]
+	
+	relation entity Connection :> element [
+		from OutputPort
+		to InputPort
+		forward outgoingConnection
+		reverse incomingConnection
+		asymmetric
+		irreflexive
+	]
+	
+	concept Model :> object_diagram:Model [
+		restricts all relation object_diagram:hasObject to element
+	]
+}

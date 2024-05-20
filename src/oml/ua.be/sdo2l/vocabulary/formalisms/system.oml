@@ -1,0 +1,8 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/system#> as system {
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+	extends <http://ua.be/sdo2l/vocabulary/base/base#> as base
+	
+	@rdfs:comment "A system is the element to be designed."
+	concept System :> base:IdentifiedThing 
+	
+}

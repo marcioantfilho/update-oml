@@ -1,0 +1,1057 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#"
+     xml:base="http://ua.be/sdo2l/description/artifacts/MyPM_drawio"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dict="http://ua.be/sdo2l/vocabulary/formalisms/dict#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:drawio="http://ua.be/sdo2l/vocabulary/formalisms/drawio#"
+     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#">
+    <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio">
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/dict"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasParent -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasParent"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasSource"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasTarget"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/drawio#isRootOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/drawio#isRootOf"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/drawio#propertyOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/drawio#propertyOf"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#inModel -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#inModel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/dict#hasKey -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/dict#hasKey"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/dict#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/dict#hasValue"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasDrawioId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasDrawioId"/>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_0 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_0">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Cell"/>
+        <drawio:isRootOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>0</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Cell"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_0"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>1</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>1m2y2pvaED3J6VFvMTAg-2</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>&lt;u style=\&quot;color: rgb(0 , 0 , 0)\&quot;&gt;%name%&lt;br&gt;: %type%&lt;/u&gt;</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_name -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_name">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>name</dict:hasKey>
+        <dict:hasValue>look_at_sketch</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>activity</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_type -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2_prop_type">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>type</dict:hasKey>
+        <dict:hasValue>LookAtSketch</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-1</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-18</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>%portname%</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>ctrl_in</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18_prop_portname -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18_prop_portname">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>portname</dict:hasKey>
+        <dict:hasValue>cin</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-19</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>%portname%</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>ctrl_out</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19_prop_portname -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19_prop_portname">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>portname</dict:hasKey>
+        <dict:hasValue>cout</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue></dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>initial</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-2</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-20 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-20">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Edge"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <drawio:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-19"/>
+        <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-20</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-20_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-20_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-20"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue></dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-20_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-20_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-20"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>ctrl_flow</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-27</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>%portname%</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>data_out</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27_prop_portname -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27_prop_portname">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>portname</dict:hasKey>
+        <dict:hasValue>sketch</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-28 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-28">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Edge"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <drawio:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-27"/>
+        <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-28</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-28_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-28_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-28"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue></dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-28_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-28_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-28"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>data_flow</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>&lt;u style=\&quot;color: rgb(0 , 0 , 0)\&quot;&gt;%name%&lt;br&gt;: %type%&lt;/u&gt;</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_name -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_name">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>name</dict:hasKey>
+        <dict:hasValue>sketch</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>activity</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_type -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2_prop_type">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>type</dict:hasKey>
+        <dict:hasValue>Sketch</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-3</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-31</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>%portname%</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>data_in</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31_prop_portname -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31_prop_portname">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>portname</dict:hasKey>
+        <dict:hasValue>sketch</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-32 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-32">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Edge"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <drawio:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33"/>
+        <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-32</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-32_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-32_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-32"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue></dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-32_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-32_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-32"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>data_flow</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-33</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>%name% : %type%</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_name -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_name">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>name</dict:hasKey>
+        <dict:hasValue>sketch</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>artifact</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_type -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33_prop_type">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>type</dict:hasKey>
+        <dict:hasValue>xopp</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue></dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>final</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-4</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>%portname%</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>ctrl_in</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4_prop_portname -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4_prop_portname">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>portname</dict:hasKey>
+        <dict:hasValue>cin</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-5</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue>%portname%</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5_prop_placeholders -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5_prop_placeholders">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>placeholders</dict:hasKey>
+        <dict:hasValue>1</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>ctrl_out</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5_prop_portname -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5_prop_portname">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>portname</dict:hasKey>
+        <dict:hasValue>cout</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-6">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Edge"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <drawio:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-1"/>
+        <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-6</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-6_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-6_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-6"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue></dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-6_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-6_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-6"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>ctrl_flow</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-7">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Edge"/>
+        <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
+        <drawio:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-5"/>
+        <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-7</drawio:hasDrawioId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-7_prop_label -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-7_prop_label">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-7"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>label</dict:hasKey>
+        <dict:hasValue></dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-7_prop_pmRole -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-7_prop_pmRole">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#CellProperty"/>
+        <drawio:propertyOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-7"/>
+        <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
+        <dict:hasKey>pmRole</dict:hasKey>
+        <dict:hasValue>ctrl_flow</dict:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model -->
+
+
+    <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model">
+        <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Model"/>
+        <drawio:hasDrawioId>prYNwPAbIUO19HUZXAOh</drawio:hasDrawioId>
+        <object_diagram:hasName>MyPM:pm_drawio</object_diagram:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

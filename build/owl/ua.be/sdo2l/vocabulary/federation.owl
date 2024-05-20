@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/federation#"
+     xml:base="http://ua.be/sdo2l/vocabulary/federation"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/federation">
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg"/>
+        <dc:description>A vocabulary about federation. Virtual data access (service and storage).</dc:description>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasOperation -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasOperation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Operation"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasParameter -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasParameter">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Operation"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#isOperationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#isOperationOf">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/federation#hasOperation"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#isParameterOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#isParameterOf">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/federation#hasParameter"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasCall -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasCall">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Operation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasDescription">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Operation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasEndPoint -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasEndPoint">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Operation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasIndex">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasName">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#hasType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasType">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/federation#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#HasOperations -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/federation#HasOperations">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#HasParameters -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/federation#HasParameters">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#Operation -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/federation#Operation">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ua.be/sdo2l/vocabulary/federation#isOperationOf"/>
+            <rdf:Description rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasCall"/>
+        </owl:hasKey>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>An Operation specifies one possible call (or operation) that can be made. For example &apos;translate&apos; for a Point class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/federation#Parameter -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/federation#Parameter">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ua.be/sdo2l/vocabulary/federation#isOperationOf"/>
+            <rdf:Description rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasIndex"/>
+            <rdf:Description rdf:about="http://ua.be/sdo2l/vocabulary/federation#hasName"/>
+        </owl:hasKey>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>A Parameter is a key value store for passing around values by name.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>hasParameter derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/federation#HasParameters"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/federation#hasParameter"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>hasOperation derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/federation#HasOperations"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/federation#hasOperation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

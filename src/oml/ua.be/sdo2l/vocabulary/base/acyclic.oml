@@ -1,0 +1,34 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/base/acyclic#> as acyclic {
+	
+	aspect element []
+	
+	// Add this type as a supertype of any relation to make it acyclic.
+	relation entity Acyclic [
+		from element
+		to element
+		forward acyclicForward
+		irreflexive
+		asymmetric
+	]
+	
+	relation entity derivedTransitiveRelation [
+		from element
+		to element
+		forward transitiveForward
+		irreflexive
+		asymmetric
+		
+		// transitive // Currently ignored by reasoner. See workaround below.
+	]
+	
+	
+	rule DeriveTransitiveRelation [
+		acyclicForward(A, B) -> transitiveForward(A, B)
+	]
+	
+	// Workaround:
+	rule MakeTransitive [
+		// Don't know if this creates unnecessary bloat, compared to the 'transitive'-flag, but it works:
+		transitiveForward(A, B) ^ transitiveForward(B, C) -> transitiveForward(A, C)
+	]
+}

@@ -1,0 +1,55 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#> as traceability_model {
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+		
+	// A traceability link is just a link :)
+	relation entity TraceabilityLink :> object_diagram:Link [
+		from object_diagram:Object
+		to object_diagram:Object
+		forward traceLinkTo
+		reverse traceLinkFrom
+		asymmetric
+		irreflexive
+	]
+	
+	concept TraceabilityLink_ [
+		restricts relation linksTo to exactly 2
+	]
+	
+	relation entity LinkedObject [
+		from TraceabilityLink_
+		to object_diagram:Object
+		forward linksTo
+		reverse hasLink
+		irreflexive 
+	]
+	
+	scalar property isVirtual [
+		domain LinkedObject
+		range xsd:boolean
+		functional
+	]
+	
+	scalar property virtualCall [
+		domain LinkedObject
+		range xsd:string
+		functional
+	]
+	
+	rule virtualObject [
+		LinkedObject(r1,l1,o1) ^ isVirtual(r1,true) -> virtualCall(r1,vc)
+	]
+		
+/** 	<link> 
+		<source> <signal>
+		<target> <column>
+		<sourceVirtual> <false>
+		<targetVirtual> <true>
+		<targetOpCall> <call>
+	<link>
+*/	
+	concept TraceabilityModel :> object_diagram:Model [
+		restricts all relation object_diagram:hasObject to TraceabilityLink
+	]
+}

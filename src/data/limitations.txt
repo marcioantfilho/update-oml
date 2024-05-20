@@ -1,0 +1,2 @@
+We need to operate between 0 and 5000 RPM.
+The torque cannot exceed 1000 Nm.

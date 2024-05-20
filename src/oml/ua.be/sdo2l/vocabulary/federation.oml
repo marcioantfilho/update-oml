@@ -1,0 +1,61 @@
+@dc:description "A vocabulary about federation. Virtual data access (service and storage)."
+vocabulary <http://ua.be/sdo2l/vocabulary/federation#> as federation {
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+    extends <http://purl.org/dc/elements/1.1/> as dc
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg
+
+    // TODO Maybe add return values/names/types
+    @rdfs:comment "An Operation specifies one possible call (or operation) that can be made. For example 'translate' for a Point class."
+    concept Operation [ key isOperationOf,hasCall ]
+	scalar property hasEndPoint [ domain Operation range xsd:string ]
+    scalar property hasDescription [ domain Operation range xsd:string ]
+    //scalar property hasSideEffect [ domain Operation range xsd:boolean ]
+    // TODO Should be IRI not string
+    //scalar property hasIri [ domain Operation range xsd:string ]
+    scalar property hasCall [ domain Operation range xsd:string ]
+    
+    
+    
+    relation entity HasOperations [
+    	from ftg:Formalism
+    	to Operation
+    	forward hasOperation
+    	reverse isOperationOf
+    	inverse functional
+    	asymmetric
+    ]
+        
+    relation entity HasParameters [
+		from Operation
+		to Parameter
+		forward hasParameter
+		reverse isParameterOf
+		inverse functional
+		asymmetric
+	]
+
+    @rdfs:comment "A Parameter is a key value store for passing around values by name."
+    concept Parameter [key isOperationOf,hasIndex,hasName]
+	scalar property hasIndex [ domain Parameter range xsd:integer]
+    scalar property hasName [ domain Parameter	range xsd:string ]
+    scalar property hasType [ domain Parameter	range xsd:string ]
+
+/*
+    // TODO Maybe make this an aspect and create concept per type of service with restrictions
+    @rdfs:comment "A Service specifies an element which has one or more Operations available."
+    concept Service
+    relation entity Services [
+		from traces:Artifact
+		to Service
+		forward hasService
+		reverse isOperationFor
+	]
+    relation entity Operations [
+		from Service
+		to Operation
+		forward hasOperation
+		reverse isOperationOf
+	]
+	*/
+}

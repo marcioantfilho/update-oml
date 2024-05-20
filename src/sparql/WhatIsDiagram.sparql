@@ -1,0 +1,23 @@
+# This query shows how we can ask for any drawio cell the different types of AS elements that it represents
+
+PREFIX object_diagram: <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#>
+PREFIX drawio: <http://ua.be/sdo2l/vocabulary/formalisms/drawio#>
+PREFIX cs_as: <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#>
+PREFIX rdf: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oml: <http://opencaesar.io/oml#>
+PREFIX purl: <http://purl.org/dc/elements/1.1/>
+
+SELECT DISTINCT ?cell ?as_element ?model ?model_type
+WHERE {
+	?cell drawio:hasDrawioId "CvR4PfVCJDiI6bvIUUvl-6" .
+	?cell cs_as:parsedAs ?as_element .
+	
+	?as_element object_diagram:inModel ?model .
+	?model a ?model_type .
+	?model_type rdf:subClassOf object_diagram:Model . 
+	
+	# only get concrete types:
+	NOT EXISTS {
+		?model_type purl:type oml:Aspect .
+	}
+}

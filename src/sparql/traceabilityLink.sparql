@@ -1,0 +1,19 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tm: <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#>
+PREFIX oml: <http://opencaesar.io/oml#>
+SELECT ?s ?o ?call ?c ?p ?v  WHERE{
+  ?s owl:sameAs <http://ua.be/sdo2l/description/artifacts/traceabilityLinks#t1> .
+  ?s a tm:TraceabilityLink_ .
+  ?l a tm:LinkedObject .
+  ?s tm:linksTo ?o .
+  ?l oml:hasSource ?s .
+  ?l oml:hasTarget ?o .
+  OPTIONAL {
+  	?l tm:isVirtual true .
+    ?l tm:virtualCall ?call .
+    BIND(URI(?call) as ?service_call)
+    SERVICE ?service_call {
+    	?c ?p ?v
+    }
+  }
+} 

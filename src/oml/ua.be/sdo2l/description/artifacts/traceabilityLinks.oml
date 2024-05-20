@@ -1,0 +1,25 @@
+description <http://ua.be/sdo2l/description/artifacts/traceabilityLinks#> as traceabilityLinks {
+	
+	uses <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#> as tm
+
+	extends <http://ua.be/sdo2l/description/artifacts/springDamper_pm#> as springDamper_pm
+
+	ci t1 : tm:TraceabilityLink_ [
+		tm:linksTo springDamper_pm:artifact_1
+		tm:linksTo springDamper_pm:artifact_2
+	]
+	
+	ri link1 : tm:LinkedObject [
+		from t1
+		to springDamper_pm:artifact_1
+		tm:isVirtual false
+	]
+	
+	ri link2 : tm:LinkedObject [
+		from t1
+		to springDamper_pm:artifact_2
+		tm:isVirtual true
+		tm:virtualCall "http://localhost:8000/cell/trace.csv/5/0/"
+	]
+	
+}

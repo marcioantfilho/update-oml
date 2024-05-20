@@ -1,0 +1,873 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/formalisms/pm#"
+     xml:base="http://ua.be/sdo2l/vocabulary/formalisms/pm"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm">
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlFrom">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSource"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSink"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSource"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSink"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#abstractActivity"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Port"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#hasType -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Artifact"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#abstractActivity"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsActivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsActivity">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsArtifact -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsArtifact">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Named"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#hasTimeout -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasTimeout">
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#AutomatedActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#Activity -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#Activity">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#abstractActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation"/>
+                <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Transformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#Artifact -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#Artifact">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSink"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSource"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Named"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#AutomatedActivity -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#AutomatedActivity">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#abstractActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation"/>
+                <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#AutomatedTransformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasTimeout"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlFlow -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlFlow">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlInputPort -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlInputPort">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSink"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Port"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlFrom"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlOutputPort -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlOutputPort">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSource"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Port"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSink -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSink">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSource -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSource">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#DataFlow -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataFlow">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#DataInputPort -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataInputPort">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSink"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Port"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#DataOutputPort -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataOutputPort">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSource"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Port"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSink -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSink">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSource -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSource">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#Final -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#Final">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSink"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#ForkJoin -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#ForkJoin">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSink"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSource"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlFrom"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#HasPort -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#HasPort">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#HasType -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#HasType">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#Initial -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#Initial">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSource"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#IsTransformation -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#IsTransformation">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#Merge -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#Merge">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSink"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlSource"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#Model -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#Model">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Model"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasObject"/>
+                <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#Named -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#Named">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#Port -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#Port">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Named"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#abstractActivity -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#abstractActivity">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Named"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
+                <owl:someValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlInputPort"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
+                <owl:someValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlOutputPort"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/pm#element -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/pm#element">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>ctrlTo derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#CtrlFlow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>dataTo derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataFlow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>hasPort derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#HasPort"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>hasType derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#HasType"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>isTransformation derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#IsTransformation"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

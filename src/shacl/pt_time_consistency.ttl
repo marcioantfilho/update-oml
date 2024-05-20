@@ -1,0 +1,44 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+@prefix base:          <http://ua.be/sdo2l/vocabulary/base#> .
+@prefix tabular:       <http://ua.be/sdo2l/vocabulary/base/tabular#> .
+@prefix process-trace: <http://ua.be/sdo2l/vocabulary/processtraces#> .
+@prefix ftgpm-shapes:  <http://ua.be/sdo2l/vocabulary/tabular-shapes#> .
+
+ftgpm-shapes:
+  a owl:Ontology ;
+  owl:imports sh: ;
+  sh:declare [ sh:prefix "time" ;    sh:namespace "http://www.w3.org/2006/time#"^^xsd:anyURI ; ] ;
+  sh:declare [ sh:prefix "owl" ;     sh:namespace "http://www.w3.org/2002/07/owl#"^^xsd:anyURI ; ] ;
+  sh:declare [ sh:prefix "rdf" ;     sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI ; ] ;
+  sh:declare [ sh:prefix "xsd" ;     sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ; ] ;
+  sh:declare [ sh:prefix "afn" ;     sh:namespace "http://jena.apache.org/ARQ/function#"^^xsd:anyURI ; ] ;
+  sh:declare [ sh:prefix "tabular" ; sh:namespace "http://ua.be/sdo2l/vocabulary/base/tabular#"^^xsd:anyURI ; ] .
+
+# TODO Fix this to get the actual times
+# 1. Need to get the 2 corresponding events (now we assume we have both start and end in the same individual)
+ftgpm-shapes:ot_time_consistency
+  a sh:NodeShape ;
+  sh:targetClass process-trace:Event ;
+  sh:sparql [
+    a sh:SPARQLConstraint ;
+    sh:message "Proces trace Event end date must be greater than or equal to the begin Date.";
+    sh:select
+      """
+	  SELECT $this (?beginTime AS ?intervalStart) (?endTime AS ?intervalEnd)
+      WHERE {
+        $this     process-trace:hasTime        ?time .
+        ?time     process-trace:ReferenceBegin ?beginIRI ;
+                  process-trace:ReferenceEnd   ?endIRI .
+        ?beginIRI time:inXSDDate               ?beginDate .
+        ?endIRI   time:inXSDDate               ?endDate .
+        FILTER  (!(?endDate >= ?beginDate))
+      }
+	  """ ;
+  ] ;
+  sh:closed false .

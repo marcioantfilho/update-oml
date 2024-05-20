@@ -1,0 +1,8 @@
+# Just get all the "objects"
+
+PREFIX object_diagram: <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#>
+
+SELECT ?object
+WHERE {
+	?object a object_diagram:Object .
+} 

@@ -1,0 +1,374 @@
+// Warning: Generated Code! Do not edit!
+// Input: http://localhost:5000/files/drawio/octiva:pm
+// Generator: https://msdl.uantwerpen.be/git/jexelmans/drawio2oml/drawio2oml/pm/oml_generator.py
+
+description <http://ua.be/sdo2l/description/artifacts/octiva_pm#> as octiva_pm {
+
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+  uses <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg
+
+  extends <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as ftg_instance
+
+  ci model : pm:Model [
+    object_diagram:hasName "octiva_pm"
+  ]
+
+  ci initial : pm:Initial [
+    object_diagram:inModel model
+    pm:ctrlTo activity_2_port_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci final : pm:Final [
+    object_diagram:inModel model
+    pm:ctrlFrom activity_0_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner errorpm:ctrlFrom activity_3_port_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci artifact_0 : pm:Artifact [
+    pm:hasName "rail_image"
+    pm:hasType ftg_instance:f_file
+    object_diagram:inModel model
+    pm:dataTo activity_3_port_4 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci artifact_1 : pm:Artifact [
+    pm:hasName "rail_detection_algorithm"
+    pm:hasType ftg_instance:f_file
+    object_diagram:inModel model
+    pm:dataTo activity_3_port_5 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci artifact_2 : pm:Artifact [
+    pm:hasName "report"
+    pm:hasType ftg_instance:f_file
+    object_diagram:inModel model
+    pm:dataTo activity_1_port_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci artifact_3 : pm:Artifact [
+    pm:hasName "data"
+    pm:hasType ftg_instance:f_file
+    object_diagram:inModel model
+    pm:dataTo activity_0_port_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci artifact_4 : pm:Artifact [
+    pm:hasName "image"
+    pm:hasType ftg_instance:f_file
+    object_diagram:inModel model
+    pm:dataTo activity_0_port_4 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_0 : pm:Activity [
+    pm:hasName "CheckStatus"
+    pm:isTransformation ftg_instance:t_FailuresResolved
+    object_diagram:inModel model
+  ]
+
+  ci activity_0_port_1 : pm:CtrlOutputPort [
+    pm:hasName "ok"
+    pm:ofActivity activity_0
+    object_diagram:inModel model
+    pm:ctrlTo final // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_0_port_2 : pm:CtrlOutputPort [
+    pm:hasName "notOk"
+    pm:ofActivity activity_0
+    object_diagram:inModel model
+    pm:ctrlTo activity_1_port_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_0_port_0 : pm:CtrlInputPort [
+    pm:hasName "cin"
+    pm:ofActivity activity_0
+    object_diagram:inModel model
+    pm:ctrlFrom activity_3_port_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_0_port_5 : pm:DataOutputPort [
+    pm:hasName "dout"
+    pm:ofActivity activity_0
+    object_diagram:inModel model
+    pm:dataTo artifact_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_0_port_3 : pm:DataInputPort [
+    pm:hasName "din"
+    pm:ofActivity activity_0
+    object_diagram:inModel model
+    pm:dataFrom artifact_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_0_port_4 : pm:DataInputPort [
+    pm:hasName "din"
+    pm:ofActivity activity_0
+    object_diagram:inModel model
+    pm:dataFrom artifact_4 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_1 : pm:Activity [
+    pm:hasName "redAlg"
+    pm:isTransformation ftg_instance:t_RedesignAlgorithm
+    object_diagram:inModel model
+  ]
+
+  ci activity_1_port_1 : pm:CtrlOutputPort [
+    pm:hasName "cout"
+    pm:ofActivity activity_1
+    object_diagram:inModel model
+    pm:ctrlTo activity_3_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_1_port_0 : pm:CtrlInputPort [
+    pm:hasName "cin"
+    pm:ofActivity activity_1
+    object_diagram:inModel model
+    pm:ctrlFrom activity_0_port_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_1_port_3 : pm:DataOutputPort [
+    pm:hasName "dout"
+    pm:ofActivity activity_1
+    object_diagram:inModel model
+    pm:dataTo artifact_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_1_port_4 : pm:DataOutputPort [
+    pm:hasName "dout"
+    pm:ofActivity activity_1
+    object_diagram:inModel model
+    pm:dataTo artifact_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_1_port_2 : pm:DataInputPort [
+    pm:hasName "din"
+    pm:ofActivity activity_1
+    object_diagram:inModel model
+    pm:dataFrom artifact_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_2 : pm:Activity [
+    pm:hasName "init"
+    pm:isTransformation ftg_instance:t_Initialization
+    object_diagram:inModel model
+  ]
+
+  ci activity_2_port_1 : pm:CtrlOutputPort [
+    pm:hasName "cout"
+    pm:ofActivity activity_2
+    object_diagram:inModel model
+    pm:ctrlTo activity_3_port_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_2_port_0 : pm:CtrlInputPort [
+    pm:hasName "cin"
+    pm:ofActivity activity_2
+    object_diagram:inModel model
+    pm:ctrlFrom initial // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_2_port_2 : pm:DataOutputPort [
+    pm:hasName "dout"
+    pm:ofActivity activity_2
+    object_diagram:inModel model
+    pm:dataTo artifact_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_2_port_3 : pm:DataOutputPort [
+    pm:hasName "dout"
+    pm:ofActivity activity_2
+    object_diagram:inModel model
+    pm:dataTo artifact_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_3 : pm:AutomatedActivity [
+    pm:hasName "det"
+    pm:isTransformation ftg_instance:t_DetectParallelRails
+    pm:hasTimeout 5000
+    object_diagram:inModel model
+  ]
+
+  ci activity_3_port_2 : pm:CtrlOutputPort [
+    pm:hasName "error"
+    pm:ofActivity activity_3
+    object_diagram:inModel model
+    pm:ctrlTo final // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_3_port_3 : pm:CtrlOutputPort [
+    pm:hasName "ok"
+    pm:ofActivity activity_3
+    object_diagram:inModel model
+    pm:ctrlTo activity_0_port_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_3_port_0 : pm:CtrlInputPort [
+    pm:hasName "cin"
+    pm:ofActivity activity_3
+    object_diagram:inModel model
+    pm:ctrlFrom activity_2_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_3_port_1 : pm:CtrlInputPort [
+    pm:hasName "rep"
+    pm:ofActivity activity_3
+    object_diagram:inModel model
+    pm:ctrlFrom activity_1_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_3_port_6 : pm:DataOutputPort [
+    pm:hasName "data"
+    pm:ofActivity activity_3
+    object_diagram:inModel model
+    pm:dataTo artifact_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_3_port_7 : pm:DataOutputPort [
+    pm:hasName "image"
+    pm:ofActivity activity_3
+    object_diagram:inModel model
+    pm:dataTo artifact_4 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+
+  ci activity_3_port_4 : pm:DataInputPort [
+    pm:hasName "image"
+    pm:ofActivity activity_3
+    object_diagram:inModel model
+    pm:dataFrom artifact_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ci activity_3_port_5 : pm:DataInputPort [
+    pm:hasName "algorithm"
+    pm:ofActivity activity_3
+    object_diagram:inModel model
+    pm:dataFrom artifact_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+
+  ri ctrl_flow_0 : pm:CtrlFlow [
+    from initial
+    to activity_2_port_0
+    object_diagram:inModel model
+  ]
+
+  ri ctrl_flow_1 : pm:CtrlFlow [
+    from activity_0_port_2
+    to activity_1_port_0
+    object_diagram:inModel model
+  ]
+
+  ri ctrl_flow_2 : pm:CtrlFlow [
+    from activity_0_port_1
+    to final
+    object_diagram:inModel model
+  ]
+
+  ri ctrl_flow_3 : pm:CtrlFlow [
+    from activity_2_port_1
+    to activity_3_port_0
+    object_diagram:inModel model
+  ]
+
+  ri ctrl_flow_4 : pm:CtrlFlow [
+    from activity_3_port_2
+    to final
+    object_diagram:inModel model
+  ]
+
+  ri ctrl_flow_5 : pm:CtrlFlow [
+    from activity_3_port_3
+    to activity_0_port_0
+    object_diagram:inModel model
+  ]
+
+  ri ctrl_flow_6 : pm:CtrlFlow [
+    from activity_1_port_1
+    to activity_3_port_1
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_0 : pm:DataFlow [
+    from artifact_0
+    to activity_3_port_4
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_1 : pm:DataFlow [
+    from artifact_1
+    to activity_3_port_5
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_2 : pm:DataFlow [
+    from artifact_2
+    to activity_1_port_2
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_3 : pm:DataFlow [
+    from activity_2_port_2
+    to artifact_0
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_4 : pm:DataFlow [
+    from artifact_3
+    to activity_0_port_3
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_5 : pm:DataFlow [
+    from artifact_4
+    to activity_0_port_4
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_6 : pm:DataFlow [
+    from activity_3_port_7
+    to artifact_4
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_7 : pm:DataFlow [
+    from activity_2_port_3
+    to artifact_1
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_8 : pm:DataFlow [
+    from activity_3_port_6
+    to artifact_3
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_9 : pm:DataFlow [
+    from activity_0_port_5
+    to artifact_2
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_10 : pm:DataFlow [
+    from activity_1_port_4
+    to artifact_1
+    object_diagram:inModel model
+  ]
+
+  ri data_flow_11 : pm:DataFlow [
+    from activity_1_port_3
+    to artifact_0
+    object_diagram:inModel model
+  ]
+
+}

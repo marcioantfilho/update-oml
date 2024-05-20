@@ -1,0 +1,16 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/violation#> as violation {
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+	extends <http://ua.be/sdo2l/vocabulary/base/base#> as base
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces
+
+	concept ViolationReport :> base:IdentifiedThing, traces:Artifact
+	
+	@rdfs:comment "The has filename property"
+	scalar property hasFilePathname [
+		domain ViolationReport
+		range xsd:string
+	]
+	
+	
+}

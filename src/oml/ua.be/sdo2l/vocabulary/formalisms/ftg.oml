@@ -1,0 +1,70 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg {
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+	extends <http://ua.be/sdo2l/vocabulary/base/base#> as base
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	extends <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+
+	// Definitions for Transformations
+	@rdfs:comment "The types of activities performed during the system design process. This concept should be used in the FTG."
+	aspect abstractTransformation :> base:ImmutableThing, base:DefinitionThing, object_diagram:Object [
+		restricts scalar property hasCtrlInput to min 1
+		restricts scalar property hasCtrlOutput to min 1
+	]
+	
+	// Non-automated transformation
+	concept Transformation :> abstractTransformation [
+	]
+
+	concept AutomatedTransformation :> abstractTransformation [
+		restricts scalar property hasEndpoint to exactly 1
+	]
+
+	// Ctrl inputs/outputs:
+	scalar property hasCtrlInput [
+		domain abstractTransformation
+		range xsd:string
+	]
+	scalar property hasCtrlOutput [
+		domain abstractTransformation
+		range xsd:string
+	]
+
+	scalar property hasEndpoint [
+		domain AutomatedTransformation
+		range xsd:string
+	]
+
+	// Definitions for Artifacts
+	@rdfs:comment "The types of artifacts generated during the system design process. This concept should be used in the FTG."
+	concept Formalism :> base:ImmutableThing, base:DefinitionThing, object_diagram:Object []
+
+	// Data inputs/outputs are named:
+	aspect InputOrOutput [
+		restricts scalar property hasName to exactly 1
+	]
+	
+	scalar property hasName [
+		domain InputOrOutput
+		range xsd:string
+		functional
+	]
+
+	relation entity HasInput :> InputOrOutput [
+		from abstractTransformation
+		to Formalism
+		forward hasInput
+		reverse isInputOf
+		asymmetric
+		irreflexive
+	]
+
+	relation entity HasOutput :> InputOrOutput [
+		from abstractTransformation
+		to Formalism
+		forward hasOutput
+		reverse isOutputOf
+		asymmetric
+		irreflexive
+	]
+}

@@ -1,0 +1,724 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/formalisms/xopp#"
+     xml:base="http://ua.be/sdo2l/vocabulary/formalisms/xopp"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp">
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/dict"/>
+        <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#LayerElement"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#XMLAttribute"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasElement -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasElement">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Layer"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#LayerElement"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasLayer -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasLayer">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Layer"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPage -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPage">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Model"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#inFile -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#inFile">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPage"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#inLayer -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#inLayer">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasElement"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#inPage -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#inPage">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasLayer"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#ofLayerElement -->
+
+
+    <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#ofLayerElement">
+        <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasAttribute"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundColor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundColor">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundStyle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundStyle">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundType">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasCreator -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasCreator">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasFileVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasFileVersion">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasHeight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasHeight">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPreview -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPreview">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasText -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasText">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#LayerElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasWidth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasWidth">
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasLayer -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasLayer">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasLayerElement -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasLayerElement">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasPage -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasPage">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasXMLAttribute -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasXMLAttribute">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#Layer -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Layer">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#inPage"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#LayerElement -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#LayerElement">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#inLayer"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasText"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#Model -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Model">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasObject"/>
+                <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Page">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#inFile"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundColor"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundStyle"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasBackgroundType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasHeight"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasWidth"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#Stroke -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Stroke">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#LayerElement"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#Text -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#Text">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#LayerElement"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#XMLAttribute -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#XMLAttribute">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/dict#DictEntry"/>
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#ofLayerElement"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ua.be/sdo2l/vocabulary/formalisms/xopp#element -->
+
+
+    <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/xopp#element">
+        <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>hasLayer derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasLayer"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasLayer"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>hasElement derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasLayerElement"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasElement"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>hasPage derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasPage"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPage"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>hasAttribute derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasXMLAttribute"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasAttribute"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

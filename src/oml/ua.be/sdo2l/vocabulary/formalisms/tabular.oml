@@ -1,0 +1,111 @@
+vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/tabular#> as tabular {
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+    extends <http://ua.be/sdo2l/vocabulary/formalisms/file#> as file
+    extends <http://ua.be/sdo2l/vocabulary/base/base#> as base
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    extends <http://bipm.org/jcgm/vim4#> as vim4
+
+
+    aspect Collection 
+    
+    concept TabularData :> file:Data, file:File
+    concept Cell        :> file:Data
+    concept Row         :> Collection
+    concept Column      :> Collection 
+    
+        
+    relation entity HasUnit [
+        from Collection
+        to vim4:MeasurementUnit
+        forward hasUnit
+        reverse isUnitOf
+        asymmetric
+        functional
+    ] 
+    
+    scalar property hasBasicType [
+    	domain Column
+    	range base:BasicType
+    	functional
+    ]
+    
+    // TODO This is not a valid rule and will be ignored by the reasoner
+    @rdfs:comment "Infers that when the type of the column is numeric it may have a unit"
+	rule NumericTypeInfersUnit [
+		hasBasicType(c, t) ^ base:BasicType(t) -> hasUnit(c, u)  
+	] 
+    
+
+    scalar property holdsContent [
+        domain Cell
+        range xsd:string
+        functional
+    ]
+
+    scalar property hasRowPosition [
+        domain Cell
+        // Maybe limit to positive integers here already, no need for shacl that way
+        range xsd:int
+    ]
+
+    scalar property hasColumnPosition [
+        domain Cell
+        // Maybe limit to positive integers here already, no need for shacl that way
+        range xsd:int
+    ]
+
+    scalar property hasRowId [
+        domain Row
+        // Maybe limit to positive integers here already, no need for shacl that way
+        range xsd:int
+    ]
+
+    scalar property hasColumnId [
+        domain Column
+        // Maybe limit to positive integers here already, no need for shacl that way
+        range xsd:int
+    ]
+
+    enumerated scalar HeadingModifier [
+        "yes",
+        "no"
+    ]
+
+    scalar property hasHeadingModifier [
+        domain Row
+        range HeadingModifier
+        functional
+    ]
+
+    concept HeaderRow :> Row [
+        restricts scalar property hasHeadingModifier to "yes"
+    ]
+
+    relation entity HasCell [
+        from Collection
+        to Cell
+        forward hasCell
+        reverse isInCollection
+    ]
+
+    relation entity HasCells [
+        from TabularData
+        to Cell
+        forward hasCells
+        reverse isCellOfTabularData
+    ]
+
+    relation entity HasRows [
+        from TabularData
+        to Row
+        forward hasRows
+        reverse isRowOfTabularData
+    ]
+
+    relation entity HasColumns [
+        from TabularData
+        to Column
+        forward hasColumns
+        reverse isColumnOfTabularData
+    ]
+}

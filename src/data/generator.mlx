@@ -1,0 +1,6 @@
+num = randi(100)
+if num < 90
+   sz = 'yes'
+else
+   sz = 'no'
+end
