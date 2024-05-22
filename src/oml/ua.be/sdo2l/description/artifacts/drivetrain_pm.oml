@@ -10,83 +10,83 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
 
   extends <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as ftg_instance
 
-  ci model : pm:Model [
+  instance model : pm:Model [
     object_diagram:hasName "drivetrain_pm"
   ]
 
-  ci initial : pm:Initial [
+  instance initial : pm:Initial [
     object_diagram:inModel model
     pm:ctrlTo activity_5_port_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci final : pm:Final [
+  instance final : pm:Final [
     object_diagram:inModel model
     //pm:ctrlFrom activity_4_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_0 : pm:Artifact [
+  instance artifact_0 : pm:Artifact [
     pm:hasName "drivetrain_limitations"
     pm:hasType ftg_instance:f_TextDocument
     object_diagram:inModel model
     pm:dataTo activity_0_port_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_1 : pm:Artifact [
+  instance artifact_1 : pm:Artifact [
     pm:hasName "test_requirements"
     pm:hasType ftg_instance:f_TextDocument
     object_diagram:inModel model
     pm:dataTo activity_0_port_4 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner errorpm:dataTo activity_2_port_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_2 : pm:Artifact [
+  instance artifact_2 : pm:Artifact [
     pm:hasName "matlab_torque"
     pm:hasType ftg_instance:f_Profile
     object_diagram:inModel model
     pm:dataTo activity_1_port_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_3 : pm:Artifact [
+  instance artifact_3 : pm:Artifact [
     pm:hasName "control_parameter_generator"
     pm:hasType ftg_instance:f_Script
     object_diagram:inModel model
     pm:dataTo activity_1_port_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_4 : pm:Artifact [
+  instance artifact_4 : pm:Artifact [
     pm:hasName "matlab_control_parameters"
     pm:hasType ftg_instance:f_TabularData
     object_diagram:inModel model
     pm:dataTo activity_2_port_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_5 : pm:Artifact [
+  instance artifact_5 : pm:Artifact [
     pm:hasName "c-code_to_be_run_on_rtt"
     pm:hasType ftg_instance:f_Code
     object_diagram:inModel model
     pm:dataTo activity_3_port_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_6 : pm:Artifact [
+  instance artifact_6 : pm:Artifact [
     pm:hasName "drivetrain_sensor_data"
     pm:hasType ftg_instance:f_TabularData
     object_diagram:inModel model
     pm:dataTo activity_4_port_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_7 : pm:Artifact [
+  instance artifact_7 : pm:Artifact [
     pm:hasName "coupling_sensor_data"
     pm:hasType ftg_instance:f_TabularData
     object_diagram:inModel model
     pm:dataTo activity_4_port_4 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_0 : pm:Activity [
+  instance activity_0 : pm:Activity [
     pm:hasName "set_up_drivetrain_profile"
     pm:isTransformation ftg_instance:t_SetupProfile
     object_diagram:inModel model
   ]
 
-  ci activity_0_port_2 : pm:CtrlOutputPort [
+  instance activity_0_port_2 : pm:CtrlOutputPort [
     pm:hasName "cout"
     pm:ofActivity activity_0
     object_diagram:inModel model
@@ -94,14 +94,14 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_0_port_0 : pm:CtrlInputPort [
+  instance activity_0_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_0
     object_diagram:inModel model
     //pm:ctrlFrom activity_5_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_0_port_1 : pm:CtrlInputPort [
+  instance activity_0_port_1 : pm:CtrlInputPort [
     pm:hasName "cinRec"
     pm:ofActivity activity_0
     object_diagram:inModel model
@@ -109,7 +109,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_0_port_5 : pm:DataOutputPort [
+  instance activity_0_port_5 : pm:DataOutputPort [
     pm:hasName "dout"
     pm:ofActivity activity_0
     object_diagram:inModel model
@@ -117,27 +117,27 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_0_port_3 : pm:DataInputPort [
+  instance activity_0_port_3 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_0
     object_diagram:inModel model
     pm:dataFrom artifact_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_0_port_4 : pm:DataInputPort [
+  instance activity_0_port_4 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_0
     object_diagram:inModel model
     pm:dataFrom artifact_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_1 : pm:Activity [
+  instance activity_1 : pm:Activity [
     pm:hasName "Generate_matlab_control_parameters"
     pm:isTransformation ftg_instance:t_GenerateControlParameters
     object_diagram:inModel model
   ]
 
-  ci activity_1_port_1 : pm:CtrlOutputPort [
+  instance activity_1_port_1 : pm:CtrlOutputPort [
     pm:hasName "cout"
     pm:ofActivity activity_1
     object_diagram:inModel model
@@ -145,7 +145,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_1_port_0 : pm:CtrlInputPort [
+  instance activity_1_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_1
     object_diagram:inModel model
@@ -153,7 +153,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_1_port_4 : pm:DataOutputPort [
+  instance activity_1_port_4 : pm:DataOutputPort [
     pm:hasName "dout"
     pm:ofActivity activity_1
     object_diagram:inModel model
@@ -161,27 +161,27 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_1_port_2 : pm:DataInputPort [
+  instance activity_1_port_2 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_1
     object_diagram:inModel model
     pm:dataFrom artifact_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_1_port_3 : pm:DataInputPort [
+  instance activity_1_port_3 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_1
     object_diagram:inModel model
     pm:dataFrom artifact_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_2 : pm:Activity [
+  instance activity_2 : pm:Activity [
     pm:hasName "Build_simulink_control_settings"
     pm:isTransformation ftg_instance:t_BuildControlSettings
     object_diagram:inModel model
   ]
 
-  ci activity_2_port_1 : pm:CtrlOutputPort [
+  instance activity_2_port_1 : pm:CtrlOutputPort [
     pm:hasName "cout"
     pm:ofActivity activity_2
     object_diagram:inModel model
@@ -189,7 +189,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_2_port_0 : pm:CtrlInputPort [
+  instance activity_2_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_2
     object_diagram:inModel model
@@ -197,7 +197,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_2_port_4 : pm:DataOutputPort [
+  instance activity_2_port_4 : pm:DataOutputPort [
     pm:hasName "dout"
     pm:ofActivity activity_2
     object_diagram:inModel model
@@ -205,27 +205,27 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_2_port_2 : pm:DataInputPort [
+  instance activity_2_port_2 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_2
     object_diagram:inModel model
     pm:dataFrom artifact_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_2_port_3 : pm:DataInputPort [
+  instance activity_2_port_3 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_2
     object_diagram:inModel model
     pm:dataFrom artifact_4 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_3 : pm:Activity [
+  instance activity_3 : pm:Activity [
     pm:hasName "run_experiment"
     pm:isTransformation ftg_instance:t_RunExperiment
     object_diagram:inModel model
   ]
 
-  ci activity_3_port_1 : pm:CtrlOutputPort [
+  instance activity_3_port_1 : pm:CtrlOutputPort [
     pm:hasName "cout"
     pm:ofActivity activity_3
     object_diagram:inModel model
@@ -233,7 +233,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_3_port_0 : pm:CtrlInputPort [
+  instance activity_3_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_3
     object_diagram:inModel model
@@ -241,14 +241,14 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_3_port_3 : pm:DataOutputPort [
+  instance activity_3_port_3 : pm:DataOutputPort [
     pm:hasName "dout"
     pm:ofActivity activity_3
     object_diagram:inModel model
     pm:dataTo artifact_6 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_3_port_4 : pm:DataOutputPort [
+  instance activity_3_port_4 : pm:DataOutputPort [
     pm:hasName "dout"
     pm:ofActivity activity_3
     object_diagram:inModel model
@@ -256,27 +256,27 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_3_port_2 : pm:DataInputPort [
+  instance activity_3_port_2 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_3
     object_diagram:inModel model
     pm:dataFrom artifact_5 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_4 : pm:Activity [
+  instance activity_4 : pm:Activity [
     pm:hasName "check_properties"
     pm:isTransformation ftg_instance:t_VerifyData
     object_diagram:inModel model
   ]
 
-  ci activity_4_port_1 : pm:CtrlOutputPort [
+  instance activity_4_port_1 : pm:CtrlOutputPort [
     pm:hasName "cout"
     pm:ofActivity activity_4
     object_diagram:inModel model
     pm:ctrlTo final // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_4_port_2 : pm:CtrlOutputPort [
+  instance activity_4_port_2 : pm:CtrlOutputPort [
     pm:hasName "coutRec"
     pm:ofActivity activity_4
     object_diagram:inModel model
@@ -284,7 +284,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_4_port_0 : pm:CtrlInputPort [
+  instance activity_4_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_4
     object_diagram:inModel model
@@ -293,27 +293,27 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   
   
 
-  ci activity_4_port_3 : pm:DataInputPort [
+  instance activity_4_port_3 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_4
     object_diagram:inModel model
     pm:dataFrom artifact_6 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_4_port_4 : pm:DataInputPort [
+  instance activity_4_port_4 : pm:DataInputPort [
     pm:hasName "din"
     pm:ofActivity activity_4
     object_diagram:inModel model
     pm:dataFrom artifact_7 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_5 : pm:Activity [
+  instance activity_5 : pm:Activity [
     pm:hasName "InputParameters"
     pm:isTransformation ftg_instance:t_Preparation
     object_diagram:inModel model
   ]
 
-  ci activity_5_port_1 : pm:CtrlOutputPort [
+  instance activity_5_port_1 : pm:CtrlOutputPort [
     pm:hasName "cout"
     pm:ofActivity activity_5
     object_diagram:inModel model
@@ -321,7 +321,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_5_port_0 : pm:CtrlInputPort [
+  instance activity_5_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_5
     object_diagram:inModel model
@@ -329,21 +329,21 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ci activity_5_port_2 : pm:DataOutputPort [
+  instance activity_5_port_2 : pm:DataOutputPort [
     pm:hasName "dout"
     pm:ofActivity activity_5
     object_diagram:inModel model
     pm:dataTo artifact_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_5_port_3 : pm:DataOutputPort [
+  instance activity_5_port_3 : pm:DataOutputPort [
     pm:hasName "dout"
     pm:ofActivity activity_5
     object_diagram:inModel model
     pm:dataTo artifact_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_5_port_4 : pm:DataOutputPort [
+  instance activity_5_port_4 : pm:DataOutputPort [
     pm:hasName "dout"
     pm:ofActivity activity_5
     object_diagram:inModel model
@@ -351,151 +351,151 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#> as drivetr
   ]
   
 
-  ri ctrl_flow_0 : pm:CtrlFlow [
+  relation instance ctrl_flow_0 : pm:CtrlFlow [
     from initial
     to activity_5_port_0
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_1 : pm:CtrlFlow [
+  relation instance ctrl_flow_1 : pm:CtrlFlow [
     from activity_0_port_2
     to activity_1_port_0
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_2 : pm:CtrlFlow [
+  relation instance ctrl_flow_2 : pm:CtrlFlow [
     from activity_1_port_1
     to activity_2_port_0
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_3 : pm:CtrlFlow [
+  relation instance ctrl_flow_3 : pm:CtrlFlow [
     from activity_2_port_1
     to activity_3_port_0
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_4 : pm:CtrlFlow [
+  relation instance ctrl_flow_4 : pm:CtrlFlow [
     from activity_3_port_1
     to activity_4_port_0
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_5 : pm:CtrlFlow [
+  relation instance ctrl_flow_5 : pm:CtrlFlow [
     from activity_4_port_1
     to final
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_6 : pm:CtrlFlow [
+  relation instance ctrl_flow_6 : pm:CtrlFlow [
     from activity_4_port_2
     to activity_0_port_1
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_7 : pm:CtrlFlow [
+  relation instance ctrl_flow_7 : pm:CtrlFlow [
     from activity_5_port_1
     to activity_0_port_0
     object_diagram:inModel model
   ]
 
-  ri data_flow_0 : pm:DataFlow [
+  relation instance data_flow_0 : pm:DataFlow [
     from artifact_0
     to activity_0_port_3
     object_diagram:inModel model
   ]
 
-  ri data_flow_1 : pm:DataFlow [
+  relation instance data_flow_1 : pm:DataFlow [
     from artifact_1
     to activity_0_port_4
     object_diagram:inModel model
   ]
 
-  ri data_flow_2 : pm:DataFlow [
+  relation instance data_flow_2 : pm:DataFlow [
     from artifact_1
     to activity_2_port_2
     object_diagram:inModel model
   ]
 
-  ri data_flow_3 : pm:DataFlow [
+  relation instance data_flow_3 : pm:DataFlow [
     from artifact_2
     to activity_1_port_3
     object_diagram:inModel model
   ]
 
-  ri data_flow_4 : pm:DataFlow [
+  relation instance data_flow_4 : pm:DataFlow [
     from artifact_3
     to activity_1_port_2
     object_diagram:inModel model
   ]
 
-  ri data_flow_5 : pm:DataFlow [
+  relation instance data_flow_5 : pm:DataFlow [
     from activity_0_port_5
     to artifact_2
     object_diagram:inModel model
   ]
 
-  ri data_flow_6 : pm:DataFlow [
+  relation instance data_flow_6 : pm:DataFlow [
     from artifact_4
     to activity_2_port_3
     object_diagram:inModel model
   ]
 
-  ri data_flow_7 : pm:DataFlow [
+  relation instance data_flow_7 : pm:DataFlow [
     from activity_1_port_4
     to artifact_4
     object_diagram:inModel model
   ]
 
-  ri data_flow_8 : pm:DataFlow [
+  relation instance data_flow_8 : pm:DataFlow [
     from artifact_5
     to activity_3_port_2
     object_diagram:inModel model
   ]
 
-  ri data_flow_9 : pm:DataFlow [
+  relation instance data_flow_9 : pm:DataFlow [
     from artifact_6
     to activity_4_port_3
     object_diagram:inModel model
   ]
 
-  ri data_flow_10 : pm:DataFlow [
+  relation instance data_flow_10 : pm:DataFlow [
     from artifact_7
     to activity_4_port_4
     object_diagram:inModel model
   ]
 
-  ri data_flow_11 : pm:DataFlow [
+  relation instance data_flow_11 : pm:DataFlow [
     from activity_3_port_3
     to artifact_6
     object_diagram:inModel model
   ]
 
-  ri data_flow_12 : pm:DataFlow [
+  relation instance data_flow_12 : pm:DataFlow [
     from activity_3_port_4
     to artifact_7
     object_diagram:inModel model
   ]
 
-  ri data_flow_13 : pm:DataFlow [
+  relation instance data_flow_13 : pm:DataFlow [
     from activity_2_port_4
     to artifact_5
     object_diagram:inModel model
   ]
 
-  ri data_flow_14 : pm:DataFlow [
+  relation instance data_flow_14 : pm:DataFlow [
     from activity_5_port_2
     to artifact_0
     object_diagram:inModel model
   ]
 
-  ri data_flow_15 : pm:DataFlow [
+  relation instance data_flow_15 : pm:DataFlow [
     from activity_5_port_3
     to artifact_1
     object_diagram:inModel model
   ]
 
-  ri data_flow_16 : pm:DataFlow [
+  relation instance data_flow_16 : pm:DataFlow [
     from activity_5_port_4
     to artifact_3
     object_diagram:inModel model

@@ -9,13 +9,13 @@ description <http://ua.be/sdo2l/description/artifacts/imabox_drawio#> as imabox_
   uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
   uses <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict
 
-  ci model : drawio:Model [
+  instance model : drawio:Model [
     drawio:hasDrawioId "zrtIvTJA7dqCUAPr35Tx"
     object_diagram:hasName "imabox_drawio"
   ]
 
   
-  ci cell_0 : drawio:Cell [
+  instance cell_0 : drawio:Cell [
     drawio:hasDrawioId "0"
     drawio:isRootOf model
     object_diagram:inModel model
@@ -23,7 +23,7 @@ description <http://ua.be/sdo2l/description/artifacts/imabox_drawio#> as imabox_
   
 
   
-  ci cell_1 : drawio:Cell [
+  instance cell_1 : drawio:Cell [
     drawio:hasDrawioId "1"
     drawio:hasParent cell_0
     object_diagram:inModel model
@@ -31,7 +31,7 @@ description <http://ua.be/sdo2l/description/artifacts/imabox_drawio#> as imabox_
   
 
   
-  ci cell_9icA3CxboUUVQeyL5Ov7-1 : drawio:Vertex [
+  instance cell_9icA3CxboUUVQeyL5Ov7-1 : drawio:Vertex [
     drawio:hasDrawioId "9icA3CxboUUVQeyL5Ov7-1"
     drawio:hasValue "Hello, I'm a box!"
     drawio:hasParent cell_1
@@ -40,7 +40,7 @@ description <http://ua.be/sdo2l/description/artifacts/imabox_drawio#> as imabox_
   
 
   
-  ci cell_9icA3CxboUUVQeyL5Ov7-2 : drawio:Vertex [
+  instance cell_9icA3CxboUUVQeyL5Ov7-2 : drawio:Vertex [
     drawio:hasDrawioId "9icA3CxboUUVQeyL5Ov7-2"
     drawio:hasParent cell_1
     object_diagram:inModel model

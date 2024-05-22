@@ -9,13 +9,13 @@ description <http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#> as Mini
   uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
   uses <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict
 
-  ci model : drawio:Model [
+  instance model : drawio:Model [
     drawio:hasDrawioId "k7m7Ebu8EXRkVeQowzfr"
     object_diagram:hasName "MinimalPM:pm_drawio"
   ]
 
   
-  ci cell_0 : drawio:Cell [
+  instance cell_0 : drawio:Cell [
     drawio:hasDrawioId "0"
     drawio:isRootOf model
     object_diagram:inModel model
@@ -23,7 +23,7 @@ description <http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#> as Mini
   
 
   
-  ci cell_1 : drawio:Cell [
+  instance cell_1 : drawio:Cell [
     drawio:hasDrawioId "1"
     drawio:hasParent cell_0
     object_diagram:inModel model
@@ -31,7 +31,7 @@ description <http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#> as Mini
   
 
   
-  ci cell_kPhmW1dwLuky_b0boUTp-3 : drawio:Edge [
+  instance cell_kPhmW1dwLuky_b0boUTp-3 : drawio:Edge [
     drawio:hasDrawioId "kPhmW1dwLuky_b0boUTp-3"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -39,13 +39,13 @@ description <http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#> as Mini
     drawio:hasTarget cell_kPhmW1dwLuky_b0boUTp-2
   ]
   
-  ci cell_kPhmW1dwLuky_b0boUTp-3_prop_label : drawio:CellProperty [
+  instance cell_kPhmW1dwLuky_b0boUTp-3_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_kPhmW1dwLuky_b0boUTp-3
     object_diagram:inModel model
   ]
-  ci cell_kPhmW1dwLuky_b0boUTp-3_prop_pmRole : drawio:CellProperty [
+  instance cell_kPhmW1dwLuky_b0boUTp-3_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_kPhmW1dwLuky_b0boUTp-3
@@ -53,19 +53,19 @@ description <http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#> as Mini
   ]
 
   
-  ci cell_kPhmW1dwLuky_b0boUTp-1 : drawio:Vertex [
+  instance cell_kPhmW1dwLuky_b0boUTp-1 : drawio:Vertex [
     drawio:hasDrawioId "kPhmW1dwLuky_b0boUTp-1"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_kPhmW1dwLuky_b0boUTp-1_prop_label : drawio:CellProperty [
+  instance cell_kPhmW1dwLuky_b0boUTp-1_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_kPhmW1dwLuky_b0boUTp-1
     object_diagram:inModel model
   ]
-  ci cell_kPhmW1dwLuky_b0boUTp-1_prop_pmRole : drawio:CellProperty [
+  instance cell_kPhmW1dwLuky_b0boUTp-1_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "initial"
     drawio:propertyOf cell_kPhmW1dwLuky_b0boUTp-1
@@ -73,19 +73,19 @@ description <http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#> as Mini
   ]
 
   
-  ci cell_kPhmW1dwLuky_b0boUTp-2 : drawio:Vertex [
+  instance cell_kPhmW1dwLuky_b0boUTp-2 : drawio:Vertex [
     drawio:hasDrawioId "kPhmW1dwLuky_b0boUTp-2"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_kPhmW1dwLuky_b0boUTp-2_prop_label : drawio:CellProperty [
+  instance cell_kPhmW1dwLuky_b0boUTp-2_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_kPhmW1dwLuky_b0boUTp-2
     object_diagram:inModel model
   ]
-  ci cell_kPhmW1dwLuky_b0boUTp-2_prop_pmRole : drawio:CellProperty [
+  instance cell_kPhmW1dwLuky_b0boUTp-2_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "final"
     drawio:propertyOf cell_kPhmW1dwLuky_b0boUTp-2

@@ -11,191 +11,191 @@ description <http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#
   extends <http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#> as my_drawio
   extends <http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#> as my_pm
 
-  ci model : cs_as:CorrespondenceModel [
+  instance model : cs_as:CorrespondenceModel [
     object_diagram:hasName "EarlyDesignSketching_corr"
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-1_initial : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-1_initial : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-1
     to my_pm:initial
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-8_final : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-8_final : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-8
     to my_pm:final
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-3_activity_0_port_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-3_activity_0_port_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-3
     to my_pm:activity_0_port_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-4_activity_0_port_2 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-4_activity_0_port_2 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-4
     to my_pm:activity_0_port_2
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-5_activity_0_port_3 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-5_activity_0_port_3 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-5
     to my_pm:activity_0_port_3
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-6_activity_0_port_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-6_activity_0_port_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-6
     to my_pm:activity_0_port_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-2_activity_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-2_activity_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-2
     to my_pm:activity_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-13_artifact_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-13_artifact_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-13
     to my_pm:artifact_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-15_activity_1_port_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-15_activity_1_port_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-15
     to my_pm:activity_1_port_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-16_activity_1_port_2 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-16_activity_1_port_2 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-16
     to my_pm:activity_1_port_2
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-17_activity_1_port_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-17_activity_1_port_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-17
     to my_pm:activity_1_port_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-18_activity_1_port_3 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-18_activity_1_port_3 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-18
     to my_pm:activity_1_port_3
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-14_activity_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-14_activity_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-14
     to my_pm:activity_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-21_artifact_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-21_artifact_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-21
     to my_pm:artifact_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-24_activity_2_port_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-24_activity_2_port_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-24
     to my_pm:activity_2_port_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-25_activity_2_port_3 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-25_activity_2_port_3 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-25
     to my_pm:activity_2_port_3
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-26_activity_2_port_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-26_activity_2_port_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-26
     to my_pm:activity_2_port_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-27_activity_2_port_4 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-27_activity_2_port_4 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-27
     to my_pm:activity_2_port_4
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-28_activity_2_port_2 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-28_activity_2_port_2 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-28
     to my_pm:activity_2_port_2
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-23_activity_2 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-23_activity_2 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-23
     to my_pm:activity_2
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-7_ctrl_flow_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-7_ctrl_flow_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-7
     to my_pm:ctrl_flow_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-9_ctrl_flow_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-9_ctrl_flow_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-9
     to my_pm:ctrl_flow_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-10_ctrl_flow_2 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-10_ctrl_flow_2 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-10
     to my_pm:ctrl_flow_2
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-11_data_flow_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-11_data_flow_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-11
     to my_pm:data_flow_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-12_data_flow_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-12_data_flow_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-12
     to my_pm:data_flow_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-19_data_flow_2 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-19_data_flow_2 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-19
     to my_pm:data_flow_2
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-20_data_flow_3 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-20_data_flow_3 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-20
     to my_pm:data_flow_3
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-22_data_flow_4 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-22_data_flow_4 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-22
     to my_pm:data_flow_4
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-29_ctrl_flow_3 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-29_ctrl_flow_3 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-29
     to my_pm:ctrl_flow_3
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_u6pOaN9qPa-NTVyj8-pj-30_ctrl_flow_4 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_u6pOaN9qPa-NTVyj8-pj-30_ctrl_flow_4 : cs_as:CS_AS_Link [
     from my_drawio:cell_u6pOaN9qPa-NTVyj8-pj-30
     to my_pm:ctrl_flow_4
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_1_model : cs_as:CS_AS_Link [
+  relation instance trace_drawio_1_model : cs_as:CS_AS_Link [
     from my_drawio:cell_1
     to my_pm:model
     object_diagram:inModel model

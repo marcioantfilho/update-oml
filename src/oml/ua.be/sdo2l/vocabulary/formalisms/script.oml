@@ -3,8 +3,8 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/script#> as script {
     extends <http://ua.be/sdo2l/vocabulary/formalisms/code#> as code
     extends <http://ua.be/sdo2l/vocabulary/formalisms/file#> as file
 
-    concept ScriptData :> code:CodeData
-    concept ScriptParameter :> file:Data
+    concept ScriptData < code:CodeData
+    concept ScriptParameter < file:Data
 
     scalar property hasParameterName [
         domain ScriptParameter
@@ -24,8 +24,8 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/script#> as script {
         forward usesScriptParameter
     ]
 
-    concept CScript      :> ScriptData, code:CCode
-    concept CppScript    :> ScriptData, code:CppCode
-    concept PythonScript :> ScriptData, code:PythonCode
-    concept MATLABScript :> ScriptData, code:MATLABCode
+    concept CScript      < ScriptData, code:CCode
+    concept CppScript    < ScriptData, code:CppCode
+    concept PythonScript < ScriptData, code:PythonCode
+    concept MATLABScript < ScriptData, code:MATLABCode
 }

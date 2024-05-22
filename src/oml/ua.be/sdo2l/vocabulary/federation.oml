@@ -12,7 +12,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/federation#> as federation {
     scalar property hasDescription [ domain Operation range xsd:string ]
     //scalar property hasSideEffect [ domain Operation range xsd:boolean ]
     // TODO Should be IRI not string
-    //scalar property hasIri [ domain Operation range xsd:string ]
+    //scalar property hasIrelation instance [ domain Operation range xsd:string ]
     scalar property hasCall [ domain Operation range xsd:string ]
     
     

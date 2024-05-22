@@ -7,7 +7,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/component#> as component {
 	extends <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces
 
 	@rdfs:comment "A Structural Model defines the static view of a system in terms of its components and their relationships."
-	concept StructuralModel :> base:IdentifiedThing, traces:Artifact//, base:WorkflowArtifact
+	concept StructuralModel < base:IdentifiedThing, traces:Artifact//, base:WorkflowArtifact
 	
 	@rdfs:comment "A Structural Model is specified by several components."
 	relation entity Specifies [
@@ -23,15 +23,15 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/component#> as component {
 	// Definitions for Components
 	
 	@rdfs:comment "A Component is something that can be designed in a structural model."
-	concept Component :> base:IdentifiedThing, base:ContainedElement, vim4:Object
+	concept Component < base:IdentifiedThing, base:ContainedElement, vim4:Object
 	
 	@rdfs:comment "A component may have several attributes."
-	concept Attribute :> base:IdentifiedThing, vim4:InherentUnitaryQuantityValue [
+	concept Attribute < base:IdentifiedThing, vim4:InherentUnitaryQuantityValue [
 		restricts all relation vim4:characterizes to Component
 	]
 	
 	@rdfs:comment "An Interface represents a set of features that describe some Component’s interaction with another Component."
-	concept Interface :> base:IdentifiedThing
+	concept Interface < base:IdentifiedThing
 	
 	@rdfs:comment "A Component presents zero or more Interfaces."
 	relation entity Presents [
@@ -45,7 +45,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/component#> as component {
 	]
 	
 	@rdfs:comment "A Junction joins two or more Interfaces."
-	relation entity Junction :> base:IdentifiedThing [
+	relation entity Junction < base:IdentifiedThing [
 		from Interface
 		to Interface
 		forward joins
@@ -68,9 +68,9 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/component#> as component {
 	
 	// Domain-Specific Components
 	
-	concept CarComponent :> Component
+	concept CarComponent < Component
 	
-	concept WheelComponent :> Component
+	concept WheelComponent < Component
 	
 	
 }

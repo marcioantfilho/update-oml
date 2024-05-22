@@ -11,77 +11,77 @@ description <http://ua.be/sdo2l/description/artifacts/RecPM_corr#> as RecPM_corr
   extends <http://ua.be/sdo2l/description/artifacts/RecPM_drawio#> as my_drawio
   extends <http://ua.be/sdo2l/description/artifacts/RecPM_pm#> as my_pm
 
-  ci model : cs_as:CorrespondenceModel [
+  instance model : cs_as:CorrespondenceModel [
     object_diagram:hasName "RecPM_corr"
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-1_initial : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-1_initial : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-1
     to my_pm:initial
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-3_final : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-3_final : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-3
     to my_pm:final
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-2_activity_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-2_activity_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-2
     to my_pm:activity_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-33_artifact_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-33_artifact_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-33
     to my_pm:artifact_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_1m2y2pvaED3J6VFvMTAg-2_activity_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_1m2y2pvaED3J6VFvMTAg-2_activity_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_1m2y2pvaED3J6VFvMTAg-2
     to my_pm:activity_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-6_ctrl_flow_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-6_ctrl_flow_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-6
     to my_pm:ctrl_flow_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-7_ctrl_flow_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-7_ctrl_flow_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-7
     to my_pm:ctrl_flow_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-20_ctrl_flow_2 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-20_ctrl_flow_2 : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-20
     to my_pm:ctrl_flow_2
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-32_data_flow_0 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-32_data_flow_0 : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-32
     to my_pm:data_flow_0
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_CvR4PfVCJDiI6bvIUUvl-28_data_flow_1 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_CvR4PfVCJDiI6bvIUUvl-28_data_flow_1 : cs_as:CS_AS_Link [
     from my_drawio:cell_CvR4PfVCJDiI6bvIUUvl-28
     to my_pm:data_flow_1
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_DqRSZQiQ3lTnqpyIPe1H-2_ctrl_flow_3 : cs_as:CS_AS_Link [
+  relation instance trace_drawio_DqRSZQiQ3lTnqpyIPe1H-2_ctrl_flow_3 : cs_as:CS_AS_Link [
     from my_drawio:cell_DqRSZQiQ3lTnqpyIPe1H-2
     to my_pm:ctrl_flow_3
     object_diagram:inModel model
   ]
 
-  ri trace_drawio_1_model : cs_as:CS_AS_Link [
+  relation instance trace_drawio_1_model : cs_as:CS_AS_Link [
     from my_drawio:cell_1
     to my_pm:model
     object_diagram:inModel model

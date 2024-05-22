@@ -4,7 +4,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/richtext#> as richtext {
     extends <http://ua.be/sdo2l/vocabulary/formalisms/text#> as text
 
 
-    concept RichTextData :> text:TextData
+    concept RichTextData < text:TextData
     concept RichTextModifer
     concept TextPosition
 
@@ -41,11 +41,11 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/richtext#> as richtext {
         forward modifierStopsAt
     ]
 
-    concept ItalicRichTextModifier :> RichTextModifer [
+    concept ItalicRichTextModifier < RichTextModifer [
         restricts scalar property hasRichTextModifierOption to "italic"
     ]
 
-    concept BoldRichTextModifier :> RichTextModifer [
+    concept BoldRichTextModifier < RichTextModifer [
         restricts scalar property hasRichTextModifierOption to "bold"
     ]
 }

@@ -5,7 +5,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/shaclproperty#> as shaclpro
 
 	extends <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces
 
-	concept SHACL-Property :> base:IdentifiedThing, traces:Artifact
+	concept SHACL-Property < base:IdentifiedThing, traces:Artifact
 	
 	@rdfs:comment "The has filename property"
 	scalar property hasFilePathname [

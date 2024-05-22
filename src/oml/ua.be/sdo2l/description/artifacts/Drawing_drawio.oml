@@ -9,13 +9,13 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
   uses <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict
 
-  ci model : drawio:Model [
+  instance model : drawio:Model [
     drawio:hasDrawioId "LgIOMtHxWmRO3Oc9vvxL"
     object_diagram:hasName "Drawing_drawio"
   ]
 
   
-  ci cell_0 : drawio:Cell [
+  instance cell_0 : drawio:Cell [
     drawio:hasDrawioId "0"
     drawio:isRootOf model
     object_diagram:inModel model
@@ -23,7 +23,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_1 : drawio:Cell [
+  instance cell_1 : drawio:Cell [
     drawio:hasDrawioId "1"
     drawio:hasParent cell_0
     object_diagram:inModel model
@@ -31,7 +31,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_qzttm6LrCUpeeJGvPEF2-1 : drawio:Vertex [
+  instance cell_qzttm6LrCUpeeJGvPEF2-1 : drawio:Vertex [
     drawio:hasDrawioId "qzttm6LrCUpeeJGvPEF2-1"
     drawio:hasValue "Actor"
     drawio:hasParent cell_1
@@ -40,7 +40,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_qzttm6LrCUpeeJGvPEF2-2 : drawio:Vertex [
+  instance cell_qzttm6LrCUpeeJGvPEF2-2 : drawio:Vertex [
     drawio:hasDrawioId "qzttm6LrCUpeeJGvPEF2-2"
     drawio:hasValue "Actor"
     drawio:hasParent cell_1
@@ -49,7 +49,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_qzttm6LrCUpeeJGvPEF2-3 : drawio:Vertex [
+  instance cell_qzttm6LrCUpeeJGvPEF2-3 : drawio:Vertex [
     drawio:hasDrawioId "qzttm6LrCUpeeJGvPEF2-3"
     drawio:hasValue "Actor"
     drawio:hasParent cell_1
@@ -58,7 +58,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_qzttm6LrCUpeeJGvPEF2-4 : drawio:Vertex [
+  instance cell_qzttm6LrCUpeeJGvPEF2-4 : drawio:Vertex [
     drawio:hasDrawioId "qzttm6LrCUpeeJGvPEF2-4"
     drawio:hasValue "Actor"
     drawio:hasParent cell_1
@@ -67,7 +67,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_qzttm6LrCUpeeJGvPEF2-6 : drawio:Vertex [
+  instance cell_qzttm6LrCUpeeJGvPEF2-6 : drawio:Vertex [
     drawio:hasDrawioId "qzttm6LrCUpeeJGvPEF2-6"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -75,7 +75,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_qzttm6LrCUpeeJGvPEF2-7 : drawio:Vertex [
+  instance cell_qzttm6LrCUpeeJGvPEF2-7 : drawio:Vertex [
     drawio:hasDrawioId "qzttm6LrCUpeeJGvPEF2-7"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -83,7 +83,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_qzttm6LrCUpeeJGvPEF2-8 : drawio:Vertex [
+  instance cell_qzttm6LrCUpeeJGvPEF2-8 : drawio:Vertex [
     drawio:hasDrawioId "qzttm6LrCUpeeJGvPEF2-8"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -91,7 +91,7 @@ description <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#> as Drawin
   
 
   
-  ci cell_qzttm6LrCUpeeJGvPEF2-9 : drawio:Vertex [
+  instance cell_qzttm6LrCUpeeJGvPEF2-9 : drawio:Vertex [
     drawio:hasDrawioId "qzttm6LrCUpeeJGvPEF2-9"
     drawio:hasParent cell_1
     object_diagram:inModel model

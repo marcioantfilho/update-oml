@@ -45,7 +45,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/base/base#> as base {
     ]  
     
     // OBS: The specialization did not work for enumerated scalars, the only way to work is duplicating the values like this. 
-    enumerated scalar NumericType :> BasicType [
+    enumerated scalar NumericType < BasicType [
     	"Double", "Integer"
     ]
 
@@ -69,7 +69,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/base/base#> as base {
 	aspect ContainedElement
 
 	@rdfs:comment "Contains is a many-to-many relation used to represent homomeric relations that form directed rooted trees."
-	relation entity Contains :> acyclic:Acyclic [
+	relation entity Contains < acyclic:Acyclic [
 		from ContainedElement
 		to ContainedElement
 		forward contains
@@ -112,7 +112,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/base/base#> as base {
 
 	// Version
 
-	aspect Versionable :> ImmutableThing
+	aspect Versionable < ImmutableThing
 
 	@rdfs:comment "The has canonical name property"
 	scalar property hasTag [
@@ -120,7 +120,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/base/base#> as base {
 		range xsd:string
 	]
 
-	relation entity Versions :> acyclic:Acyclic [
+	relation entity Versions < acyclic:Acyclic [
 		from Versionable
 		to Versionable
 		forward previousVersionOf
