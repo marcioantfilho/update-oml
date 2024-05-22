@@ -19,7 +19,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_
 	// A link is also an object, meaning:
 	//   - it can have attributes
 	//   - it can be the source/target of another link
-	relation entity Link :> Object [
+	relation entity Link < Object [
 		from Object
 		to Object
 	]

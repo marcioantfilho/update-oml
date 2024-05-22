@@ -10,7 +10,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 
 	// TODO Add time to Event (starting time and ending time of PT events)
 //	@rdfs:comment "The class to represent traces of execution of a given workflow."
-//	concept Trace :> base:IdentifiedThing
+//	concept Trace < base:IdentifiedThing
 
 	// A process trace element
 	aspect element [
@@ -26,22 +26,22 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 	]
 
 	@rdfs:comment "The class to represent an event of a trace."
-	aspect Event :> element, object_diagram:Object
+	aspect Event < element, object_diagram:Object
 	
-	scalar property hasTimestamp :> object_diagram:hasField [
+	scalar property hasTimestamp < object_diagram:hasField [
 		domain Event
 		range xsd:dateTime
 	]
 	
 	@rdfs:comment "An event signaling the start of a new trace."
-	concept StartTraceEvent :> Event [
+	concept StartTraceEvent < Event [
 		restricts all relation relatesTo to pm:Model
 		restricts relation isFollowedBy to max 1
 		restricts relation isPrecededBy to max 0
 	]
 	
 	@rdfs:comment "An event signaling the end of a trace."
-	concept EndTraceEvent :> Event [
+	concept EndTraceEvent < Event [
 		restricts all relation relatesTo to pm:Model
 		restricts relation isFollowedBy to max 0
 		restricts relation isPrecededBy to max 1
@@ -49,7 +49,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 	]
 
 	@rdfs:comment "The class to represent a starting event of a trace."
-	concept StartActivityEvent :> Event [
+	concept StartActivityEvent < Event [
 		restricts all relation relatesTo to pm:CtrlInputPort
 		restricts relation isFollowedBy to max 1
 		restricts relation isPrecededBy to max 1
@@ -57,14 +57,14 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 	]
 
 	@rdfs:comment "The class to represent an ending event of a trace."
-	concept EndActivityEvent :> Event [
+	concept EndActivityEvent < Event [
 		restricts all relation relatesTo to pm:CtrlOutputPort
 		restricts relation isFollowedBy to max 1
 		restricts relation isPrecededBy to max 1
 		
 	]
 	
-	relation entity Follows :> acyclic:Acyclic, object_diagram:Link [
+	relation entity Follows < acyclic:Acyclic, object_diagram:Link [
 		from Event
 		to Event
 		forward isFollowedBy
@@ -75,7 +75,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 		inverse functional
 	]
 
-	relation entity Produces :> element, object_diagram:Link [
+	relation entity Produces < element, object_diagram:Link [
 		from EndActivityEvent
 		to Artifact
 		forward produces
@@ -87,7 +87,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 		restricts all relation relatesTo to pm:DataOutputPort
 	]
 	
-	relation entity Consumes :> element, object_diagram:Link [
+	relation entity Consumes < element, object_diagram:Link [
 		from StartActivityEvent
 		to Artifact
 		forward consumes
@@ -99,16 +99,16 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 	]
 	
 	@rdfs:comment "The class of artifacts generated during the system design process. Here we are referring to the concrete artifacts that are created/used during the enactment of a workflow."
-	concept Artifact :> element, base:Versionable [
+	concept Artifact < element, base:Versionable [
 		restricts all relation relatesTo to pm:Artifact
 	]
 	
-	scalar property hasLocation :> object_diagram:hasField [
+	scalar property hasLocation < object_diagram:hasField [
 		domain Artifact
 		range xsd:string
 	]
 
-	scalar property addedAt :> object_diagram:hasField [
+	scalar property addedAt < object_diagram:hasField [
 		domain Artifact
 		range xsd:dateTime
 	]

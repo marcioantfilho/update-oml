@@ -7,239 +7,239 @@ description <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as FTG_ftg {
   uses <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg
   uses <http://ua.be/sdo2l/vocabulary/base/base#> as base
 
-  ci f_TextDocument : ftg:Formalism [
+  instance f_TextDocument : ftg:Formalism [
     base:hasGUID "TextDocument"
   ]
 
-  ci f_Profile : ftg:Formalism [
+  instance f_Profile : ftg:Formalism [
     base:hasGUID "Profile"
   ]
 
-  ci f_TabularData : ftg:Formalism [
+  instance f_TabularData : ftg:Formalism [
     base:hasGUID "TabularData"
   ]
 
-  ci f_Code : ftg:Formalism [
+  instance f_Code : ftg:Formalism [
     base:hasGUID "Code"
   ]
 
-  ci f_Script : ftg:Formalism [
+  instance f_Script : ftg:Formalism [
     base:hasGUID "Script"
   ]
 
-  ci f_xopp : ftg:Formalism [
+  instance f_xopp : ftg:Formalism [
     base:hasGUID "xopp"
   ]
 
-  ci f_file : ftg:Formalism [
+  instance f_file : ftg:Formalism [
     base:hasGUID "file"
   ]
 
-  ci f_CBD : ftg:Formalism [
+  instance f_CBD : ftg:Formalism [
     base:hasGUID "CBD"
   ]
 
-  ci t_Preparation : ftg:Transformation [
+  instance t_Preparation : ftg:Transformation [
     base:hasGUID "Preparation"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_Preparation_output0 : ftg:HasOutput [
+  relation instance t_Preparation_output0 : ftg:HasOutput [
     from t_Preparation
     to f_TextDocument
     ftg:hasName "dout"
   ]
-  ri t_Preparation_output1 : ftg:HasOutput [
+  relation instance t_Preparation_output1 : ftg:HasOutput [
     from t_Preparation
     to f_TextDocument
     ftg:hasName "dout"
   ]
-  ri t_Preparation_output2 : ftg:HasOutput [
+  relation instance t_Preparation_output2 : ftg:HasOutput [
     from t_Preparation
     to f_Script
     ftg:hasName "dout"
   ]
 
-  ci t_SetupProfile : ftg:Transformation [
+  instance t_SetupProfile : ftg:Transformation [
     base:hasGUID "SetupProfile"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlInput "cinRec"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_SetupProfile_input0 : ftg:HasInput [
+  relation instance t_SetupProfile_input0 : ftg:HasInput [
     from t_SetupProfile
     to f_TextDocument
     ftg:hasName "din"
   ]
-  ri t_SetupProfile_input1 : ftg:HasInput [
+  relation instance t_SetupProfile_input1 : ftg:HasInput [
     from t_SetupProfile
     to f_TextDocument
     ftg:hasName "din"
   ]
-  ri t_SetupProfile_output0 : ftg:HasOutput [
+  relation instance t_SetupProfile_output0 : ftg:HasOutput [
     from t_SetupProfile
     to f_Profile
     ftg:hasName "dout"
   ]
 
-  ci t_GenerateControlParameters : ftg:Transformation [
+  instance t_GenerateControlParameters : ftg:Transformation [
     base:hasGUID "GenerateControlParameters"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_GenerateControlParameters_input0 : ftg:HasInput [
+  relation instance t_GenerateControlParameters_input0 : ftg:HasInput [
     from t_GenerateControlParameters
     to f_Profile
     ftg:hasName "din"
   ]
-  ri t_GenerateControlParameters_input1 : ftg:HasInput [
+  relation instance t_GenerateControlParameters_input1 : ftg:HasInput [
     from t_GenerateControlParameters
     to f_Script
     ftg:hasName "din"
   ]
-  ri t_GenerateControlParameters_output0 : ftg:HasOutput [
+  relation instance t_GenerateControlParameters_output0 : ftg:HasOutput [
     from t_GenerateControlParameters
     to f_TabularData
     ftg:hasName "dout"
   ]
 
-  ci t_VerifyData : ftg:Transformation [
+  instance t_VerifyData : ftg:Transformation [
     base:hasGUID "VerifyData"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     ftg:hasCtrlOutput "coutRec"
     
   ]
-  ri t_VerifyData_input0 : ftg:HasInput [
+  relation instance t_VerifyData_input0 : ftg:HasInput [
     from t_VerifyData
     to f_TabularData
     ftg:hasName "din"
   ]
-  ri t_VerifyData_input1 : ftg:HasInput [
+  relation instance t_VerifyData_input1 : ftg:HasInput [
     from t_VerifyData
     to f_TabularData
     ftg:hasName "din"
   ]
 
-  ci t_RunExperiment : ftg:Transformation [
+  instance t_RunExperiment : ftg:Transformation [
     base:hasGUID "RunExperiment"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_RunExperiment_input0 : ftg:HasInput [
+  relation instance t_RunExperiment_input0 : ftg:HasInput [
     from t_RunExperiment
     to f_Code
     ftg:hasName "din"
   ]
-  ri t_RunExperiment_output0 : ftg:HasOutput [
+  relation instance t_RunExperiment_output0 : ftg:HasOutput [
     from t_RunExperiment
     to f_TabularData
     ftg:hasName "dout"
   ]
-  ri t_RunExperiment_output1 : ftg:HasOutput [
+  relation instance t_RunExperiment_output1 : ftg:HasOutput [
     from t_RunExperiment
     to f_TabularData
     ftg:hasName "dout"
   ]
 
-  ci t_BuildControlSettings : ftg:Transformation [
+  instance t_BuildControlSettings : ftg:Transformation [
     base:hasGUID "BuildControlSettings"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_BuildControlSettings_input0 : ftg:HasInput [
+  relation instance t_BuildControlSettings_input0 : ftg:HasInput [
     from t_BuildControlSettings
     to f_TabularData
     ftg:hasName "din"
   ]
-  ri t_BuildControlSettings_input1 : ftg:HasInput [
+  relation instance t_BuildControlSettings_input1 : ftg:HasInput [
     from t_BuildControlSettings
     to f_TextDocument
     ftg:hasName "din"
   ]
-  ri t_BuildControlSettings_output0 : ftg:HasOutput [
+  relation instance t_BuildControlSettings_output0 : ftg:HasOutput [
     from t_BuildControlSettings
     to f_Code
     ftg:hasName "dout"
   ]
 
-  ci t_InitialDesign : ftg:Transformation [
+  instance t_InitialDesign : ftg:Transformation [
     base:hasGUID "InitialDesign"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_InitialDesign_input0 : ftg:HasInput [
+  relation instance t_InitialDesign_input0 : ftg:HasInput [
     from t_InitialDesign
     to f_file
     ftg:hasName "requirements"
   ]
-  ri t_InitialDesign_output0 : ftg:HasOutput [
+  relation instance t_InitialDesign_output0 : ftg:HasOutput [
     from t_InitialDesign
     to f_xopp
     ftg:hasName "initial_design"
   ]
 
-  ci t_CheckDesign : ftg:Transformation [
+  instance t_CheckDesign : ftg:Transformation [
     base:hasGUID "CheckDesign"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "good"
     ftg:hasCtrlOutput "bad"
     
   ]
-  ri t_CheckDesign_input0 : ftg:HasInput [
+  relation instance t_CheckDesign_input0 : ftg:HasInput [
     from t_CheckDesign
     to f_xopp
     ftg:hasName "initial_design"
   ]
-  ri t_CheckDesign_input1 : ftg:HasInput [
+  relation instance t_CheckDesign_input1 : ftg:HasInput [
     from t_CheckDesign
     to f_file
     ftg:hasName "requirements"
   ]
 
-  ci t_CreateRequirements : ftg:Transformation [
+  instance t_CreateRequirements : ftg:Transformation [
     base:hasGUID "CreateRequirements"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_CreateRequirements_output0 : ftg:HasOutput [
+  relation instance t_CreateRequirements_output0 : ftg:HasOutput [
     from t_CreateRequirements
     to f_file
     ftg:hasName "requirements"
   ]
 
-  ci t_Sketch : ftg:Transformation [
+  instance t_Sketch : ftg:Transformation [
     base:hasGUID "Sketch"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_Sketch_output0 : ftg:HasOutput [
+  relation instance t_Sketch_output0 : ftg:HasOutput [
     from t_Sketch
     to f_xopp
     ftg:hasName "sketch"
   ]
 
-  ci t_LookAtSketch : ftg:Transformation [
+  instance t_LookAtSketch : ftg:Transformation [
     base:hasGUID "LookAtSketch"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_LookAtSketch_input0 : ftg:HasInput [
+  relation instance t_LookAtSketch_input0 : ftg:HasInput [
     from t_LookAtSketch
     to f_xopp
     ftg:hasName "sketch"
   ]
 
-  ci t_DefineCBDModel : ftg:Transformation [
+  instance t_DefineCBDModel : ftg:Transformation [
     base:hasGUID "DefineCBDModel"
     ftg:hasCtrlInput "rec"
     ftg:hasCtrlInput "cin"
@@ -247,35 +247,35 @@ description <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as FTG_ftg {
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_DefineCBDModel_input0 : ftg:HasInput [
+  relation instance t_DefineCBDModel_input0 : ftg:HasInput [
     from t_DefineCBDModel
     to f_xopp
     ftg:hasName "din"
   ]
-  ri t_DefineCBDModel_output0 : ftg:HasOutput [
+  relation instance t_DefineCBDModel_output0 : ftg:HasOutput [
     from t_DefineCBDModel
     to f_CBD
     ftg:hasName "dout"
   ]
 
-  ci t_RunCBDSimulation : ftg:Transformation [
+  instance t_RunCBDSimulation : ftg:Transformation [
     base:hasGUID "RunCBDSimulation"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_RunCBDSimulation_input0 : ftg:HasInput [
+  relation instance t_RunCBDSimulation_input0 : ftg:HasInput [
     from t_RunCBDSimulation
     to f_CBD
     ftg:hasName "din"
   ]
-  ri t_RunCBDSimulation_output0 : ftg:HasOutput [
+  relation instance t_RunCBDSimulation_output0 : ftg:HasOutput [
     from t_RunCBDSimulation
     to f_TabularData
     ftg:hasName "dout"
   ]
 
-  ci t_ValidateCBDSimulationResults : ftg:AutomatedTransformation [
+  instance t_ValidateCBDSimulationResults : ftg:AutomatedTransformation [
     base:hasGUID "ValidateCBDSimulationResults"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "ok"
@@ -285,30 +285,30 @@ description <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as FTG_ftg {
     ftg:hasEndpoint "http://localhost:7999"
     
   ]
-  ri t_ValidateCBDSimulationResults_input0 : ftg:HasInput [
+  relation instance t_ValidateCBDSimulationResults_input0 : ftg:HasInput [
     from t_ValidateCBDSimulationResults
     to f_TabularData
     ftg:hasName "din"
   ]
 
-  ci t_Initialization : ftg:Transformation [
+  instance t_Initialization : ftg:Transformation [
     base:hasGUID "Initialization"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_Initialization_output0 : ftg:HasOutput [
+  relation instance t_Initialization_output0 : ftg:HasOutput [
     from t_Initialization
     to f_file
     ftg:hasName "dout"
   ]
-  ri t_Initialization_output1 : ftg:HasOutput [
+  relation instance t_Initialization_output1 : ftg:HasOutput [
     from t_Initialization
     to f_file
     ftg:hasName "dout"
   ]
 
-  ci t_DetectParallelRails : ftg:AutomatedTransformation [
+  instance t_DetectParallelRails : ftg:AutomatedTransformation [
     base:hasGUID "DetectParallelRails"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlInput "rep"
@@ -318,67 +318,67 @@ description <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as FTG_ftg {
     ftg:hasEndpoint "http://localhost:7999/octiva/"
     
   ]
-  ri t_DetectParallelRails_input0 : ftg:HasInput [
+  relation instance t_DetectParallelRails_input0 : ftg:HasInput [
     from t_DetectParallelRails
     to f_file
     ftg:hasName "algorithm"
   ]
-  ri t_DetectParallelRails_input1 : ftg:HasInput [
+  relation instance t_DetectParallelRails_input1 : ftg:HasInput [
     from t_DetectParallelRails
     to f_file
     ftg:hasName "image"
   ]
-  ri t_DetectParallelRails_output0 : ftg:HasOutput [
+  relation instance t_DetectParallelRails_output0 : ftg:HasOutput [
     from t_DetectParallelRails
     to f_file
     ftg:hasName "data"
   ]
-  ri t_DetectParallelRails_output1 : ftg:HasOutput [
+  relation instance t_DetectParallelRails_output1 : ftg:HasOutput [
     from t_DetectParallelRails
     to f_file
     ftg:hasName "image"
   ]
 
-  ci t_FailuresResolved : ftg:Transformation [
+  instance t_FailuresResolved : ftg:Transformation [
     base:hasGUID "FailuresResolved"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "ok"
     ftg:hasCtrlOutput "notOk"
     
   ]
-  ri t_FailuresResolved_input0 : ftg:HasInput [
+  relation instance t_FailuresResolved_input0 : ftg:HasInput [
     from t_FailuresResolved
     to f_file
     ftg:hasName "din"
   ]
-  ri t_FailuresResolved_input1 : ftg:HasInput [
+  relation instance t_FailuresResolved_input1 : ftg:HasInput [
     from t_FailuresResolved
     to f_file
     ftg:hasName "din"
   ]
-  ri t_FailuresResolved_output0 : ftg:HasOutput [
+  relation instance t_FailuresResolved_output0 : ftg:HasOutput [
     from t_FailuresResolved
     to f_file
     ftg:hasName "dout"
   ]
 
-  ci t_RedesignAlgorithm : ftg:Transformation [
+  instance t_RedesignAlgorithm : ftg:Transformation [
     base:hasGUID "RedesignAlgorithm"
     ftg:hasCtrlInput "cin"
     ftg:hasCtrlOutput "cout"
     
   ]
-  ri t_RedesignAlgorithm_input0 : ftg:HasInput [
+  relation instance t_RedesignAlgorithm_input0 : ftg:HasInput [
     from t_RedesignAlgorithm
     to f_file
     ftg:hasName "din"
   ]
-  ri t_RedesignAlgorithm_output0 : ftg:HasOutput [
+  relation instance t_RedesignAlgorithm_output0 : ftg:HasOutput [
     from t_RedesignAlgorithm
     to f_file
     ftg:hasName "dout"
   ]
-  ri t_RedesignAlgorithm_output1 : ftg:HasOutput [
+  relation instance t_RedesignAlgorithm_output1 : ftg:HasOutput [
     from t_RedesignAlgorithm
     to f_file
     ftg:hasName "dout"

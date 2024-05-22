@@ -8,10 +8,10 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/tabular#> as tabular {
 
     aspect Collection 
     
-    concept TabularData :> file:Data, file:File
-    concept Cell        :> file:Data
-    concept Row         :> Collection
-    concept Column      :> Collection 
+    concept TabularData < file:Data, file:File
+    concept Cell        < file:Data
+    concept Row         < Collection
+    concept Column      < Collection 
     
         
     relation entity HasUnit [
@@ -77,7 +77,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/tabular#> as tabular {
         functional
     ]
 
-    concept HeaderRow :> Row [
+    concept HeaderRow < Row [
         restricts scalar property hasHeadingModifier to "yes"
     ]
 

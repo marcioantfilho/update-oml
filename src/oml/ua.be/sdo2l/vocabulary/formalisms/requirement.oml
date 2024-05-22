@@ -4,7 +4,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/requirement#> as requiremen
 
 	extends <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces
 	
-	concept Requirement :> base:IdentifiedThing
+	concept Requirement < base:IdentifiedThing
 	
 	relation entity Describes [
 		from Requirement 
@@ -15,7 +15,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/requirement#> as requiremen
 		irreflexive
 	]
 	
-	concept RequirementList :> base:IdentifiedThing, traces:Artifact
+	concept RequirementList < base:IdentifiedThing, traces:Artifact
 	
 	relation entity Groups [
 		from RequirementList

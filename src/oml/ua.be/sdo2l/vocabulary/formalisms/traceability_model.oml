@@ -4,7 +4,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#> as tra
 	extends <http://www.w3.org/2001/XMLSchema#> as xsd
 		
 	// A traceability link is just a link :)
-	relation entity TraceabilityLink :> object_diagram:Link [
+	relation entity TraceabilityLink < object_diagram:Link [
 		from object_diagram:Object
 		to object_diagram:Object
 		forward traceLinkTo
@@ -43,13 +43,13 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#> as tra
 		
 /** 	<link> 
 		<source> <signal>
-		<target> <column>
+		<referencedValue> <column>
 		<sourceVirtual> <false>
-		<targetVirtual> <true>
-		<targetOpCall> <call>
+		<referencedValueVirtual> <true>
+		<referencedValueOpCall> <call>
 	<link>
 */	
-	concept TraceabilityModel :> object_diagram:Model [
+	concept TraceabilityModel < object_diagram:Model [
 		restricts all relation object_diagram:hasObject to TraceabilityLink
 	]
 }

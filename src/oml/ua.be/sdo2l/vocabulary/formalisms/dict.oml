@@ -8,16 +8,16 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict {
 	
 	// In many vocabularies, we want to have "dictionaries" (key-value mappings).
 	// We choose to represent every dictionary entry by an 'Object', that has a 'key' and 'value' field
-	aspect DictEntry :> Object [
+	aspect DictEntry < Object [
 		restricts scalar property hasKey to exactly 1
 		restricts scalar property hasValue to exactly 1
 	]
-	scalar property hasKey :> object_diagram:hasField [
+	scalar property hasKey < object_diagram:hasField [
 		domain DictEntry
 		range xsd:string
 		functional
 	]
-	scalar property hasValue :> object_diagram:hasField [
+	scalar property hasValue < object_diagram:hasField [
 		domain DictEntry
 		range xsd:string
 		functional

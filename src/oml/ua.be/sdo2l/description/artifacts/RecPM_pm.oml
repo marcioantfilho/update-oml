@@ -10,34 +10,34 @@ description <http://ua.be/sdo2l/description/artifacts/RecPM_pm#> as RecPM_pm {
 
   extends <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as ftg_instance
 
-  ci model : pm:Model [
+  instance model : pm:Model [
     object_diagram:hasName "RecPM_pm"
   ]
 
-  ci initial : pm:Initial [
+  instance initial : pm:Initial [
     object_diagram:inModel model
     pm:ctrlTo activity_0_port_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci final : pm:Final [
+  instance final : pm:Final [
     object_diagram:inModel model
     //pm:ctrlFrom activity_1_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci artifact_0 : pm:Artifact [
+  instance artifact_0 : pm:Artifact [
     pm:hasName "sketch"
     pm:hasType ftg_instance:f_xopp
     object_diagram:inModel model
     pm:dataTo activity_1_port_3 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_0 : pm:Activity [
+  instance activity_0 : pm:Activity [
     pm:hasName "sketch"
     pm:isTransformation ftg_instance:t_Sketch
     object_diagram:inModel model
   ]
 
-  ci activity_0_port_2 : pm:CtrlOutputPort [
+  instance activity_0_port_2 : pm:CtrlOutputPort [
     pm:hasName "cout"
     pm:ofActivity activity_0
     object_diagram:inModel model
@@ -45,14 +45,14 @@ description <http://ua.be/sdo2l/description/artifacts/RecPM_pm#> as RecPM_pm {
   ]
   
 
-  ci activity_0_port_0 : pm:CtrlInputPort [
+  instance activity_0_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_0
     object_diagram:inModel model
     //pm:ctrlFrom initial // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_0_port_1 : pm:CtrlInputPort [
+  instance activity_0_port_1 : pm:CtrlInputPort [
     pm:hasName "cinRec"
     pm:ofActivity activity_0
     object_diagram:inModel model
@@ -60,7 +60,7 @@ description <http://ua.be/sdo2l/description/artifacts/RecPM_pm#> as RecPM_pm {
   ]
   
 
-  ci activity_0_port_3 : pm:DataOutputPort [
+  instance activity_0_port_3 : pm:DataOutputPort [
     pm:hasName "sketch"
     pm:ofActivity activity_0
     object_diagram:inModel model
@@ -68,20 +68,20 @@ description <http://ua.be/sdo2l/description/artifacts/RecPM_pm#> as RecPM_pm {
   ]
   
 
-  ci activity_1 : pm:Activity [
+  instance activity_1 : pm:Activity [
     pm:hasName "look_at_sketch"
     pm:isTransformation ftg_instance:t_LookAtSketch
     object_diagram:inModel model
   ]
 
-  ci activity_1_port_1 : pm:CtrlOutputPort [
+  instance activity_1_port_1 : pm:CtrlOutputPort [
     pm:hasName "cout"
     pm:ofActivity activity_1
     object_diagram:inModel model
     pm:ctrlTo final // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ci activity_1_port_2 : pm:CtrlOutputPort [
+  instance activity_1_port_2 : pm:CtrlOutputPort [
     pm:hasName "coutRec"
     pm:ofActivity activity_1
     object_diagram:inModel model
@@ -89,7 +89,7 @@ description <http://ua.be/sdo2l/description/artifacts/RecPM_pm#> as RecPM_pm {
   ]
   
 
-  ci activity_1_port_0 : pm:CtrlInputPort [
+  instance activity_1_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_1
     object_diagram:inModel model
@@ -98,44 +98,44 @@ description <http://ua.be/sdo2l/description/artifacts/RecPM_pm#> as RecPM_pm {
   
   
 
-  ci activity_1_port_3 : pm:DataInputPort [
+  instance activity_1_port_3 : pm:DataInputPort [
     pm:hasName "sketch"
     pm:ofActivity activity_1
     object_diagram:inModel model
     //pm:dataFrom artifact_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
-  ri ctrl_flow_0 : pm:CtrlFlow [
+  relation instance ctrl_flow_0 : pm:CtrlFlow [
     from initial
     to activity_0_port_0
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_1 : pm:CtrlFlow [
+  relation instance ctrl_flow_1 : pm:CtrlFlow [
     from activity_0_port_2
     to activity_1_port_0
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_2 : pm:CtrlFlow [
+  relation instance ctrl_flow_2 : pm:CtrlFlow [
     from activity_1_port_1
     to final
     object_diagram:inModel model
   ]
 
-  ri ctrl_flow_3 : pm:CtrlFlow [
+  relation instance ctrl_flow_3 : pm:CtrlFlow [
     from activity_1_port_2
     to activity_0_port_1
     object_diagram:inModel model
   ]
 
-  ri data_flow_0 : pm:DataFlow [
+  relation instance data_flow_0 : pm:DataFlow [
     from artifact_0
     to activity_1_port_3
     object_diagram:inModel model
   ]
 
-  ri data_flow_1 : pm:DataFlow [
+  relation instance data_flow_1 : pm:DataFlow [
     from activity_0_port_3
     to artifact_0
     object_diagram:inModel model

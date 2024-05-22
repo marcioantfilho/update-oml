@@ -9,13 +9,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
   uses <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict
 
-  ci model : drawio:Model [
+  instance model : drawio:Model [
     drawio:hasDrawioId "QPvuOu0HlYeX6ktRWhZL"
     object_diagram:hasName "drivetrain:pm_drawio"
   ]
 
   
-  ci cell_0 : drawio:Cell [
+  instance cell_0 : drawio:Cell [
     drawio:hasDrawioId "0"
     drawio:isRootOf model
     object_diagram:inModel model
@@ -23,7 +23,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   
 
   
-  ci cell_1 : drawio:Cell [
+  instance cell_1 : drawio:Cell [
     drawio:hasDrawioId "1"
     drawio:hasParent cell_0
     object_diagram:inModel model
@@ -31,7 +31,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-3 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-3 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-3"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -39,13 +39,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_oDRBLhcRjnzzmYJR4pT3-2
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-3_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-3_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-3
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-3_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-3_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-3
@@ -53,19 +53,19 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Kvt-DgTJ1DRZdE3eO3Tz-1 : drawio:Vertex [
+  instance cell_Kvt-DgTJ1DRZdE3eO3Tz-1 : drawio:Vertex [
     drawio:hasDrawioId "Kvt-DgTJ1DRZdE3eO3Tz-1"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Kvt-DgTJ1DRZdE3eO3Tz-1_prop_label : drawio:CellProperty [
+  instance cell_Kvt-DgTJ1DRZdE3eO3Tz-1_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Kvt-DgTJ1DRZdE3eO3Tz-1
     object_diagram:inModel model
   ]
-  ci cell_Kvt-DgTJ1DRZdE3eO3Tz-1_prop_pmRole : drawio:CellProperty [
+  instance cell_Kvt-DgTJ1DRZdE3eO3Tz-1_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "initial"
     drawio:propertyOf cell_Kvt-DgTJ1DRZdE3eO3Tz-1
@@ -73,37 +73,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-4 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-4 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-4"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-4_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-4_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-4_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-4_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "activity"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-4_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-4_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "set_up_drivetrain_profile"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-4_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-4_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "SetupProfile"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-4_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-4_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-4
@@ -111,31 +111,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-10 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-10 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-10"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-10_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-10_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-10
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-10_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-10_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cin"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-10
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-10_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-10_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-10
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-10_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-10_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-10
@@ -143,31 +143,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-12 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-12 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-12"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-12_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-12_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-12
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-12_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-12_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-12
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-12_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-12_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-12
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-12_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-12_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-12
@@ -175,31 +175,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-13 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-13 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-13"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-13_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-13_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-13
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-13_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-13_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-13
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-13_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-13_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-13
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-13_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-13_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-13
@@ -207,31 +207,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-20 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-20 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-20"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-20_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-20_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-20
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-20_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-20_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "dout"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-20
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-20_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-20_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-20
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-20_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-20_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_out"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-20
@@ -239,31 +239,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-23 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-23 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-23"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-23_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-23_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-23
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-23_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-23_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cout"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-23
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-23_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-23_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-23
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-23_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-23_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_out"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-23
@@ -271,31 +271,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_lIuTJBtmPldcnfcOhHGF-3 : drawio:Vertex [
+  instance cell_lIuTJBtmPldcnfcOhHGF-3 : drawio:Vertex [
     drawio:hasDrawioId "lIuTJBtmPldcnfcOhHGF-3"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-4
     object_diagram:inModel model
   ]
   
-  ci cell_lIuTJBtmPldcnfcOhHGF-3_prop_label : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-3_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-3
     object_diagram:inModel model
   ]
-  ci cell_lIuTJBtmPldcnfcOhHGF-3_prop_portname : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-3_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cinRec"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-3
     object_diagram:inModel model
   ]
-  ci cell_lIuTJBtmPldcnfcOhHGF-3_prop_placeholders : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-3_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-3
     object_diagram:inModel model
   ]
-  ci cell_lIuTJBtmPldcnfcOhHGF-3_prop_pmRole : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-3_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_in"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-3
@@ -303,7 +303,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-14 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-14 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-14"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -311,13 +311,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-12
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-14_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-14_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-14
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-14_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-14_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-14
@@ -325,37 +325,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-5 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-5 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-5"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-5_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-5_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%name% : %type%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-5
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-5_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-5_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "artifact"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-5
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-5_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-5_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-5
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-5_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-5_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "drivetrain_limitations"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-5
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-5_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-5_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "TextDocument"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-5
@@ -363,7 +363,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-15 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-15 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-15"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -371,13 +371,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-13
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-15_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-15_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-15
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-15_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-15_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-15
@@ -385,7 +385,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_hjtIVpRlB6XSkxCe3kzS-1 : drawio:Edge [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-1 : drawio:Edge [
     drawio:hasDrawioId "hjtIVpRlB6XSkxCe3kzS-1"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -393,13 +393,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-43
   ]
   
-  ci cell_hjtIVpRlB6XSkxCe3kzS-1_prop_label : drawio:CellProperty [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-1_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_hjtIVpRlB6XSkxCe3kzS-1
     object_diagram:inModel model
   ]
-  ci cell_hjtIVpRlB6XSkxCe3kzS-1_prop_pmRole : drawio:CellProperty [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-1_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_hjtIVpRlB6XSkxCe3kzS-1
@@ -407,37 +407,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-6 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-6 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-6"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-6_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-6_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%name% : %type%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-6
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-6_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-6_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "artifact"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-6
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-6_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-6_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-6
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-6_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-6_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "test_requirements"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-6
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-6_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-6_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "TextDocument"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-6
@@ -445,7 +445,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-27 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-27 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-27"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -453,13 +453,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-26
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-27_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-27_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-27
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-27_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-27_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-27
@@ -467,37 +467,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-17 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-17 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-17"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-17_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-17_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%name% : %type%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-17
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-17_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-17_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "artifact"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-17
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-17_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-17_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-17
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-17_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-17_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "matlab_torque"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-17
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-17_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-17_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "Profile"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-17
@@ -505,7 +505,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-29 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-29 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-29"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -513,13 +513,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-28
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-29_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-29_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-29
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-29_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-29_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-29
@@ -527,37 +527,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-18 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-18 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-18"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-18_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-18_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%name% : %type%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-18
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-18_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-18_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "artifact"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-18
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-18_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-18_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-18
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-18_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-18_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "control_parameter_generator"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-18
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-18_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-18_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "Script"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-18
@@ -565,7 +565,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-21 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-21 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-21"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -573,13 +573,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-17
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-21_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-21_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-21
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-21_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-21_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-21
@@ -587,37 +587,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-22 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-22 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-22"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-22_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-22_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-22_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-22_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "activity"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-22_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-22_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "Generate_matlab_control_parameters"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-22_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-22_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "GenerateControlParameters"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-22_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-22_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-22
@@ -625,31 +625,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-28 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-28 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-28"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-28_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-28_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-28
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-28_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-28_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-28
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-28_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-28_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-28
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-28_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-28_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-28
@@ -657,31 +657,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-2 : drawio:Vertex [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-2 : drawio:Vertex [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-2"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-2_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-2_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-2
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-2_prop_portname : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-2_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cout"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-2
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-2_prop_placeholders : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-2_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-2
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-2_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-2_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_out"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-2
@@ -689,31 +689,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-38 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-38 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-38"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-38_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-38_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-38
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-38_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-38_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "dout"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-38
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-38_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-38_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-38
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-38_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-38_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_out"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-38
@@ -721,31 +721,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-24 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-24 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-24"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-24_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-24_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-24
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-24_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-24_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cin"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-24
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-24_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-24_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-24
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-24_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-24_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-24
@@ -753,31 +753,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-26 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-26 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-26"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-22
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-26_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-26_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-26
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-26_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-26_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-26
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-26_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-26_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-26
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-26_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-26_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-26
@@ -785,7 +785,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-25 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-25 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-25"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -793,13 +793,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-24
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-25_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-25_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-25
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-25_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-25_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-25
@@ -807,37 +807,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-30 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-30 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-30"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-30_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-30_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-30_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-30_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "activity"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-30_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-30_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "Build_simulink_control_settings"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-30_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-30_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "BuildControlSettings"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-30_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-30_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-30
@@ -845,31 +845,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-43 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-43 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-43"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-43_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-43_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-43
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-43_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-43_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-43
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-43_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-43_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-43
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-43_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-43_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-43
@@ -877,31 +877,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-1 : drawio:Vertex [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-1 : drawio:Vertex [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-1"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-1_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-1_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-1
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-1_prop_portname : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-1_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cin"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-1
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-1_prop_placeholders : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-1_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-1
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-1_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-1_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_in"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-1
@@ -909,31 +909,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-4 : drawio:Vertex [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-4 : drawio:Vertex [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-4"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-4_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-4_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-4
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-4_prop_portname : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-4_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cout"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-4
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-4_prop_placeholders : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-4_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-4
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-4_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-4_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_out"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-4
@@ -941,31 +941,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-12 : drawio:Vertex [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-12 : drawio:Vertex [
     drawio:hasDrawioId "-FBhw_vcgPF5rW2nMRGZ-12"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-12_prop_label : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-12_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-12
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-12_prop_portname : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-12_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "dout"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-12
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-12_prop_placeholders : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-12_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-12
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-12_prop_pmRole : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-12_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_out"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-12
@@ -973,31 +973,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-47 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-47 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-47"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-30
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-47_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-47_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-47
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-47_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-47_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-47
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-47_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-47_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-47
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-47_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-47_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-47
@@ -1005,7 +1005,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-48 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-48 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-48"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1013,13 +1013,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-47
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-48_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-48_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-48
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-48_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-48_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-48
@@ -1027,37 +1027,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-34 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-34 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-34"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-34_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-34_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%name% : %type%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-34
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-34_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-34_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "artifact"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-34
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-34_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-34_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-34
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-34_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-34_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "matlab_control_parameters"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-34
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-34_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-34_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "TabularData"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-34
@@ -1065,7 +1065,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-41 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-41 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-41"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1073,13 +1073,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-34
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-41_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-41_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-41
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-41_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-41_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-41
@@ -1087,7 +1087,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-15 : drawio:Edge [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-15 : drawio:Edge [
     drawio:hasDrawioId "-FBhw_vcgPF5rW2nMRGZ-15"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1095,13 +1095,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_-FBhw_vcgPF5rW2nMRGZ-13
   ]
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-15_prop_label : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-15_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-15
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-15_prop_pmRole : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-15_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-15
@@ -1109,37 +1109,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-49 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-49 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-49"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-49_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-49_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%name% : %type%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-49
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-49_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-49_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "artifact"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-49
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-49_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-49_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-49
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-49_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-49_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "c-code_to_be_run_on_rtt"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-49
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-49_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-49_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "Code"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-49
@@ -1147,37 +1147,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-50 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-50 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-50"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-50_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-50_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-50_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-50_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "activity"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-50_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-50_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "run_experiment"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-50_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-50_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "RunExperiment"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-50_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-50_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-50
@@ -1185,31 +1185,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-57 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-57 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-57"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-57_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-57_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-57
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-57_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-57_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "dout"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-57
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-57_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-57_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-57
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-57_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-57_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_out"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-57
@@ -1217,31 +1217,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-58 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-58 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-58"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-58_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-58_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-58
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-58_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-58_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "dout"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-58
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-58_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-58_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-58
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-58_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-58_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_out"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-58
@@ -1249,31 +1249,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-5 : drawio:Vertex [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-5 : drawio:Vertex [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-5"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-5_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-5_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-5
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-5_prop_portname : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-5_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cin"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-5
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-5_prop_placeholders : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-5_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-5
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-5_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-5_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_in"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-5
@@ -1281,31 +1281,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-8 : drawio:Vertex [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-8 : drawio:Vertex [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-8"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-8_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-8_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-8
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-8_prop_portname : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-8_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cout"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-8
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-8_prop_placeholders : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-8_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-8
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-8_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-8_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_out"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-8
@@ -1313,31 +1313,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-13 : drawio:Vertex [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-13 : drawio:Vertex [
     drawio:hasDrawioId "-FBhw_vcgPF5rW2nMRGZ-13"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-50
     object_diagram:inModel model
   ]
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-13_prop_label : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-13_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-13
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-13_prop_portname : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-13_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-13
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-13_prop_placeholders : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-13_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-13
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-13_prop_pmRole : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-13_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-13
@@ -1345,7 +1345,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_qdYLwQm77Az_fS4UmsVN-1 : drawio:Edge [
+  instance cell_qdYLwQm77Az_fS4UmsVN-1 : drawio:Edge [
     drawio:hasDrawioId "qdYLwQm77Az_fS4UmsVN-1"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1353,13 +1353,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-67
   ]
   
-  ci cell_qdYLwQm77Az_fS4UmsVN-1_prop_label : drawio:CellProperty [
+  instance cell_qdYLwQm77Az_fS4UmsVN-1_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_qdYLwQm77Az_fS4UmsVN-1
     object_diagram:inModel model
   ]
-  ci cell_qdYLwQm77Az_fS4UmsVN-1_prop_pmRole : drawio:CellProperty [
+  instance cell_qdYLwQm77Az_fS4UmsVN-1_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_qdYLwQm77Az_fS4UmsVN-1
@@ -1367,37 +1367,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-52 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-52 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-52"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-52_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-52_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%name% : %type%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-52
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-52_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-52_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "artifact"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-52
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-52_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-52_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-52
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-52_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-52_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "drivetrain_sensor_data"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-52
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-52_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-52_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "TabularData"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-52
@@ -1405,7 +1405,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-11 : drawio:Edge [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-11 : drawio:Edge [
     drawio:hasDrawioId "-FBhw_vcgPF5rW2nMRGZ-11"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1413,13 +1413,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-68
   ]
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-11_prop_label : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-11_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-11
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-11_prop_pmRole : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-11_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-11
@@ -1427,37 +1427,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-53 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-53 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-53"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-53_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-53_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%name% : %type%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-53
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-53_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-53_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "artifact"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-53
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-53_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-53_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-53
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-53_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-53_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "coupling_sensor_data"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-53
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-53_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-53_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "TabularData"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-53
@@ -1465,37 +1465,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-54 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-54 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-54"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-54_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-54_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-54_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-54_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "activity"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-54_prop_name : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-54_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "check_properties"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-54_prop_type : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-54_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "VerifyData"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-54_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-54_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-54
@@ -1503,31 +1503,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-67 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-67 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-67"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-67_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-67_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-67
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-67_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-67_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-67
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-67_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-67_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-67
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-67_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-67_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-67
@@ -1535,31 +1535,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_hjtIVpRlB6XSkxCe3kzS-4 : drawio:Vertex [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-4 : drawio:Vertex [
     drawio:hasDrawioId "hjtIVpRlB6XSkxCe3kzS-4"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
   
-  ci cell_hjtIVpRlB6XSkxCe3kzS-4_prop_label : drawio:CellProperty [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-4_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_hjtIVpRlB6XSkxCe3kzS-4
     object_diagram:inModel model
   ]
-  ci cell_hjtIVpRlB6XSkxCe3kzS-4_prop_portname : drawio:CellProperty [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-4_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cout"
     drawio:propertyOf cell_hjtIVpRlB6XSkxCe3kzS-4
     object_diagram:inModel model
   ]
-  ci cell_hjtIVpRlB6XSkxCe3kzS-4_prop_placeholders : drawio:CellProperty [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-4_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_hjtIVpRlB6XSkxCe3kzS-4
     object_diagram:inModel model
   ]
-  ci cell_hjtIVpRlB6XSkxCe3kzS-4_prop_pmRole : drawio:CellProperty [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-4_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_out"
     drawio:propertyOf cell_hjtIVpRlB6XSkxCe3kzS-4
@@ -1567,31 +1567,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_lIuTJBtmPldcnfcOhHGF-6 : drawio:Vertex [
+  instance cell_lIuTJBtmPldcnfcOhHGF-6 : drawio:Vertex [
     drawio:hasDrawioId "lIuTJBtmPldcnfcOhHGF-6"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
   
-  ci cell_lIuTJBtmPldcnfcOhHGF-6_prop_label : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-6_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-6
     object_diagram:inModel model
   ]
-  ci cell_lIuTJBtmPldcnfcOhHGF-6_prop_portname : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-6_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "coutRec"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-6
     object_diagram:inModel model
   ]
-  ci cell_lIuTJBtmPldcnfcOhHGF-6_prop_placeholders : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-6_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-6
     object_diagram:inModel model
   ]
-  ci cell_lIuTJBtmPldcnfcOhHGF-6_prop_pmRole : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-6_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_out"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-6
@@ -1599,31 +1599,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-68 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-68 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-68"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-68_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-68_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-68
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-68_prop_portname : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-68_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "din"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-68
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-68_prop_placeholders : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-68_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-68
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-68_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-68_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_in"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-68
@@ -1631,31 +1631,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-7 : drawio:Vertex [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-7 : drawio:Vertex [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-7"
     drawio:hasParent cell_Akw1mT6UbTgWhP--InIg-54
     object_diagram:inModel model
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-7_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-7_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-7
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-7_prop_portname : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-7_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cin"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-7
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-7_prop_placeholders : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-7_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-7
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-7_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-7_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_in"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-7
@@ -1663,7 +1663,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-65 : drawio:Edge [
+  instance cell_Akw1mT6UbTgWhP--InIg-65 : drawio:Edge [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-65"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1671,13 +1671,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-52
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-65_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-65_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-65
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-65_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-65_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-65
@@ -1685,19 +1685,19 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_Akw1mT6UbTgWhP--InIg-69 : drawio:Vertex [
+  instance cell_Akw1mT6UbTgWhP--InIg-69 : drawio:Vertex [
     drawio:hasDrawioId "Akw1mT6UbTgWhP--InIg-69"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_Akw1mT6UbTgWhP--InIg-69_prop_label : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-69_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-69
     object_diagram:inModel model
   ]
-  ci cell_Akw1mT6UbTgWhP--InIg-69_prop_pmRole : drawio:CellProperty [
+  instance cell_Akw1mT6UbTgWhP--InIg-69_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "final"
     drawio:propertyOf cell_Akw1mT6UbTgWhP--InIg-69
@@ -1705,7 +1705,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-6 : drawio:Edge [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-6 : drawio:Edge [
     drawio:hasDrawioId "-FBhw_vcgPF5rW2nMRGZ-6"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1713,13 +1713,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-53
   ]
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-6_prop_label : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-6_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-6
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-6_prop_pmRole : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-6_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-6
@@ -1727,7 +1727,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-14 : drawio:Edge [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-14 : drawio:Edge [
     drawio:hasDrawioId "-FBhw_vcgPF5rW2nMRGZ-14"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1735,13 +1735,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-49
   ]
   
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-14_prop_label : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-14_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-14
     object_diagram:inModel model
   ]
-  ci cell_-FBhw_vcgPF5rW2nMRGZ-14_prop_pmRole : drawio:CellProperty [
+  instance cell_-FBhw_vcgPF5rW2nMRGZ-14_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_-FBhw_vcgPF5rW2nMRGZ-14
@@ -1749,7 +1749,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-3 : drawio:Edge [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-3 : drawio:Edge [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-3"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1757,13 +1757,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_XzE_Lk5AR0apfi5KI8EF-1
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-3_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-3_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-3
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-3_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-3_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-3
@@ -1771,7 +1771,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-6 : drawio:Edge [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-6 : drawio:Edge [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-6"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1779,13 +1779,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_XzE_Lk5AR0apfi5KI8EF-5
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-6_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-6_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-6
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-6_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-6_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-6
@@ -1793,7 +1793,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-9 : drawio:Edge [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-9 : drawio:Edge [
     drawio:hasDrawioId "XzE_Lk5AR0apfi5KI8EF-9"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1801,13 +1801,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_XzE_Lk5AR0apfi5KI8EF-7
   ]
   
-  ci cell_XzE_Lk5AR0apfi5KI8EF-9_prop_label : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-9_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-9
     object_diagram:inModel model
   ]
-  ci cell_XzE_Lk5AR0apfi5KI8EF-9_prop_pmRole : drawio:CellProperty [
+  instance cell_XzE_Lk5AR0apfi5KI8EF-9_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_XzE_Lk5AR0apfi5KI8EF-9
@@ -1815,7 +1815,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_hjtIVpRlB6XSkxCe3kzS-5 : drawio:Edge [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-5 : drawio:Edge [
     drawio:hasDrawioId "hjtIVpRlB6XSkxCe3kzS-5"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1823,13 +1823,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-69
   ]
   
-  ci cell_hjtIVpRlB6XSkxCe3kzS-5_prop_label : drawio:CellProperty [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-5_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_hjtIVpRlB6XSkxCe3kzS-5
     object_diagram:inModel model
   ]
-  ci cell_hjtIVpRlB6XSkxCe3kzS-5_prop_pmRole : drawio:CellProperty [
+  instance cell_hjtIVpRlB6XSkxCe3kzS-5_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_hjtIVpRlB6XSkxCe3kzS-5
@@ -1837,7 +1837,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_lIuTJBtmPldcnfcOhHGF-5 : drawio:Edge [
+  instance cell_lIuTJBtmPldcnfcOhHGF-5 : drawio:Edge [
     drawio:hasDrawioId "lIuTJBtmPldcnfcOhHGF-5"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -1845,13 +1845,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_lIuTJBtmPldcnfcOhHGF-3
   ]
   
-  ci cell_lIuTJBtmPldcnfcOhHGF-5_prop_label : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-5_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-5
     object_diagram:inModel model
   ]
-  ci cell_lIuTJBtmPldcnfcOhHGF-5_prop_pmRole : drawio:CellProperty [
+  instance cell_lIuTJBtmPldcnfcOhHGF-5_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_lIuTJBtmPldcnfcOhHGF-5
@@ -1859,37 +1859,37 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_ZZiZBwUqE79DcpNbQ25f-1 : drawio:Vertex [
+  instance cell_ZZiZBwUqE79DcpNbQ25f-1 : drawio:Vertex [
     drawio:hasDrawioId "ZZiZBwUqE79DcpNbQ25f-1"
     drawio:hasParent cell_1
     object_diagram:inModel model
   ]
   
-  ci cell_ZZiZBwUqE79DcpNbQ25f-1_prop_label : drawio:CellProperty [
+  instance cell_ZZiZBwUqE79DcpNbQ25f-1_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "<u style=\"color: rgb(0 , 0 , 0)\">%name%<br>: %type%</u>"
     drawio:propertyOf cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
-  ci cell_ZZiZBwUqE79DcpNbQ25f-1_prop_pmRole : drawio:CellProperty [
+  instance cell_ZZiZBwUqE79DcpNbQ25f-1_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "activity"
     drawio:propertyOf cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
-  ci cell_ZZiZBwUqE79DcpNbQ25f-1_prop_name : drawio:CellProperty [
+  instance cell_ZZiZBwUqE79DcpNbQ25f-1_prop_name : drawio:CellProperty [
     dict:hasKey "name"
     dict:hasValue "InputParameters"
     drawio:propertyOf cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
-  ci cell_ZZiZBwUqE79DcpNbQ25f-1_prop_type : drawio:CellProperty [
+  instance cell_ZZiZBwUqE79DcpNbQ25f-1_prop_type : drawio:CellProperty [
     dict:hasKey "type"
     dict:hasValue "Preparation"
     drawio:propertyOf cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
-  ci cell_ZZiZBwUqE79DcpNbQ25f-1_prop_placeholders : drawio:CellProperty [
+  instance cell_ZZiZBwUqE79DcpNbQ25f-1_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_ZZiZBwUqE79DcpNbQ25f-1
@@ -1897,31 +1897,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-2 : drawio:Vertex [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-2 : drawio:Vertex [
     drawio:hasDrawioId "oDRBLhcRjnzzmYJR4pT3-2"
     drawio:hasParent cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-2_prop_label : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-2_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-2
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-2_prop_portname : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-2_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cin"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-2
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-2_prop_placeholders : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-2_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-2
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-2_prop_pmRole : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-2_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_in"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-2
@@ -1929,31 +1929,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-3 : drawio:Vertex [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-3 : drawio:Vertex [
     drawio:hasDrawioId "oDRBLhcRjnzzmYJR4pT3-3"
     drawio:hasParent cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-3_prop_label : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-3_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-3
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-3_prop_portname : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-3_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "cout"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-3
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-3_prop_placeholders : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-3_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-3
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-3_prop_pmRole : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-3_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_out"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-3
@@ -1961,31 +1961,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-5 : drawio:Vertex [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-5 : drawio:Vertex [
     drawio:hasDrawioId "oDRBLhcRjnzzmYJR4pT3-5"
     drawio:hasParent cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-5_prop_label : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-5_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-5
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-5_prop_portname : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-5_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "dout"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-5
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-5_prop_placeholders : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-5_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-5
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-5_prop_pmRole : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-5_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_out"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-5
@@ -1993,31 +1993,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-6 : drawio:Vertex [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-6 : drawio:Vertex [
     drawio:hasDrawioId "oDRBLhcRjnzzmYJR4pT3-6"
     drawio:hasParent cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-6_prop_label : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-6_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-6
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-6_prop_portname : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-6_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "dout"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-6
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-6_prop_placeholders : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-6_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-6
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-6_prop_pmRole : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-6_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_out"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-6
@@ -2025,31 +2025,31 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_nNHIfMFn6DHzLZeGgIeC-1 : drawio:Vertex [
+  instance cell_nNHIfMFn6DHzLZeGgIeC-1 : drawio:Vertex [
     drawio:hasDrawioId "nNHIfMFn6DHzLZeGgIeC-1"
     drawio:hasParent cell_ZZiZBwUqE79DcpNbQ25f-1
     object_diagram:inModel model
   ]
   
-  ci cell_nNHIfMFn6DHzLZeGgIeC-1_prop_label : drawio:CellProperty [
+  instance cell_nNHIfMFn6DHzLZeGgIeC-1_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue "%portname%"
     drawio:propertyOf cell_nNHIfMFn6DHzLZeGgIeC-1
     object_diagram:inModel model
   ]
-  ci cell_nNHIfMFn6DHzLZeGgIeC-1_prop_portname : drawio:CellProperty [
+  instance cell_nNHIfMFn6DHzLZeGgIeC-1_prop_portname : drawio:CellProperty [
     dict:hasKey "portname"
     dict:hasValue "dout"
     drawio:propertyOf cell_nNHIfMFn6DHzLZeGgIeC-1
     object_diagram:inModel model
   ]
-  ci cell_nNHIfMFn6DHzLZeGgIeC-1_prop_placeholders : drawio:CellProperty [
+  instance cell_nNHIfMFn6DHzLZeGgIeC-1_prop_placeholders : drawio:CellProperty [
     dict:hasKey "placeholders"
     dict:hasValue "1"
     drawio:propertyOf cell_nNHIfMFn6DHzLZeGgIeC-1
     object_diagram:inModel model
   ]
-  ci cell_nNHIfMFn6DHzLZeGgIeC-1_prop_pmRole : drawio:CellProperty [
+  instance cell_nNHIfMFn6DHzLZeGgIeC-1_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_out"
     drawio:propertyOf cell_nNHIfMFn6DHzLZeGgIeC-1
@@ -2057,7 +2057,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-4 : drawio:Edge [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-4 : drawio:Edge [
     drawio:hasDrawioId "oDRBLhcRjnzzmYJR4pT3-4"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -2065,13 +2065,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-10
   ]
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-4_prop_label : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-4_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-4
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-4_prop_pmRole : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-4_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "ctrl_flow"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-4
@@ -2079,7 +2079,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-7 : drawio:Edge [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-7 : drawio:Edge [
     drawio:hasDrawioId "oDRBLhcRjnzzmYJR4pT3-7"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -2087,13 +2087,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-5
   ]
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-7_prop_label : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-7_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-7
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-7_prop_pmRole : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-7_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-7
@@ -2101,7 +2101,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-8 : drawio:Edge [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-8 : drawio:Edge [
     drawio:hasDrawioId "oDRBLhcRjnzzmYJR4pT3-8"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -2109,13 +2109,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-6
   ]
   
-  ci cell_oDRBLhcRjnzzmYJR4pT3-8_prop_label : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-8_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-8
     object_diagram:inModel model
   ]
-  ci cell_oDRBLhcRjnzzmYJR4pT3-8_prop_pmRole : drawio:CellProperty [
+  instance cell_oDRBLhcRjnzzmYJR4pT3-8_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_oDRBLhcRjnzzmYJR4pT3-8
@@ -2123,7 +2123,7 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
   ]
 
   
-  ci cell_nNHIfMFn6DHzLZeGgIeC-2 : drawio:Edge [
+  instance cell_nNHIfMFn6DHzLZeGgIeC-2 : drawio:Edge [
     drawio:hasDrawioId "nNHIfMFn6DHzLZeGgIeC-2"
     drawio:hasParent cell_1
     object_diagram:inModel model
@@ -2131,13 +2131,13 @@ description <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#> as dri
     drawio:hasTarget cell_Akw1mT6UbTgWhP--InIg-18
   ]
   
-  ci cell_nNHIfMFn6DHzLZeGgIeC-2_prop_label : drawio:CellProperty [
+  instance cell_nNHIfMFn6DHzLZeGgIeC-2_prop_label : drawio:CellProperty [
     dict:hasKey "label"
     dict:hasValue ""
     drawio:propertyOf cell_nNHIfMFn6DHzLZeGgIeC-2
     object_diagram:inModel model
   ]
-  ci cell_nNHIfMFn6DHzLZeGgIeC-2_prop_pmRole : drawio:CellProperty [
+  instance cell_nNHIfMFn6DHzLZeGgIeC-2_prop_pmRole : drawio:CellProperty [
     dict:hasKey "pmRole"
     dict:hasValue "data_flow"
     drawio:propertyOf cell_nNHIfMFn6DHzLZeGgIeC-2

@@ -3,35 +3,35 @@ description <http://ua.be/sdo2l/description/artifacts/operations#> as ops {
 
 	extends <http://ua.be/sdo2l/description/artifacts/FTG_ftg#> as FTG_ftg
 
-	ci outlier : fed:Operation [
+	instance outlier : fed:Operation [
 		fed:hasEndPoint "http://localhost:8000"
 		fed:hasDescription "Given a column with numbers, it returns the cells whose values are outliers compared to the other cells."
 		fed:hasCall "outlier"
 		fed:isOperationOf FTG_ftg:f_TabularData
 	]
 	
-	ci outlierFile : fed:Parameter [
+	instance outlierFile : fed:Parameter [
 		fed:hasIndex 0
 		fed:hasName "file"
 		fed:hasType "String"
 		fed:isParameterOf outlier
 	]
 	
-	ci outlierColumn : fed:Parameter [
+	instance outlierColumn : fed:Parameter [
 		fed:hasIndex 1
 		fed:hasName "col"
 		fed:hasType "String"
 		fed:isParameterOf outlier
 	]
 	
-	ci outlierArtifactIRI : fed:Parameter [
+	instance outlierArtifactIRI : fed:Parameter [
 		fed:hasIndex 2
 		fed:hasName "artifactIRI"
 		fed:hasType "String"
 		fed:isParameterOf outlier
 	]
 	
-	ci get_cell : fed:Operation [
+	instance get_cell : fed:Operation [
 		fed:hasEndPoint "http://localhost:8000"
 		fed:hasDescription "Given a column and a row indexes , it returns the corresponding cell."
 		fed:hasCall "cell"
@@ -42,28 +42,28 @@ description <http://ua.be/sdo2l/description/artifacts/operations#> as ops {
 		fed:isOperationOf FTG_ftg:f_TabularData
 	]
 	
-	ci get_cell_file : fed:Parameter [
+	instance get_cell_file : fed:Parameter [
 		fed:hasIndex 0
 		fed:hasName "file"
 		fed:hasType "String"
 		fed:isParameterOf get_cell
 	]
 	
-	ci get_cell_column : fed:Parameter [
+	instance get_cell_column : fed:Parameter [
 		fed:hasIndex 1
 		fed:hasName "col"
 		fed:hasType "String"
 		fed:isParameterOf get_cell
 	]
 	
-	ci get_cell_row : fed:Parameter [
+	instance get_cell_row : fed:Parameter [
 		fed:hasIndex 2
 		fed:hasName "row"
 		fed:hasType "String"
 		fed:isParameterOf get_cell
 	]
 	
-	ci get_cell_artifactIRI : fed:Parameter [
+	instance get_cell_artifactIRI : fed:Parameter [
 		fed:hasIndex 3
 		fed:hasName "artifactIRI"
 		fed:hasType "String"
