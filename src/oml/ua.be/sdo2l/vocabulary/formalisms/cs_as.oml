@@ -3,7 +3,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#> as cs_as {
 	extends <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#> as traceability_model
 	extends <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
 	
-	relation entity CS_AS_Link < traceability_model:TraceabilityLink [
+	relation entity CS_AS_Link  [
 		from object_diagram:Object
 		to object_diagram:Object
 		forward parsedAs
@@ -11,9 +11,9 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#> as cs_as {
 		functional // Assuming that CS contains at least the same amount of the information as AS, there is only one way to parse something
 		asymmetric
 		irreflexive
-	]
+	]< traceability_model:TraceabilityLink
 	
-	concept CorrespondenceModel < traceability_model:TraceabilityModel [
-		restricts all relation object_diagram:hasObject to CS_AS_Link
-	]
+	concept CorrespondenceModel  [
+		restricts all object_diagram:hasObject to CS_AS_Link
+	]< traceability_model:TraceabilityModel
 }

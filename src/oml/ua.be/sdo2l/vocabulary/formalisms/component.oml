@@ -27,7 +27,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/component#> as component {
 	
 	@rdfs:comment "A component may have several attributes."
 	concept Attribute < base:IdentifiedThing, vim4:InherentUnitaryQuantityValue [
-		restricts all relation vim4:characterizes to Component
+		restricts all  vim4:characterizes to Component
 	]
 	
 	@rdfs:comment "An Interface represents a set of features that describe some Component’s interaction with another Component."
@@ -45,13 +45,13 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/component#> as component {
 	]
 	
 	@rdfs:comment "A Junction joins two or more Interfaces."
-	relation entity Junction < base:IdentifiedThing [
+	relation entity Junction  [
 		from Interface
 		to Interface
 		forward joins
 		symmetric
 		irreflexive
-	]
+	]< base:IdentifiedThing
 	
 	@rdfs:comment "A Component connects to zero or more components."
 	relation entity Connection [
@@ -63,7 +63,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/component#> as component {
 	
 	@rdfs:comment "When interfaces presented by components are joined, we infer that the components are connected."
 	rule Junction-infers-Connection [
-		presents(c1, i1) ^ joins(i1, i2) ^ isPresentedBy(i2, c2) -> connectsTo(c1, c2)
+		presents(c1, i1) & joins(i1, i2) & isPresentedBy(i2, c2) -> connectsTo(c1, c2)
 	]
 	
 	// Domain-Specific Components

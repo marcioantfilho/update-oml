@@ -9,48 +9,48 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm {
 	aspect DataSource []
 	aspect DataSink []
 	
-	relation entity CtrlFlow < object_diagram:Link [
+	relation entity CtrlFlow [
 		from CtrlSource
 		to CtrlSink
 		forward ctrlTo
 		reverse ctrlFrom
 		asymmetric
 		irreflexive
-	]
-	relation entity DataFlow < object_diagram:Link [
+	]< object_diagram:Link 
+	relation entity DataFlow [
 		from DataSource
 		to DataSink
 		forward dataTo
 		reverse dataFrom
 		asymmetric
 		irreflexive
-	]
+	]< object_diagram:Link 
 	
 	aspect Named [
-		restricts scalar property hasName to exactly 1
+		restricts hasName to exactly 1
 	]
-	scalar property hasName < object_diagram:hasField [
+	scalar property hasName  [
 		domain Named
 		range xsd:string
 		functional
-	]
+	]< object_diagram:hasField
 
 	aspect element < object_diagram:Object []
 	
 	aspect abstractActivity < element, object_diagram:Object, Named [
 		// must have at least one of the following port types:
-		restricts some relation hasPort to CtrlInputPort
-		restricts some relation hasPort to CtrlOutputPort
+		restricts some hasPort to CtrlInputPort
+		restricts some hasPort to CtrlOutputPort
 	]
 	
 	// Non-automated activity
 	concept Activity < abstractActivity [
-		restricts all relation isTransformation to ftg:Transformation
+		restricts all  isTransformation to ftg:Transformation
 	]
 	
 	concept AutomatedActivity < abstractActivity [
-		restricts all relation isTransformation to ftg:AutomatedTransformation
-		restricts scalar property hasTimeout to exactly 1
+		restricts all isTransformation to ftg:AutomatedTransformation
+		restricts  hasTimeout to exactly 1
 	]
 	
 	scalar property hasTimeout [
@@ -70,10 +70,10 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm {
 	]
 	
 	aspect Port < element, Named [
-		restricts relation ofActivity to exactly 1
+		restricts ofActivity to exactly 1
 	]
 	
-	relation entity HasPort < object_diagram:Link [
+	relation entity HasPort  [
 		from abstractActivity
 		to Port
 		forward hasPort
@@ -81,30 +81,30 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm {
 		asymmetric
 		irreflexive
 		inverse functional
-	]
+	]< object_diagram:Link
 	
 	// Every port can only have one incoming/outgoing connection
 	concept CtrlOutputPort < CtrlSource, Port [
-		restricts relation ctrlTo to exactly 1
+		restricts  ctrlTo to exactly 1
 	]
 	concept CtrlInputPort < CtrlSink, Port [
-		restricts relation ctrlFrom to exactly 1
+		restricts  ctrlFrom to exactly 1
 	]
 	concept DataOutputPort < DataSource, Port [
-		restricts relation dataTo to exactly 1
+		restricts  dataTo to exactly 1
 	]
 	concept DataInputPort < DataSink, Port [
-		restricts relation dataFrom to exactly 1
+		restricts  dataFrom to exactly 1
 	]
 	
 	concept Initial < element, CtrlSource [
-		restricts relation ctrlTo to exactly 1
+		restricts  ctrlTo to exactly 1
 	]
 	concept Final < element, CtrlSink 
 	
 	concept Artifact < element, Named, DataSource, DataSink [
 		// an artifact must come from somewhere :)
-		restricts relation dataFrom to min 1
+		restricts  dataFrom to min 1
 	]
 	
 	relation entity HasType [
@@ -118,16 +118,16 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm {
 	]
 	
 	concept ForkJoin < element, CtrlSink, CtrlSource [
-		restricts relation ctrlFrom to min 1
-		restricts relation ctrlTo to min 1
+		restricts  ctrlFrom to min 1
+		restricts  ctrlTo to min 1
 	]
 	
 	concept Merge < element, CtrlSink, CtrlSource [
 		// Only one outgoing control flow link:
-		restricts relation ctrlTo to exactly 1
+		restricts  ctrlTo to exactly 1
 	]
 	
 	concept Model < object_diagram:Model, element [
-		restricts all relation object_diagram:hasObject to element
+		restricts all object_diagram:hasObject to element
 	]
 }

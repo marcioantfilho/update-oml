@@ -8,8 +8,8 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg {
 	// Definitions for Transformations
 	@rdfs:comment "The types of activities performed during the system design process. This concept should be used in the FTG."
 	aspect abstractTransformation < base:ImmutableThing, base:DefinitionThing, object_diagram:Object [
-		restricts scalar property hasCtrlInput to min 1
-		restricts scalar property hasCtrlOutput to min 1
+		restricts hasCtrlInput to min 1
+		restricts hasCtrlOutput to min 1
 	]
 	
 	// Non-automated transformation
@@ -17,7 +17,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg {
 	]
 
 	concept AutomatedTransformation < abstractTransformation [
-		restricts scalar property hasEndpoint to exactly 1
+		restricts hasEndpoint to exactly 1
 	]
 
 	// Ctrl inputs/outputs:
@@ -41,7 +41,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg {
 
 	// Data inputs/outputs are named:
 	aspect InputOrOutput [
-		restricts scalar property hasName to exactly 1
+		restricts hasName to exactly 1
 	]
 	
 	scalar property hasName [
@@ -50,21 +50,21 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg {
 		functional
 	]
 
-	relation entity HasInput < InputOrOutput [
+	relation entity HasInput [
 		from abstractTransformation
 		to Formalism
 		forward hasInput
 		reverse isInputOf
 		asymmetric
 		irreflexive
-	]
+	]< InputOrOutput 
 
-	relation entity HasOutput < InputOrOutput [
+	relation entity HasOutput  [
 		from abstractTransformation
 		to Formalism
 		forward hasOutput
 		reverse isOutputOf
 		asymmetric
 		irreflexive
-	]
+	]< InputOrOutput
 }
