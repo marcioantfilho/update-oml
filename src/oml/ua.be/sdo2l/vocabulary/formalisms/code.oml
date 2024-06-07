@@ -5,7 +5,8 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/code#> as code {
     concept CodeData < text:TextData
     concept CodeLanguage
 
-    enumerated scalar CodeLanguageOption [
+    scalar CodeLanguageOption [
+    	oneOf
         "C",
         "C++",
         "Python",
@@ -24,35 +25,35 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/code#> as code {
     ]
 
     concept CCodeLanguage < CodeLanguage [
-        restricts scalar property hasCodeLanguageOption to "C"
+        restricts hasCodeLanguageOption to "C"
     ]
 
     concept CCode < CodeData [
-        restricts all relation usesCodeLanguage to CCodeLanguage
+        restricts all usesCodeLanguage to CCodeLanguage
     ]
 
     concept CppCodeLanguage < CodeLanguage [
-        restricts scalar property hasCodeLanguageOption to "C++"
+        restricts hasCodeLanguageOption to "C++"
     ]
 
     concept CppCode < CodeData [
-        restricts all relation usesCodeLanguage to CppCodeLanguage
+        restricts all usesCodeLanguage to CppCodeLanguage
     ]
 
     concept PythonCodeLanguage < CodeLanguage [
-        restricts scalar property hasCodeLanguageOption to "Python"
+        restricts  hasCodeLanguageOption to "Python"
     ]
 
     concept PythonCode < CodeData [
-        restricts all relation usesCodeLanguage to PythonCodeLanguage
+        restricts all  usesCodeLanguage to PythonCodeLanguage
     ]
 
     concept MATLABCodeLanguage < CodeLanguage [
-        restricts scalar property hasCodeLanguageOption to "MATLAB"
+        restricts hasCodeLanguageOption to "MATLAB"
     ]
 
     concept MATLABCode < CodeData [
-        restricts all relation usesCodeLanguage to MATLABCodeLanguage
+        restricts all  usesCodeLanguage to MATLABCodeLanguage
     ]
 
 

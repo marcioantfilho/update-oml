@@ -32,7 +32,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/tabular#> as tabular {
     // TODO This is not a valid rule and will be ignored by the reasoner
     @rdfs:comment "Infers that when the type of the column is numeric it may have a unit"
 	rule NumericTypeInfersUnit [
-		hasBasicType(c, t) ^ base:BasicType(t) -> hasUnit(c, u)  
+		hasBasicType(c, t) & base:BasicType(t) -> hasUnit(c, u)  
 	] 
     
 
@@ -66,19 +66,20 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/tabular#> as tabular {
         range xsd:int
     ]
 
-    enumerated scalar HeadingModifier [
+    scalar HeadingModifier [
+    	oneOf
         "yes",
         "no"
     ]
 
-    scalar property hasHeadingModifier [
+     scalar property hasHeadingModifier [
         domain Row
         range HeadingModifier
         functional
     ]
 
     concept HeaderRow < Row [
-        restricts scalar property hasHeadingModifier to "yes"
+        restricts hasHeadingModifier to "yes"
     ]
 
     relation entity HasCell [

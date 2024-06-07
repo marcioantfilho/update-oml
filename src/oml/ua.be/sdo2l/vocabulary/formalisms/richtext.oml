@@ -18,12 +18,13 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/richtext#> as richtext {
         range xsd:int
     ]
 
-    enumerated scalar RichTextModifierOption [
+     scalar RichTextModifierOption [
+    	oneOf
         "italic",
         "bold"
     ]
 
-    scalar property hasRichTextModifierOption [
+     scalar property hasRichTextModifierOption [
         domain RichTextModifer
         range RichTextModifierOption
         functional
@@ -42,10 +43,10 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/richtext#> as richtext {
     ]
 
     concept ItalicRichTextModifier < RichTextModifer [
-        restricts scalar property hasRichTextModifierOption to "italic"
+        restricts  hasRichTextModifierOption to "italic"
     ]
 
     concept BoldRichTextModifier < RichTextModifer [
-        restricts scalar property hasRichTextModifierOption to "bold"
+        restricts hasRichTextModifierOption to "bold"
     ]
 }

@@ -7,7 +7,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/cbd#> as cbd {
 	aspect element < object_diagram:Object []
 	
 	aspect namedElement < element [
-		restricts scalar property hasName to exactly 1
+		restricts  hasName to exactly 1
 	]
 	scalar property hasName [
 		domain namedElement
@@ -33,26 +33,26 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/cbd#> as cbd {
 	]
 	
 	aspect port < namedElement [
-		restricts relation ofBlock to exactly 1
+		restricts ofBlock to exactly 1
 	]
 	
 	concept InputPort < port [
-		restricts relation incomingConnection to min 1
+		restricts incomingConnection to min 1
 	]
 	concept OutputPort < port [
-		restricts relation outgoingConnection to min 1
+		restricts outgoingConnection to min 1
 	]
 	
-	relation entity Connection < element [
+	relation entity Connection [
 		from OutputPort
 		to InputPort
 		forward outgoingConnection
 		reverse incomingConnection
 		asymmetric
 		irreflexive
-	]
+	] < element 
 	
 	concept Model < object_diagram:Model [
-		restricts all relation object_diagram:hasObject to element
+		restricts all object_diagram:hasObject to element
 	]
 }

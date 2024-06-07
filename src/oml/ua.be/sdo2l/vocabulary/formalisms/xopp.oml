@@ -7,36 +7,36 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
 
 	aspect element < object_diagram:Object []
 	
-	aspect LayerElement < element [
-		restricts relation inLayer to exactly 1
-		restricts scalar property hasText to exactly 1
-	]
-	scalar property hasText < object_diagram:hasField [
+	aspect LayerElement [
+		restricts inLayer to exactly 1
+		restricts  hasText to exactly 1
+	]< element 
+	scalar property hasText [
 		domain LayerElement
 		range xsd:string
 		functional
-	]
+	]< object_diagram:hasField 
 
-	relation entity HasXMLAttribute < object_diagram:Link [
+	relation entity HasXMLAttribute [
 		from LayerElement
 		to XMLAttribute
 		forward hasAttribute
 		reverse ofLayerElement
 		inverse functional
-	]
+	]< object_diagram:Link 
 	
 	concept XMLAttribute < element, dict:DictEntry [
-		restricts relation ofLayerElement to exactly 1
+		restricts  ofLayerElement to exactly 1
 	]
 	
 	concept Text < LayerElement []
 	concept Stroke < LayerElement []
 	
-	concept Layer < element [
-		restricts relation inPage to exactly 1
-	]
+	concept Layer [
+		restricts inPage to exactly 1
+	]< element 
 	
-	relation entity HasLayerElement < object_diagram:Link [
+	relation entity HasLayerElement [
 		from Layer
 		to LayerElement
 		forward hasElement
@@ -44,43 +44,43 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
 		inverse functional
 		asymmetric
 		irreflexive
-	]
+	] < object_diagram:Link 
 	
-	concept Page < element [
-		restricts relation inFile to exactly 1
-		restricts scalar property hasWidth to exactly 1
-		restricts scalar property hasHeight to exactly 1
-		restricts scalar property hasBackgroundType to exactly 1
-		restricts scalar property hasBackgroundColor to exactly 1
-		restricts scalar property hasBackgroundStyle to exactly 1
-	]
+	concept Page  [
+		restricts inFile to exactly 1
+		restricts hasWidth to exactly 1
+		restricts  hasHeight to exactly 1
+		restricts  hasBackgroundType to exactly 1
+		restricts  hasBackgroundColor to exactly 1
+		restricts hasBackgroundStyle to exactly 1
+	]< element
 
-	scalar property hasWidth < object_diagram:hasField [
+	scalar property hasWidth  [
 		domain Page
 		range xsd:decimal
 		functional
-	]
-	scalar property hasHeight < object_diagram:hasField [
+	]< object_diagram:hasField
+	scalar property hasHeight  [
 		domain Page
 		range xsd:decimal
 		functional
-	]
-	scalar property hasBackgroundType < object_diagram:hasField [
+	]< object_diagram:hasField
+	scalar property hasBackgroundType[
 		domain Page
 		range xsd:string
 		functional
-	]
-	scalar property hasBackgroundColor < object_diagram:hasField [
+	] < object_diagram:hasField 
+	scalar property hasBackgroundColor [
 		domain Page
 		range xsd:string
 		functional
-	]
-	scalar property hasBackgroundStyle < object_diagram:hasField [
+	]< object_diagram:hasField 
+	scalar property hasBackgroundStyle [
 		domain Page
 		range xsd:string
 		functional
-	]
-	relation entity HasLayer < object_diagram:Link [
+	]< object_diagram:hasField 
+	relation entity HasLayer [
 		from Page
 		to Layer
 		forward hasLayer
@@ -88,31 +88,31 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
 		inverse functional
 		asymmetric
 		irreflexive
-	]
+	]< object_diagram:Link 
 		
-	scalar property hasCreator < object_diagram:hasField [
+	scalar property hasCreator [
 		domain Model
 		range xsd:string
 		functional
-	]
-	scalar property hasFileVersion < object_diagram:hasField [
+	]< object_diagram:hasField 
+	scalar property hasFileVersion [
 		domain Model
 		range xsd:integer
 		functional
-	]
-	scalar property hasTitle < object_diagram:hasField [
+	]< object_diagram:hasField 
+	scalar property hasTitle [
 		domain Model
 		range xsd:string
 		functional
-	]
-	scalar property hasPreview < object_diagram:hasField [
+	]< object_diagram:hasField 
+	scalar property hasPreview  [
 		domain Model
 //		range xsd:base64Binary // PNG-encoded // Doesn't seem to be working, workaround below
 		range xsd:string // Workaround
 		functional
-	]	
+	]	< object_diagram:hasField
 	
-	relation entity HasPage < object_diagram:Link [
+	relation entity HasPage  [
 		from Model
 		to Page
 		forward hasPage
@@ -120,10 +120,10 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
 		asymmetric
 		irreflexive
 		inverse functional
-	]
+	]< object_diagram:Link
 	
 	// A Xournal++ file:
-	concept Model < object_diagram:Model [
-		restricts all relation object_diagram:hasObject to element
-	]
+	concept Model  [
+		restricts all object_diagram:hasObject to element
+	]< object_diagram:Model
 }

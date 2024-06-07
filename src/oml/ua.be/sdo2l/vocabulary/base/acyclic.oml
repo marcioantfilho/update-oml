@@ -29,6 +29,6 @@ vocabulary <http://ua.be/sdo2l/vocabulary/base/acyclic#> as acyclic {
 	// Workaround:
 	rule MakeTransitive [
 		// Don't know if this creates unnecessary bloat, compared to the 'transitive'-flag, but it works:
-		transitiveForward(A, B) ^ transitiveForward(B, C) -> transitiveForward(A, C)
+		transitiveForward(A, B) & transitiveForward(B, C) -> transitiveForward(A, C)
 	]
 }
