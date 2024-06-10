@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#"
      xml:base="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,12 +9,15 @@
      xmlns:dict="http://ua.be/sdo2l/vocabulary/formalisms/dict#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:drawio="http://ua.be/sdo2l/vocabulary/formalisms/drawio#"
-     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#">
+     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#"
+     xmlns:MinimalPM_drawio="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio">
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/dict"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#"/>
+        <oml:prefix>MinimalPM_drawio</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -133,6 +136,7 @@
         <drawio:isRootOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <drawio:hasDrawioId>0</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -145,6 +149,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#cell_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <drawio:hasDrawioId>1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -157,6 +162,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <drawio:hasDrawioId>kPhmW1dwLuky_b0boUTp-1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -170,6 +176,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -183,6 +190,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>initial</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -195,6 +203,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <drawio:hasDrawioId>kPhmW1dwLuky_b0boUTp-2</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -208,6 +217,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -221,6 +231,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>final</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -235,6 +246,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#cell_kPhmW1dwLuky_b0boUTp-2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <drawio:hasDrawioId>kPhmW1dwLuky_b0boUTp-3</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -248,6 +260,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -261,6 +274,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -272,11 +286,12 @@
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Model"/>
         <drawio:hasDrawioId>k7m7Ebu8EXRkVeQowzfr</drawio:hasDrawioId>
         <object_diagram:hasName>MinimalPM:pm_drawio</object_diagram:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

@@ -4,7 +4,7 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#isRootOf>
-        rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#HasCellAttribute>
         rdf:type         owl:Class ;
@@ -66,7 +66,7 @@
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#PointListItem>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#Point> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#PointListItem> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/drawio#Point> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#PointListItem> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/ftg#isOutputOf>
         rdf:type  owl:ObjectProperty .
@@ -92,6 +92,9 @@
 
 <http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasColumnPosition>
         rdf:type  owl:DatatypeProperty .
+
+<http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link>
+        rdf:type  owl:ObjectProperty .
 
 <http://bipm.org/jcgm/vim4#characterizes>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
@@ -144,7 +147,7 @@
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#VertexGeometry>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#Point> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#VertexGeometry> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/drawio#Point> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#VertexGeometry> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/xopp#ofLayerElement>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
@@ -158,7 +161,7 @@
 
 <http://ua.be/sdo2l/vocabulary/formalisms/ftg#AutomatedTransformation>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation> , <http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/ftg#AutomatedTransformation> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing> , <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/ftg#AutomatedTransformation> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasWidth>
         rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
@@ -241,7 +244,7 @@
         rdf:type  owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#targetOf>
-        rdf:type  owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/richtext#onLine>
         rdf:type  owl:DatatypeProperty .
@@ -264,7 +267,7 @@
 
 <http://ua.be/sdo2l/vocabulary/formalisms/shaclproperty#SHACL-Property>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact> , <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/base/base#Versionable> , <http://ua.be/sdo2l/vocabulary/formalisms/shaclproperty#SHACL-Property> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element> , <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact> , <http://ua.be/sdo2l/vocabulary/base/base#Versionable> , <http://ua.be/sdo2l/vocabulary/formalisms/shaclproperty#SHACL-Property> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/xopp#HasLayer>
         rdf:type         owl:Class ;
@@ -373,7 +376,7 @@ owl:topObjectProperty
         rdfs:subClassOf  <http://bipm.org/jcgm/vim4#MeasurementScale> , <http://bipm.org/jcgm/vim4#IdentifiedElement> , <http://bipm.org/jcgm/vim4#OrdinalScale> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsActivity>
-        rdf:type  owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/tabular#Collection>
         rdf:type         owl:Class ;
@@ -405,7 +408,7 @@ owl:topObjectProperty
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#HasParentCell>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/acyclic#Acyclic> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#HasParentCell> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/acyclic#Acyclic> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#HasParentCell> .
 
 <http://bipm.org/jcgm/vim4#MeasurementProcedure>
         rdf:type         owl:Class ;
@@ -425,7 +428,7 @@ owl:topObjectProperty
         rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#renderedAs>
-        rdf:type  owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort>
         rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
@@ -474,7 +477,7 @@ owl:topObjectProperty
 
 <http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing> , <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#Vertex>
         rdf:type         owl:Class ;
@@ -502,7 +505,7 @@ owl:topObjectProperty
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Follows>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/acyclic#Acyclic> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Follows> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/acyclic#Acyclic> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Follows> .
 
 <http://ua.be/sdo2l/vocabulary/base/base#Defines>
         rdf:type         owl:Class ;
@@ -616,12 +619,12 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/description/bundle/classes>
         rdf:type         owl:Ontology ;
-        rdfs:comment     "Generated by Owl Reason 1.1.5" ;
+        rdfs:comment     "Generated by Owl Reason 2.8.1" ;
         owl:imports      <http://ua.be/sdo2l/description/bundle> ;
-        owl:versionInfo  "1715340171" .
+        owl:versionInfo  "1717979530" .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/tabular#isUnitOf>
-        rdf:type  owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
 
 <http://bipm.org/jcgm/vim4#YieldsMeasurementUncertainty>
         rdf:type         owl:Class ;
@@ -656,7 +659,7 @@ owl:Thing  rdf:type  owl:Class .
         rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/formalisms/component#Junction> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isArtifact>
-        rdf:type  owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasName>
         rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
@@ -701,7 +704,7 @@ owl:Thing  rdf:type  owl:Class .
         rdfs:subClassOf  <http://bipm.org/jcgm/vim4#SystemHasUnitaryQuantity> , <http://bipm.org/jcgm/vim4#SystemHasBaseUnitaryQuantity> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsArtifact>
-        rdf:type  owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#parsedAs>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
@@ -725,7 +728,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#Point>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#Point> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/drawio#Point> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/code#CppCodeLanguage>
         rdf:type         owl:Class ;
@@ -750,7 +753,7 @@ owl:Thing  rdf:type  owl:Class .
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasChild>
-        rdf:type  owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/requirement#isDescribedBy>
         rdf:type  owl:ObjectProperty .
@@ -959,7 +962,7 @@ owl:Thing  rdf:type  owl:Class .
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isPrecededBy>
-        rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://bipm.org/jcgm/vim4#isBasedOn>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
@@ -1053,7 +1056,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/violation#ViolationReport>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact> , <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/base/base#Versionable> , <http://ua.be/sdo2l/vocabulary/formalisms/violation#ViolationReport> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element> , <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact> , <http://ua.be/sdo2l/vocabulary/base/base#Versionable> , <http://ua.be/sdo2l/vocabulary/formalisms/violation#ViolationReport> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#abstractActivity>
         rdf:type         owl:Class ;
@@ -1061,7 +1064,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/ftg#Transformation>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation> , <http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/ftg#Transformation> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing> , <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/ftg#Transformation> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasElement>
         rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
@@ -1178,7 +1181,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing> , <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism> .
 
 <http://bipm.org/jcgm/vim4#hasQuantityDimensionFactor>
         rdf:type  owl:ObjectProperty .
@@ -1194,7 +1197,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/requirement#RequirementList>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact> , <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/base/base#Versionable> , <http://ua.be/sdo2l/vocabulary/formalisms/requirement#RequirementList> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element> , <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact> , <http://ua.be/sdo2l/vocabulary/base/base#Versionable> , <http://ua.be/sdo2l/vocabulary/formalisms/requirement#RequirementList> .
 
 <http://bipm.org/jcgm/vim4#isAttributedTo>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
@@ -1235,7 +1238,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/component#StructuralModel>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact> , <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/base/base#Versionable> , <http://ua.be/sdo2l/vocabulary/formalisms/component#StructuralModel> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element> , <http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact> , <http://ua.be/sdo2l/vocabulary/base/base#Versionable> , <http://ua.be/sdo2l/vocabulary/formalisms/component#StructuralModel> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#styleEntryOf>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
@@ -1487,7 +1490,7 @@ owl:sameAs  rdf:type  owl:ObjectProperty .
         rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#LinkedObject> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#sourceOf>
-        rdf:type  owl:ObjectProperty .
+        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/requirement#describes>
         rdf:type  owl:ObjectProperty .
@@ -1516,9 +1519,6 @@ owl:sameAs  rdf:type  owl:ObjectProperty .
         rdfs:subClassOf  <http://bipm.org/jcgm/vim4#IndividualProperty> , <http://bipm.org/jcgm/vim4#IndividualNominalProperty> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/cbd#outgoingConnection>
-        rdf:type  owl:ObjectProperty .
-
-<http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward>
         rdf:type  owl:ObjectProperty .
 
 <http://ua.be/sdo2l/vocabulary/base/acyclic#derivedTransitiveRelation>
@@ -1593,7 +1593,7 @@ owl:Nothing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#Named>
         rdf:type         owl:Class ;
-        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object> , <http://ua.be/sdo2l/vocabulary/formalisms/pm#Named> .
+        rdfs:subClassOf  <http://ua.be/sdo2l/vocabulary/formalisms/pm#Named> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#PageAttribute>
         rdf:type         owl:Class ;

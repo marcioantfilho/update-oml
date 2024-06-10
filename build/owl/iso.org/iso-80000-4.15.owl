@@ -9,19 +9,22 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vim4="http://bipm.org/jcgm/vim4#"
-     xmlns:viewpoint="http://opencaesar.io/viewpoint#"
-     xmlns:iso-1087-1="http://iso.org/iso-1087-1#">
+     xmlns:iso-1087-1="http://iso.org/iso-1087-1#"
+     xmlns:iso-80000-4.15="http://iso.org/iso-80000-4.15#">
     <owl:Ontology rdf:about="http://iso.org/iso-80000-4.15">
         <owl:imports rdf:resource="http://bipm.org/jcgm/vim4"/>
         <owl:imports rdf:resource="http://iso.org/iso-80000-1"/>
         <owl:imports rdf:resource="http://iso.org/iso-80000-3.3"/>
         <owl:imports rdf:resource="http://iso.org/iso-80000-4.9"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <oml:namespace rdf:resource="http://iso.org/iso-80000-4.15#"/>
+        <oml:prefix>iso-80000-4.15</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
         <dc:creator>Jet Propulsion Laboratory</dc:creator>
         <dc:description>The ISO-80000-4 library.</dc:description>
-        <dc:rights>Copyright 2021, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology. This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.</dc:rights>
+        <dc:rights>Copyright 2021, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology. 
+This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.</dc:rights>
         <dc:title>ISO-80000-4.15 pressure, pascal</dc:title>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -112,6 +115,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-4.15#pressure"/>
         <vim4:isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isDimensionless>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -124,6 +128,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-4.15#ISQ7-pressure"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.3#ISQ7-area"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -136,6 +141,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-4.15#ISQ7-pressure"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-4.9#ISQ7-force"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -148,6 +154,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-4.15#pressure"/>
         <vim4:isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isDimensionless>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -160,6 +167,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-4.15#ISQ8-pressure"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.3#ISQ8-area"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -172,6 +180,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-4.15#ISQ8-pressure"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-4.9#ISQ8-force"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -183,6 +192,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemHasDerivedUnit"/>
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-4.15#pascal"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -195,6 +205,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-4.15#SI7-pascal"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-4.9#SI7-newton"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -207,6 +218,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-4.15#SI7-pascal"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.3#SI7-square_metre"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -218,6 +230,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemHasDerivedUnit"/>
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-4.15#pascal"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -230,6 +243,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-4.15#SI8-pascal"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-4.9#SI8-newton"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -242,6 +256,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-4.15#SI8-pascal"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.3#SI8-square_metre"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -253,6 +268,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#UnprefixedMeasurementUnit"/>
         <vim4:instantiates rdf:resource="http://iso.org/iso-80000-4.15#pressure"/>
         <vim4:id>pascal</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>4-15.a</dc:source>
     </owl:NamedIndividual>
     
@@ -264,12 +280,13 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.15#pressure">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#GeneralUnitaryQuantity"/>
         <vim4:id>pressure</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>4-15.1</dc:source>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

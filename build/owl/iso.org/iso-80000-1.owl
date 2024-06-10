@@ -2,22 +2,26 @@
 <rdf:RDF xmlns="http://iso.org/iso-80000-1#"
      xml:base="http://iso.org/iso-80000-1"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vim4="http://bipm.org/jcgm/vim4#"
-     xmlns:viewpoint="http://opencaesar.io/viewpoint#"
-     xmlns:iso-1087-1="http://iso.org/iso-1087-1#">
+     xmlns:iso-1087-1="http://iso.org/iso-1087-1#"
+     xmlns:iso-80000-1="http://iso.org/iso-80000-1#">
     <owl:Ontology rdf:about="http://iso.org/iso-80000-1">
         <owl:imports rdf:resource="http://bipm.org/jcgm/vim4"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <oml:namespace rdf:resource="http://iso.org/iso-80000-1#"/>
+        <oml:prefix>iso-80000-1</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
         <dc:creator>Jet Propulsion Laboratory</dc:creator>
         <dc:description>The ISO-80000-1 library of multipliers, prefixes, SI, and ISQ.</dc:description>
-        <dc:rights>Copyright 2021, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology. This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.</dc:rights>
+        <dc:rights>Copyright 2021, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology. 
+This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.</dc:rights>
         <dc:title>ISO-80000-1</dc:title>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -78,6 +82,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#ISQ7">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemOfQuantities"/>
         <vim4:id>ISQ7</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>The ISQ with the 7 base quantities.</rdfs:comment>
         <rdfs:seeAlso>https://www.bipm.org/en/publications/si-brochure/</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -90,6 +95,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#ISQ8">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemOfQuantities"/>
         <vim4:id>ISQ8</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>Leonard&apos;s proposal for adding angle as an 8th base quantity.</rdfs:comment>
         <rdfs:seeAlso>http://dx.doi.org/10.1088/1681-7575/ac0240</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -102,6 +108,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#Pi_180">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>Pi/180</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>Pi/180</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -114,6 +121,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemOfUnits"/>
         <vim4:given rdf:resource="http://iso.org/iso-80000-1#ISQ7"/>
         <vim4:id>SI7</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>The SI with the 7 base units.</rdfs:comment>
         <rdfs:seeAlso>https://www.bipm.org/en/publications/si-brochure/</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -127,6 +135,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemOfUnits"/>
         <vim4:given rdf:resource="http://iso.org/iso-80000-1#ISQ8"/>
         <vim4:id>SI8</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>Leonard&apos;s proposal for adding radian as an 8th base unit.</rdfs:comment>
         <rdfs:seeAlso>http://dx.doi.org/10.1088/1681-7575/ac0240</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -139,6 +148,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#atto">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>atto</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-18</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -150,6 +160,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#centi">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>centi</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-2</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -161,17 +172,19 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#deca">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>deca</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^1</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://iso.org/iso-80000-1#deci -->
+    <!-- http://iso.org/iso-80000-1#deinstance -->
 
 
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#deci">
+    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#deinstance">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>deci</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-1</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -183,6 +196,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#exa">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>exa</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^18</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -194,6 +208,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#femto">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>femto</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-15</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -205,6 +220,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#giga">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>giga</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^9</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -216,6 +232,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#hecto">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>hecto</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^2</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -227,6 +244,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#kilo">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>kilo</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^3</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -238,6 +256,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#mega">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>mega</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^6</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -249,6 +268,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#micro">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>micro</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-6</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -260,6 +280,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#milli">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>milli</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-3</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -271,6 +292,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#nano">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>nano</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-9</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -282,6 +304,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#one_of_sixty">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>1/60</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>1/60</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -293,6 +316,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#peta">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>peta</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^15</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -304,6 +328,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#pico">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>pico</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-12</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -315,6 +340,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#sixty">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>60</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>60</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -326,6 +352,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#tera">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>tera</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^12</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -337,6 +364,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#yocto">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>yocto</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-24</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -348,6 +376,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#yotta">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>yotta</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^24</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -359,6 +388,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#zepto">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>zepto</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^-21</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -370,12 +400,13 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#zetta">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#Multiple"/>
         <vim4:id>zetta</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>10^21</rdfs:comment>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/formalisms/ftg#"
      xml:base="http://ua.be/sdo2l/vocabulary/formalisms/ftg"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ftg="http://ua.be/sdo2l/vocabulary/formalisms/ftg#"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,10 +11,11 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg">
-        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/base/base"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#"/>
+        <oml:prefix>ftg</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
     </owl:Ontology>
     
 
@@ -38,7 +40,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasInput"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -51,7 +54,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasOutput"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -61,7 +65,12 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#isInputOf">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasInput"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasInput"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -71,7 +80,12 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#isOutputOf">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasOutput"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasOutput"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -94,7 +108,6 @@
     <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -105,7 +118,6 @@
     <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlOutput">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -116,7 +128,6 @@
     <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasEndpoint">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#AutomatedTransformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -128,7 +139,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#InputOrOutput"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -156,7 +166,7 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -168,7 +178,7 @@
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#DefinitionThing"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#ImmutableThing"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>The types of artifacts generated during the system design process. This concept should be used in the FTG.</rdfs:comment>
     </owl:Class>
     
@@ -179,7 +189,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasInput">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#InputOrOutput"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -189,7 +199,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasOutput">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#InputOrOutput"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -198,13 +208,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#InputOrOutput">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasName"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
     </owl:Class>
     
 
@@ -214,7 +218,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Transformation">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#abstractTransformation"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -238,7 +242,7 @@
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
         <rdfs:comment>The types of activities performed during the system design process. This concept should be used in the FTG.</rdfs:comment>
     </owl:Class>
     
@@ -270,10 +274,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasOutput"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -281,9 +284,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasOutput"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -327,10 +331,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasInput"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -338,9 +341,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#HasInput"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -380,6 +384,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

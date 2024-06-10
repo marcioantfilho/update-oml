@@ -9,18 +9,21 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vim4="http://bipm.org/jcgm/vim4#"
-     xmlns:viewpoint="http://opencaesar.io/viewpoint#"
-     xmlns:iso-1087-1="http://iso.org/iso-1087-1#">
+     xmlns:iso-1087-1="http://iso.org/iso-1087-1#"
+     xmlns:iso-80000-3.5="http://iso.org/iso-80000-3.5#">
     <owl:Ontology rdf:about="http://iso.org/iso-80000-3.5">
         <owl:imports rdf:resource="http://bipm.org/jcgm/vim4"/>
         <owl:imports rdf:resource="http://iso.org/iso-80000-1"/>
         <owl:imports rdf:resource="http://iso.org/iso-80000-3.1"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <oml:namespace rdf:resource="http://iso.org/iso-80000-3.5#"/>
+        <oml:prefix>iso-80000-3.5</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
         <dc:creator>Jet Propulsion Laboratory</dc:creator>
         <dc:description>The ISO-80000-3 library.</dc:description>
-        <dc:rights>Copyright 2021, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology. This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.</dc:rights>
+        <dc:rights>Copyright 2021, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology. 
+This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.</dc:rights>
         <dc:title>ISO-80000-3.5 plane-angle, radian</dc:title>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -138,6 +141,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemHasDerivedUnitaryQuantity"/>
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#2pi-plane-angle"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -150,6 +154,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.5#ISQ7-2pi-plane-angle"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#ISQ7-plane-angle"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -162,6 +167,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#plane-angle"/>
         <vim4:isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vim4:isDimensionless>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
         <rdfs:comment>plane angle (angular measure in ISO-80000-3:2019) is derived in ISQ7</rdfs:comment>
         <rdfs:seeAlso>https://www.iso.org/obp/ui/#iso:std:iso:80000:-3:ed-2:v1:en</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -176,6 +182,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.5#ISQ7-plane-angle"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.1#ISQ7-length-of-path"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -188,6 +195,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.5#ISQ7-plane-angle"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.1#ISQ7-radius"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -199,6 +207,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemHasDerivedUnitaryQuantity"/>
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#2pi-plane-angle"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -211,6 +220,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.5#ISQ8-2pi-plane-angle"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#ISQ8-plane-angle"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -223,6 +233,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#plane-angle"/>
         <vim4:dimensionSymbol>A</vim4:dimensionSymbol>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
         <rdfs:comment>Leonard&apos;s proposal with plane angle as a base quantity in ISQ8</rdfs:comment>
         <rdfs:seeAlso>https://iopscience.iop.org/article/10.1088/1681-7575/abe0fc</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -237,6 +248,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#degree-of-arc"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -249,6 +261,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#minute-of-arc"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -261,6 +274,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#radian"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -273,6 +287,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.5#SI7-radian"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.1#SI7-metre"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -285,6 +300,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.5#SI7-radian"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.1#SI7-metre"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -297,6 +313,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#second-of-arc"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -309,6 +326,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#degree-of-arc"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -321,6 +339,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#minute-of-arc"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -332,7 +351,9 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#SystemHasBaseUnit"/>
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#radian"/>
-        <rdfs:comment>Contrary to ISO 80000-3, 0.3.2 stating that radian is a dimensionless derived unit,  it is defined here as a base unit, following multiple proposals in Metrologia.</rdfs:comment>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
+        <rdfs:comment>Contrary to ISO 80000-3, 0.3.2 stating that radian is a dimensionless derived unit,
+  it is defined here as a base unit, following multiple proposals in Metrologia.</rdfs:comment>
         <rdfs:seeAlso>https://iopscience.iop.org/article/10.1088/1681-7575/abe0fc</rdfs:seeAlso>
     </owl:NamedIndividual>
     
@@ -346,6 +367,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.5#second-of-arc"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -359,6 +381,7 @@
         <vim4:instantiates rdf:resource="http://iso.org/iso-80000-3.5#plane-angle"/>
         <vim4:isMultipleOf rdf:resource="http://iso.org/iso-80000-3.5#radian"/>
         <vim4:id>degree-of-arc</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-5.b</dc:source>
     </owl:NamedIndividual>
     
@@ -373,6 +396,7 @@
         <vim4:instantiates rdf:resource="http://iso.org/iso-80000-3.5#plane-angle"/>
         <vim4:isMultipleOf rdf:resource="http://iso.org/iso-80000-3.5#degree-of-arc"/>
         <vim4:id>minute-of-arc</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-5.c</dc:source>
     </owl:NamedIndividual>
     
@@ -384,6 +408,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.5#plane-angle">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#GeneralUnitaryQuantity"/>
         <vim4:id>plane-angle</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-5</dc:source>
     </owl:NamedIndividual>
     
@@ -396,6 +421,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#UnprefixedMeasurementUnit"/>
         <vim4:instantiates rdf:resource="http://iso.org/iso-80000-3.5#plane-angle"/>
         <vim4:id>radian</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-5.a</dc:source>
     </owl:NamedIndividual>
     
@@ -410,6 +436,7 @@
         <vim4:instantiates rdf:resource="http://iso.org/iso-80000-3.5#plane-angle"/>
         <vim4:isMultipleOf rdf:resource="http://iso.org/iso-80000-3.5#minute-of-arc"/>
         <vim4:id>second-of-arc</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-5.d</dc:source>
     </owl:NamedIndividual>
     
@@ -421,12 +448,13 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.5#2pi-plane-angle">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#GeneralUnitaryQuantity"/>
         <vim4:id>2pi-plane-angle</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <rdfs:comment>2Pi is the plane angle corresponding to 1 revolution.</rdfs:comment>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

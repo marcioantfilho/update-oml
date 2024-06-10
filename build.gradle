@@ -11,6 +11,7 @@ version = '1.0.0'
  */
 apply plugin: 'maven-publish'
 
+
 /* 
  * The Gradle task dependencies 
  */
@@ -71,15 +72,6 @@ dependencies {
     oml "io.opencaesar.ontologies:metrology-vocabularies:7.+"
 }
 
-
-/*
- * A task to extract and merge the OML dependencies
- * @seeAlso https://github.com/opencaesar/oml-tools/blob/master/oml-merge/README.md
- */
-task downloadDependencies(type:io.opencaesar.oml.merge.OmlMergeTask, group:"oml", dependsOn: configurations.oml) {
-    inputZipPaths = configurations.oml.files
-    outputCatalogFolder = file('build/oml')
-}
 
 /*
  * A task to extract and merge the OML dependencies
@@ -191,15 +183,6 @@ task omlZip(type: Zip, group:"oml") {
     archiveBaseName = project.name
     archiveVersion = project.version
 }
-
-// Marcio Filho additions
-artifacts.default omlZip
-
-/*
- * Publish project artifacts to maven
- */
-apply plugin: 'maven-publish'
-apply plugin: 'signing'
 
 def pomConfig = {
     licenses {

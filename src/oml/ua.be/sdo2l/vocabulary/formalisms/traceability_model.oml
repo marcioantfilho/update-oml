@@ -14,7 +14,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#> as tra
 	] < object_diagram:Link 
 	
 	concept TraceabilityLink_ [
-		restricts linksTo to exactly 2
+		//restricts linksTo to exactly 2 object_diagram:Object
 	]
 	
 	relation entity LinkedObject [

@@ -5,8 +5,8 @@ vocabulary <http://ua.be/sdo2l/vocabulary/base/base#> as base {
 
 	aspect ImmutableThing [
 		key hasGUID
-		restricts hasGUID to exactly 1 
-	]
+		//restricts hasGUID to exactly 1 xsd:Integer
+	] //< hasGUID[ restricts hasGUID to exactly 1]
 	
 	scalar property hasGUID [
 		domain ImmutableThing

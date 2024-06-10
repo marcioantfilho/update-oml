@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#"
      xml:base="http://ua.be/sdo2l/description/artifacts/springDamper_drawio"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,12 +9,15 @@
      xmlns:dict="http://ua.be/sdo2l/vocabulary/formalisms/dict#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:drawio="http://ua.be/sdo2l/vocabulary/formalisms/drawio#"
-     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#">
+     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#"
+     xmlns:springDamper_drawio="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/springDamper_drawio">
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/dict"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#"/>
+        <oml:prefix>springDamper_drawio</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -133,6 +136,7 @@
         <drawio:isRootOf rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>0</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -145,6 +149,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -159,6 +164,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -171,6 +177,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-10</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -184,6 +191,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -197,6 +205,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -210,6 +219,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -223,6 +233,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>din</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -235,6 +246,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-11</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -248,6 +260,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -261,6 +274,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -274,6 +288,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -287,6 +302,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>dout</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -299,6 +315,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-12</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -312,6 +329,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -325,6 +343,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -338,6 +357,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -351,6 +371,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cout</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -365,6 +386,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-8"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-13</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -378,6 +400,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -391,6 +414,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -405,6 +429,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-10"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-14</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -418,6 +443,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -431,6 +457,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -443,6 +470,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-15</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -456,6 +484,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%name% : %type%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -469,6 +498,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>springDamperRequirements</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -482,6 +512,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -495,6 +526,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>artifact</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -508,6 +540,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>file</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -522,6 +555,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-15"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-16</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -535,6 +569,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -548,6 +583,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -562,6 +598,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-22"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-17</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -575,6 +612,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -588,6 +626,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -600,6 +639,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-18</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -613,6 +653,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%name% : %type%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -626,6 +667,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>sdModelAndParams</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -639,6 +681,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -652,6 +695,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>artifact</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -665,6 +709,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>CBD</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -679,6 +724,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-18"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-19</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -692,6 +738,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -705,6 +752,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -718,6 +766,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -731,6 +780,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -743,6 +793,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-2</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -755,6 +806,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-20</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -768,6 +820,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>&lt;u style=\&quot;color: rgb(0 , 0 , 0)\&quot;&gt;%name%&lt;br&gt;: %type%&lt;/u&gt;</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -781,6 +834,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>runExp</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -794,6 +848,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -807,6 +862,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>activity</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -820,6 +876,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>RunCBDSimulation</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -832,6 +889,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-20"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-21</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -845,6 +903,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -858,6 +917,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -871,6 +931,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -884,6 +945,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cin</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -896,6 +958,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-20"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-22</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -909,6 +972,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -922,6 +986,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -935,6 +1000,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -948,6 +1014,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>din</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -960,6 +1027,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-20"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-23</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -973,6 +1041,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -986,6 +1055,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -999,6 +1069,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1012,6 +1083,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>dout</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1024,6 +1096,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-20"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-24</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1037,6 +1110,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1050,6 +1124,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1063,6 +1138,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1076,6 +1152,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cout</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1090,6 +1167,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-21"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-25</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1103,6 +1181,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1116,6 +1195,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1128,6 +1208,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-27</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1141,6 +1222,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%name% : %type%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1154,6 +1236,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>trace_table</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1167,6 +1250,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1180,6 +1264,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>artifact</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1193,6 +1278,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>TabularData</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1207,6 +1293,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-27"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-28</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1220,6 +1307,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1233,6 +1321,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1246,6 +1335,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1259,6 +1349,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>initial</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1271,6 +1362,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-3</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1283,6 +1375,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_bSbNTGvVxcwvyUkA0aUh-1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-30</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1296,6 +1389,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1309,6 +1403,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1322,6 +1417,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1335,6 +1431,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cin</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1347,6 +1444,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_bSbNTGvVxcwvyUkA0aUh-1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-31</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1360,6 +1458,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1373,6 +1472,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1386,6 +1486,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1399,6 +1500,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>din</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1411,6 +1513,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_bSbNTGvVxcwvyUkA0aUh-1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-32</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1424,6 +1527,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1437,6 +1541,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1450,6 +1555,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1463,6 +1569,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>ok</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1475,6 +1582,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_bSbNTGvVxcwvyUkA0aUh-1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-33</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1488,6 +1596,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1501,6 +1610,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1514,6 +1624,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1527,6 +1638,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>notOk</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1539,6 +1651,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-35</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1552,6 +1665,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1565,6 +1679,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>final</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1578,6 +1693,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>&lt;u style=\&quot;color: rgb(0 , 0 , 0)\&quot;&gt;%name%&lt;br&gt;: %type%&lt;/u&gt;</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1591,6 +1707,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>define_damper_req</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1604,6 +1721,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1617,6 +1735,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>activity</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1630,6 +1749,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>CreateRequirements</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1642,6 +1762,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-4</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1655,6 +1776,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1668,6 +1790,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1681,6 +1804,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1694,6 +1818,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cin</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1706,6 +1831,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-5</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1719,6 +1845,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1732,6 +1859,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1745,6 +1873,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1758,6 +1887,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cout</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1770,6 +1900,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-6</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1783,6 +1914,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1796,6 +1928,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1809,6 +1942,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1822,6 +1956,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>dout</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1834,6 +1969,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-7</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1847,6 +1983,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>&lt;u style=\&quot;color: rgb(0 , 0 , 0)\&quot;&gt;%name%&lt;br&gt;: %type%&lt;/u&gt;</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1860,6 +1997,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>createCBD</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1873,6 +2011,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1886,6 +2025,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>activity</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1899,6 +2039,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>DefineCBDModel</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1911,6 +2052,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-8</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1924,6 +2066,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1937,6 +2080,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1950,6 +2094,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1963,6 +2108,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cin</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1975,6 +2121,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>6EwGGpy6rZ522-kh7by9-9</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1988,6 +2135,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2001,6 +2149,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2014,6 +2163,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2027,6 +2177,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>rec</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2039,6 +2190,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_bSbNTGvVxcwvyUkA0aUh-1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>7aubSDIZ3aql-5XpQAt0-1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2052,6 +2204,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2065,6 +2218,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2078,6 +2232,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2091,6 +2246,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>error</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2105,6 +2261,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_j9tabdb7EQjFiC8vxNGg-1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>7aubSDIZ3aql-5XpQAt0-2</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2118,6 +2275,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2131,6 +2289,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2145,6 +2304,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-31"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>PR43pSw0OvMHOdnO7uKn-1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2158,6 +2318,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2171,6 +2332,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2185,6 +2347,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-30"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>PR43pSw0OvMHOdnO7uKn-2</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2198,6 +2361,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2211,6 +2375,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2225,6 +2390,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-9"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>PR43pSw0OvMHOdnO7uKn-3</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2238,6 +2404,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2251,6 +2418,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2265,6 +2433,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-35"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>PR43pSw0OvMHOdnO7uKn-4</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2278,6 +2447,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2291,6 +2461,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2303,6 +2474,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>bSbNTGvVxcwvyUkA0aUh-1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2316,6 +2488,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>automated</dict:hasKey>
         <dict:hasValue>true</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2329,6 +2502,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>&lt;u style=\&quot;color: rgb(0 , 0 , 0)\&quot;&gt;%name%&lt;br&gt;: %type%&lt;/u&gt;</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2342,6 +2516,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>checkRes</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2355,6 +2530,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2368,6 +2544,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>activity</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2381,6 +2558,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>timeout</dict:hasKey>
         <dict:hasValue>5000</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2394,6 +2572,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>ValidateCBDSimulationResults</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2406,6 +2585,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#cell_6EwGGpy6rZ522-kh7by9-7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <drawio:hasDrawioId>j9tabdb7EQjFiC8vxNGg-1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2419,6 +2599,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2432,6 +2613,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2445,6 +2627,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2458,6 +2641,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>error</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -2469,11 +2653,12 @@
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Model"/>
         <drawio:hasDrawioId>Ndo5pcrYqaD98EJA1hEp</drawio:hasDrawioId>
         <object_diagram:hasName>springDamper:pm_drawio</object_diagram:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

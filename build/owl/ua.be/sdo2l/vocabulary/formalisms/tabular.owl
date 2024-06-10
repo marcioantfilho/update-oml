@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/formalisms/tabular#"
      xml:base="http://ua.be/sdo2l/vocabulary/formalisms/tabular"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,14 +10,15 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:viewpoint="http://opencaesar.io/viewpoint#"
+     xmlns:tabular="http://ua.be/sdo2l/vocabulary/formalisms/tabular#"
      xmlns:iso-1087-1="http://iso.org/iso-1087-1#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular">
         <owl:imports rdf:resource="http://bipm.org/jcgm/vim4"/>
-        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/base/base"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/file"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#"/>
+        <oml:prefix>tabular</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
     </owl:Ontology>
     
 
@@ -76,7 +78,8 @@
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasCell">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Collection"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Cell"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCell"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -87,7 +90,8 @@
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasCells">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#TabularData"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Cell"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCells"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -98,7 +102,8 @@
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasColumns">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#TabularData"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Column"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasColumns"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -109,7 +114,8 @@
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasRows">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#TabularData"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Row"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasRows"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -122,7 +128,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Collection"/>
         <rdfs:range rdf:resource="http://bipm.org/jcgm/vim4#MeasurementUnit"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasUnit"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -132,7 +139,10 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#isCellOfTabularData">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasCells"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Cell"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#TabularData"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCells"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -142,7 +152,10 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#isColumnOfTabularData">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasColumns"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Column"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#TabularData"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasColumns"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -152,7 +165,10 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#isInCollection">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasCell"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Cell"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Collection"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCell"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -162,7 +178,10 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#isRowOfTabularData">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasRows"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Row"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#TabularData"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasRows"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -172,7 +191,12 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#isUnitOf">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasUnit"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://bipm.org/jcgm/vim4#MeasurementUnit"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Collection"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasUnit"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -196,7 +220,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Column"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#BasicType"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -207,7 +230,6 @@
     <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasColumnId">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Column"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -218,7 +240,6 @@
     <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasColumnPosition">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Cell"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -230,7 +251,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Row"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HeadingModifier"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -241,7 +261,6 @@
     <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasRowId">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Row"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -252,7 +271,6 @@
     <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasRowPosition">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Cell"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -264,7 +282,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Cell"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -286,7 +303,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Cell">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/file#Data"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -295,7 +312,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Collection">
-        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
     </owl:Class>
     
 
@@ -305,7 +322,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Column">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Collection"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -314,7 +331,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCell">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -323,7 +340,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCells">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -332,7 +349,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasColumns">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -341,7 +358,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasRows">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -350,7 +367,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasUnit">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -366,7 +383,7 @@
                 <owl:hasValue>yes</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -376,7 +393,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Row">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#Collection"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -387,23 +404,8 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#TabularData">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/file#Data"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/file#File"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/tabular#NumericTypeInfersUnit">
-        <rdfs:comment>Infers that when the type of the column is numeric it may have a unit</rdfs:comment>
-    </rdf:Description>
     
 
 
@@ -439,10 +441,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCells"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -450,9 +451,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCells"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -496,10 +498,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasColumns"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -507,9 +508,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasColumns"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -553,10 +555,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasRows"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -564,9 +565,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasRows"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -610,10 +612,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasUnit"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -621,9 +622,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasUnit"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -667,10 +669,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCell"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -678,9 +679,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/tabular#HasCell"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -717,7 +719,9 @@
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label>NumericTypeInfersUnit</rdfs:label>
+        <oml:name>http://ua.be/sdo2l/vocabulary/formalisms/tabular#NumericTypeInfersUnit</oml:name>
+        <oml:type>http://opencaesar.io/oml#Rule</oml:type>
+        <rdfs:comment>Infers that when the type of the column is numeric it may have a unit</rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -764,6 +768,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

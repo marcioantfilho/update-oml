@@ -1,19 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/formalisms/script#"
      xml:base="http://ua.be/sdo2l/vocabulary/formalisms/script"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:script="http://ua.be/sdo2l/vocabulary/formalisms/script#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script">
-        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/code"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/file"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#"/>
+        <oml:prefix>script</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
     </owl:Ontology>
     
 
@@ -36,7 +38,8 @@
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#usesScriptParameter">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptData"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptParameter"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#UsesScriptParameter"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -60,7 +63,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptParameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -71,7 +73,6 @@
     <owl:DatatypeProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#hasParameterValue">
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptParameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -94,7 +95,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#CScript">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/code#CCode"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptData"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -105,7 +106,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#CppScript">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/code#CppCode"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptData"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -116,7 +117,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#MATLABScript">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/code#MATLABCode"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptData"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -127,7 +128,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#PythonScript">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/code#PythonCode"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptData"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -137,7 +138,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptData">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/code#CodeData"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -147,7 +148,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#ScriptParameter">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/file#Data"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -156,7 +157,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/script#UsesScriptParameter">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -187,10 +188,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#UsesScriptParameter"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -198,9 +198,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/script#UsesScriptParameter"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -240,6 +241,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 
