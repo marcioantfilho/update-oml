@@ -14,7 +14,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 
 	// A process trace element
 	aspect element [
-		restricts relatesTo to exactly 1 // every PT element must relate to one PM element
+		//restricts relatesTo to exactly 1 // every PT element must relate to one PM element
 	]
 	
 	// Supertype for all links from PT to PM
@@ -84,7 +84,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 		irreflexive
 		inverse functional // every (version of an) artifact can only be produced by one (ended) activity
 		
-		restricts all relatesTo to pm:DataOutputPort
+		
 	]< element, object_diagram:Link 
 	
 	relation entity Consumes [
@@ -95,12 +95,14 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#> as traces {
 		asymmetric
 		irreflexive
 		
-		restricts all relatesTo to pm:DataInputPort
+		
 	]< element, object_diagram:Link 
 	
 	@rdfs:comment "The class of artifacts generated during the system design process. Here we are referring to the concrete artifacts that are created/used during the enactment of a workflow."
 	concept Artifact < element, base:Versionable [
 		restricts all  relatesTo to pm:Artifact
+		restricts all relatesTo to pm:DataOutputPort
+		restricts all relatesTo to pm:DataInputPort
 	]
 	
 	scalar property hasLocation  [

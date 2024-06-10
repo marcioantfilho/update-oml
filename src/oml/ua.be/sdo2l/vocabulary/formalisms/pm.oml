@@ -27,7 +27,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm {
 	]< object_diagram:Link 
 	
 	aspect Named [
-		restricts hasName to exactly 1
+		//restricts hasName to exactly 1
 	]
 	scalar property hasName  [
 		domain Named

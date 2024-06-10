@@ -1,20 +1,22 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#"
      xml:base="http://ua.be/sdo2l/description/artifacts/drivetrain_corr"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#">
+     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#"
+     xmlns:drivetrain_corr="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/drivetrain_corr">
         <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#"/>
+        <oml:prefix>drivetrain_corr</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -89,6 +91,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CorrespondenceModel"/>
         <object_diagram:hasName>drivetrain_corr</object_diagram:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -101,6 +104,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_-FBhw_vcgPF5rW2nMRGZ-11"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_10"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -113,6 +117,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_-FBhw_vcgPF5rW2nMRGZ-12"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_2_port_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -125,6 +130,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_-FBhw_vcgPF5rW2nMRGZ-13"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_3_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -137,6 +143,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_-FBhw_vcgPF5rW2nMRGZ-14"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_13"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -149,6 +156,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_-FBhw_vcgPF5rW2nMRGZ-15"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_8"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -161,6 +169,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_-FBhw_vcgPF5rW2nMRGZ-6"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_12"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -173,6 +182,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#model"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -185,6 +195,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-10"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_0_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -197,6 +208,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-12"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_0_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -209,6 +221,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-13"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_0_port_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -221,6 +234,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-14"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -233,6 +247,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-15"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -245,6 +260,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-17"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#artifact_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -257,6 +273,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-18"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#artifact_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -269,6 +286,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-20"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_0_port_5"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -281,6 +299,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-21"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_5"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -293,6 +312,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-22"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -305,6 +325,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-23"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_0_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -317,6 +338,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-24"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_1_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -329,6 +351,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-25"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#ctrl_flow_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -341,6 +364,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-26"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_1_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -353,6 +377,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-27"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -365,6 +390,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-28"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_1_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -377,6 +403,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-29"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -389,6 +416,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-30"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -401,6 +429,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-34"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#artifact_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -413,6 +442,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-38"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_1_port_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -425,6 +455,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-3"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#ctrl_flow_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -437,6 +468,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-41"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -449,6 +481,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-43"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_2_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -461,6 +494,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-47"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_2_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -473,6 +507,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-48"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_6"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -485,6 +520,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-49"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#artifact_5"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -497,6 +533,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-4"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -509,6 +546,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-50"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -521,6 +559,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-52"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#artifact_6"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -533,6 +572,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-53"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#artifact_7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -545,6 +585,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-54"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -557,6 +598,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-57"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_3_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -569,6 +611,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-58"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_3_port_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -581,6 +624,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-5"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#artifact_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -593,6 +637,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-65"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_11"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -605,6 +650,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-67"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_4_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -617,6 +663,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-68"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_4_port_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -629,6 +676,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-69"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#final"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -641,6 +689,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Akw1mT6UbTgWhP--InIg-6"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#artifact_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -653,6 +702,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_Kvt-DgTJ1DRZdE3eO3Tz-1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#initial"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -665,6 +715,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_2_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -677,6 +728,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-2"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_1_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -689,6 +741,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-3"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#ctrl_flow_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -701,6 +754,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-4"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_2_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -713,6 +767,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-5"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_3_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -725,6 +780,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-6"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#ctrl_flow_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -737,6 +793,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-7"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_4_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -749,6 +806,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-8"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_3_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -761,6 +819,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_XzE_Lk5AR0apfi5KI8EF-9"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#ctrl_flow_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -773,6 +832,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_ZZiZBwUqE79DcpNbQ25f-1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_5"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -785,6 +845,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_hjtIVpRlB6XSkxCe3kzS-1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -797,6 +858,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_hjtIVpRlB6XSkxCe3kzS-4"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_4_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -809,6 +871,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_hjtIVpRlB6XSkxCe3kzS-5"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#ctrl_flow_5"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -821,6 +884,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_lIuTJBtmPldcnfcOhHGF-3"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_0_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -833,6 +897,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_lIuTJBtmPldcnfcOhHGF-5"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#ctrl_flow_6"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -845,6 +910,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_lIuTJBtmPldcnfcOhHGF-6"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_4_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -857,6 +923,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_nNHIfMFn6DHzLZeGgIeC-1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_5_port_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -869,6 +936,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_nNHIfMFn6DHzLZeGgIeC-2"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_16"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -881,6 +949,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_oDRBLhcRjnzzmYJR4pT3-2"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_5_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -893,6 +962,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_oDRBLhcRjnzzmYJR4pT3-3"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_5_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -905,6 +975,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_oDRBLhcRjnzzmYJR4pT3-4"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#ctrl_flow_7"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -917,6 +988,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_oDRBLhcRjnzzmYJR4pT3-5"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_5_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -929,6 +1001,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_oDRBLhcRjnzzmYJR4pT3-6"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#activity_5_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -941,6 +1014,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_oDRBLhcRjnzzmYJR4pT3-7"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_14"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -953,6 +1027,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_oDRBLhcRjnzzmYJR4pT3-8"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_15"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -965,11 +1040,12 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#cell_qdYLwQm77Az_fS4UmsVN-1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#data_flow_9"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

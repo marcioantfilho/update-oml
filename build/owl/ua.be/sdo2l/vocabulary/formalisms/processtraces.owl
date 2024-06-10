@@ -1,21 +1,23 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#"
      xml:base="http://ua.be/sdo2l/vocabulary/formalisms/processtraces"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:traces="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces">
-        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/base/acyclic"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/base/base"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#"/>
+        <oml:prefix>traces</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
     </owl:Ontology>
     
 
@@ -36,12 +38,13 @@
 
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#consumes">
-        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#StartActivityEvent"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Consumes"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -51,7 +54,13 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isArtifact">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isModel"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Model"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#IsModel"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -61,7 +70,12 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isConsumedBy">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#consumes"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#StartActivityEvent"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Consumes"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -71,14 +85,15 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isFollowedBy">
         <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/acyclic#acyclicForward"/>
-        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Event"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Event"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Follows"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -92,7 +107,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Model"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#IsModel"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -102,7 +118,14 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isPrecededBy">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isFollowedBy"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Event"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Event"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Follows"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -112,7 +135,13 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isProducedBy">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#produces"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#EndActivityEvent"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Produces"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -121,13 +150,14 @@
 
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#produces">
-        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#EndActivityEvent"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Produces"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -139,7 +169,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#element"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#RelatesToPM"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -163,7 +194,6 @@
         <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -175,7 +205,6 @@
         <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -187,7 +216,6 @@
         <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasField"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -216,7 +244,19 @@
                 <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#Artifact"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#relatesTo"/>
+                <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataInputPort"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#relatesTo"/>
+                <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataOutputPort"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>The class of artifacts generated during the system design process. Here we are referring to the concrete artifacts that are created/used during the enactment of a workflow.</rdfs:comment>
     </owl:Class>
     
@@ -228,13 +268,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Consumes">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#relatesTo"/>
-                <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataInputPort"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -262,7 +296,7 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>The class to represent an ending event of a trace.</rdfs:comment>
     </owl:Class>
     
@@ -291,7 +325,7 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>An event signaling the end of a trace.</rdfs:comment>
     </owl:Class>
     
@@ -303,7 +337,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Event">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
         <rdfs:comment>The class to represent an event of a trace.</rdfs:comment>
     </owl:Class>
     
@@ -315,7 +349,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Follows">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/acyclic#Acyclic"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -324,7 +358,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#IsModel">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -335,13 +369,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Produces">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#relatesTo"/>
-                <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#DataOutputPort"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -350,7 +378,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#RelatesToPM">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -378,7 +406,7 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>The class to represent a starting event of a trace.</rdfs:comment>
     </owl:Class>
     
@@ -407,7 +435,7 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>An event signaling the start of a new trace.</rdfs:comment>
     </owl:Class>
     
@@ -417,13 +445,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#element">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#relatesTo"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
     </owl:Class>
     
 
@@ -454,10 +476,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Consumes"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -465,9 +486,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Consumes"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -511,10 +533,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Follows"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -522,9 +543,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Follows"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -568,10 +590,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#IsModel"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -579,9 +600,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#IsModel"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -625,10 +647,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Produces"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -636,9 +657,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Produces"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -682,10 +704,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#RelatesToPM"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -693,9 +714,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#RelatesToPM"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -735,6 +757,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

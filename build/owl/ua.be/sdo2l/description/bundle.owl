@@ -2,12 +2,13 @@
 <rdf:RDF xmlns="http://ua.be/sdo2l/description/bundle#"
      xml:base="http://ua.be/sdo2l/description/bundle"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:viewpoint="http://opencaesar.io/viewpoint#"
+     xmlns:bundle="http://ua.be/sdo2l/description/bundle#"
      xmlns:iso-1087-1="http://iso.org/iso-1087-1#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/description/bundle">
         <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/Drawing_drawio"/>
@@ -39,7 +40,9 @@
         <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/springDamper_pm"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/traceabilityLinks"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/bundle"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#DescriptionBundle"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/description/bundle#"/>
+        <oml:prefix>bundle</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#DescriptionBundle"/>
     </owl:Ontology>
     
 
@@ -53,1126 +56,6 @@
      -->
 
 
-    
-
-
-    <!-- http://iso.org/iec-80000-6.1#ampere -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iec-80000-6.1#ampere">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iec-80000-6.10#volt-per-metre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iec-80000-6.10#volt-per-metre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iec-80000-6.11#volt -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iec-80000-6.11#volt">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iec-80000-6.13#farad -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iec-80000-6.13#farad">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iec-80000-6.2#coulomb -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iec-80000-6.2#coulomb">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iec-80000-6.21#tesla -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iec-80000-6.21#tesla">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iec-80000-6.45#watt -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iec-80000-6.45#watt">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iec-80000-6.46#ohm -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iec-80000-6.46#ohm">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-1#SI7 -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#SI7">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#given"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-1#SI8 -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-1#SI8">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#given"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.1#decimetre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.1#decimetre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.1#kilometre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.1#kilometre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.1#metre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.1#metre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.10#radian-per-second -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.10#radian-per-second">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.11#radian-per-second-squared -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.11#radian-per-second-squared">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.14#revolution -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.14#revolution">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.15#hertz -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.15#hertz">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.15#revolution-per-second -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.15#revolution-per-second">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.2#metre-1 -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.2#metre-1">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.3#square_metre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.3#square_metre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.4#cubic_metre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.4#cubic_metre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.4#litre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.4#litre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.5#degree-of-arc -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.5#degree-of-arc">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.5#minute-of-arc -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.5#minute-of-arc">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.5#radian -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.5#radian">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.5#second-of-arc -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.5#second-of-arc">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.6#steradian -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.6#steradian">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.7#hour -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.7#hour">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.7#minute -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.7#minute">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.7#second -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.7#second">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.8#kilometre-per-hour -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.8#kilometre-per-hour">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.8#metre-per-second -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.8#metre-per-second">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-3.9#metre-per-second-squared -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.9#metre-per-second-squared">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.1#kilogram -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.1#kilogram">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.11#newton-second -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.11#newton-second">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.13#newton-metre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.13#newton-metre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.14#newton-metre-second -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.14#newton-metre-second">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.15#pascal -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.15#pascal">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.2#kilogram-per-cubic_metre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.2#kilogram-per-cubic_metre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.26#watt -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.26#watt">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.3#kilogram-per-cubic_metre-over-kilogram-per-cubic_metre -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.3#kilogram-per-cubic_metre-over-kilogram-per-cubic_metre">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.8#kilogram-metre-per-second -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.8#kilogram-metre-per-second">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-4.9#newton -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-4.9#newton">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://iso.org/iso-80000-5.1#kelvin -->
-
-
-    <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-5.1#kelvin">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#characterizes"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#hasMultiple"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bipm.org/jcgm/vim4#isMultipleOf"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
     
 
 
@@ -1329,26 +212,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasDrawioId"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -3840,12 +2703,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -3858,12 +2715,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -3883,12 +2734,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -3912,12 +2757,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -3935,12 +2774,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -3964,12 +2797,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -3982,12 +2809,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -4007,12 +2828,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -4036,12 +2851,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -4059,12 +2868,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -4088,12 +2891,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -4106,12 +2903,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -4131,12 +2922,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -4160,12 +2945,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -4183,12 +2962,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -4212,12 +2985,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -4238,12 +3005,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -4255,12 +3016,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -4278,12 +3033,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -4295,34 +3044,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_corr#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_corr#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -17290,124 +16011,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_CBD -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_CBD">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Code -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Code">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Profile -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Profile">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Script -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Script">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -17416,12 +16019,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_BuildControlSettings">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17444,12 +16041,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_CheckDesign">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -17468,12 +16059,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_CreateRequirements">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17496,12 +16081,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DefineCBDModel">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxCardinality>
             </owl:Restriction>
@@ -17520,12 +16099,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DetectParallelRails">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17554,12 +16127,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_FailuresResolved">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -17578,12 +16145,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_GenerateControlParameters">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17606,12 +16167,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_InitialDesign">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -17630,12 +16185,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Initialization">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17658,12 +16207,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_LookAtSketch">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -17682,12 +16225,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Preparation">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17710,12 +16247,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RedesignAlgorithm">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -17734,12 +16265,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunCBDSimulation">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17762,12 +16287,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunExperiment">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -17786,12 +16305,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_SetupProfile">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17814,12 +16327,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Sketch">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -17838,12 +16345,6 @@
 
 
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_ValidateCBDSimulationResults">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
@@ -17872,12 +16373,6 @@
     <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_VerifyData">
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#hasGUID"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlInput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -17886,20 +16381,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#hasCtrlOutput"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/MinimalPM_corr#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/MinimalPM_corr#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -18112,12 +16593,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -18129,34 +16604,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/MinimalPM_pm#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/MinimalPM_pm#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_corr#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_corr#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -19492,12 +17939,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -19510,12 +17951,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -19535,12 +17970,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -19564,12 +17993,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -19590,12 +18013,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -19608,12 +18025,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -19633,12 +18044,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -19662,12 +18067,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -19688,12 +18087,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -19708,12 +18101,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -19725,34 +18112,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/MyPM_pm#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_pm#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_corr#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_corr#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -21330,12 +19689,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -21348,12 +19701,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -21373,12 +19720,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -21402,12 +19743,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -21425,12 +19760,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -21454,12 +19783,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -21472,12 +19795,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -21497,12 +19814,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -21526,12 +19837,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -21549,12 +19854,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -21578,12 +19877,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -21598,12 +19891,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -21615,34 +19902,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/RecPM_pm#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/RecPM_pm#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/drivetrain_corr#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -27662,12 +25921,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -27680,12 +25933,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -27705,12 +25952,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -27734,12 +25975,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -27757,12 +25992,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -27786,12 +26015,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -27809,12 +26032,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -27838,12 +26055,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -27856,12 +26067,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -27881,12 +26086,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -27910,12 +26109,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -27933,12 +26126,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -27962,12 +26149,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -27988,12 +26169,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28006,12 +26181,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -28031,12 +26200,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28060,12 +26223,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28083,12 +26240,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28112,12 +26263,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28138,12 +26283,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28156,12 +26295,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -28181,12 +26314,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28210,12 +26337,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28233,12 +26354,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28262,12 +26377,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28288,12 +26397,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28306,12 +26409,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -28331,12 +26428,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28360,12 +26451,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28383,12 +26468,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28412,12 +26491,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28438,12 +26511,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28456,12 +26523,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -28481,12 +26542,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28510,12 +26565,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28533,12 +26582,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28562,12 +26605,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28588,12 +26625,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28605,12 +26636,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28628,12 +26653,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28645,12 +26664,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28668,12 +26681,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28685,12 +26692,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28708,12 +26709,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28725,12 +26720,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28748,12 +26737,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -28765,20 +26748,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/drivetrain_pm#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/drivetrain_pm#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -28855,26 +26824,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasDrawioId"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/octiva_corr#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/octiva_corr#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33288,12 +31237,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33306,12 +31249,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -33331,12 +31268,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33360,12 +31291,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33383,12 +31308,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33412,12 +31331,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33435,12 +31348,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33464,12 +31371,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33482,12 +31383,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -33507,12 +31402,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33536,12 +31425,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33559,12 +31442,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33588,12 +31465,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33614,12 +31485,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33632,12 +31497,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -33657,12 +31516,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33686,12 +31539,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33709,12 +31556,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33738,12 +31579,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33756,12 +31591,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -33790,12 +31619,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33813,12 +31636,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33842,12 +31659,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33865,12 +31676,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33894,12 +31699,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33917,12 +31716,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -33946,12 +31739,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33972,12 +31759,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -33990,12 +31771,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -34012,12 +31787,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -34029,12 +31798,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -34052,12 +31815,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -34072,12 +31829,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -34089,34 +31840,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/octiva_pm#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/octiva_pm#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/springDamper_corr#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/springDamper_corr#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -37508,12 +35231,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37526,12 +35243,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -37551,12 +35262,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -37580,12 +35285,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37606,12 +35305,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37624,12 +35317,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -37649,12 +35336,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -37678,12 +35359,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37701,12 +35376,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -37730,12 +35399,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37753,12 +35416,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -37782,12 +35439,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37800,12 +35451,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
@@ -37825,12 +35470,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -37854,12 +35493,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37877,12 +35510,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -37906,12 +35533,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37924,12 +35545,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -37958,12 +35573,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -37981,12 +35590,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -38010,12 +35613,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -38033,12 +35630,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -38062,12 +35653,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -38079,12 +35664,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -38102,12 +35681,6 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
     </rdf:Description>
     
 
@@ -38119,12 +35692,6 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/pm#hasName"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdf:type>
@@ -38143,38 +35710,10 @@
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/springDamper_pm#model -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/springDamper_pm#model">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasName"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    
-
-
-    <!-- http://ua.be/sdo2l/description/artifacts/traceabilityLinks#t1 -->
-
-
-    <rdf:Description rdf:about="http://ua.be/sdo2l/description/artifacts/traceabilityLinks#t1">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#linksTo"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

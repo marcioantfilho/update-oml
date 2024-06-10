@@ -1,19 +1,22 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/formalisms/requirement#"
      xml:base="http://ua.be/sdo2l/vocabulary/formalisms/requirement"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:requirement="http://ua.be/sdo2l/vocabulary/formalisms/requirement#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/requirement">
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/base/base"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/system"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#"/>
+        <oml:prefix>requirement</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
     </owl:Ontology>
     
 
@@ -38,7 +41,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Requirement"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/system#System"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Describes"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -52,7 +56,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#RequirementList"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Requirement"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Groups"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -62,7 +67,12 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/requirement#isDescribedBy">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#describes"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/system#System"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Requirement"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Describes"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -72,7 +82,13 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/requirement#isGroupedBy">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#groups"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Requirement"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#RequirementList"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Groups"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -93,7 +109,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Describes">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -102,7 +118,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Groups">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -112,7 +128,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Requirement">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -123,7 +139,7 @@
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/requirement#RequirementList">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/base/base#IdentifiedThing"/>
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/processtraces#Artifact"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -154,10 +170,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Describes"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -165,9 +180,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Describes"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -211,10 +227,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Groups"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -222,9 +237,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/requirement#Groups"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -264,6 +280,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

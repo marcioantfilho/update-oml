@@ -13,7 +13,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#> as cs_as {
 		irreflexive
 	]< traceability_model:TraceabilityLink
 	
-	concept CorrespondenceModel  [
+	concept CorrespondenceModel < traceability_model:TraceabilityModel [
 		restricts all object_diagram:hasObject to CS_AS_Link
-	]< traceability_model:TraceabilityModel
+	]
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#"
      xml:base="http://ua.be/sdo2l/description/artifacts/MyPM_drawio"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,12 +9,15 @@
      xmlns:dict="http://ua.be/sdo2l/vocabulary/formalisms/dict#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:drawio="http://ua.be/sdo2l/vocabulary/formalisms/drawio#"
+     xmlns:MyPM_drawio="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#"
      xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/MyPM_drawio">
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/dict"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#"/>
+        <oml:prefix>MyPM_drawio</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -133,6 +136,7 @@
         <drawio:isRootOf rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>0</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -145,6 +149,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -157,6 +162,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>1m2y2pvaED3J6VFvMTAg-2</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -170,6 +176,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>&lt;u style=\&quot;color: rgb(0 , 0 , 0)\&quot;&gt;%name%&lt;br&gt;: %type%&lt;/u&gt;</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -183,6 +190,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>look_at_sketch</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -196,6 +204,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -209,6 +218,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>activity</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -222,6 +232,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>LookAtSketch</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -234,6 +245,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-1</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -246,6 +258,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-18</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -259,6 +272,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -272,6 +286,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -285,6 +300,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -298,6 +314,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cin</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -310,6 +327,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-19</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -323,6 +341,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -336,6 +355,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -349,6 +369,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -362,6 +383,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cout</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -375,6 +397,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -388,6 +411,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>initial</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -400,6 +424,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-2</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -414,6 +439,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-20</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -427,6 +453,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -440,6 +467,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -452,6 +480,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-27</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -465,6 +494,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -478,6 +508,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -491,6 +522,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -504,6 +536,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>sketch</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -518,6 +551,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-33"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-28</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -531,6 +565,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -544,6 +579,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -557,6 +593,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>&lt;u style=\&quot;color: rgb(0 , 0 , 0)\&quot;&gt;%name%&lt;br&gt;: %type%&lt;/u&gt;</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -570,6 +607,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>sketch</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -583,6 +621,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -596,6 +635,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>activity</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -609,6 +649,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>Sketch</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -621,6 +662,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-3</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -633,6 +675,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1m2y2pvaED3J6VFvMTAg-2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-31</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -646,6 +689,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -659,6 +703,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -672,6 +717,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -685,6 +731,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>sketch</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -699,6 +746,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-31"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-32</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -712,6 +760,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -725,6 +774,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>data_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -737,6 +787,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-33</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -750,6 +801,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%name% : %type%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -763,6 +815,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>name</dict:hasKey>
         <dict:hasValue>sketch</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -776,6 +829,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -789,6 +843,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>artifact</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -802,6 +857,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>type</dict:hasKey>
         <dict:hasValue>xopp</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -815,6 +871,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -828,6 +885,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>final</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -840,6 +898,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-4</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -853,6 +912,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -866,6 +926,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -879,6 +940,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_in</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -892,6 +954,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cin</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -904,6 +967,7 @@
         <drawio:hasParent rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-5</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -917,6 +981,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue>%portname%</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -930,6 +995,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>placeholders</dict:hasKey>
         <dict:hasValue>1</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -943,6 +1009,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_out</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -956,6 +1023,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>portname</dict:hasKey>
         <dict:hasValue>cout</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -970,6 +1038,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-6</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -983,6 +1052,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -996,6 +1066,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1010,6 +1081,7 @@
         <drawio:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#cell_CvR4PfVCJDiI6bvIUUvl-18"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <drawio:hasDrawioId>CvR4PfVCJDiI6bvIUUvl-7</drawio:hasDrawioId>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1023,6 +1095,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>label</dict:hasKey>
         <dict:hasValue></dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1036,6 +1109,7 @@
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/MyPM_drawio#model"/>
         <dict:hasKey>pmRole</dict:hasKey>
         <dict:hasValue>ctrl_flow</dict:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1047,11 +1121,12 @@
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/drawio#Model"/>
         <drawio:hasDrawioId>prYNwPAbIUO19HUZXAOh</drawio:hasDrawioId>
         <object_diagram:hasName>MyPM:pm_drawio</object_diagram:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

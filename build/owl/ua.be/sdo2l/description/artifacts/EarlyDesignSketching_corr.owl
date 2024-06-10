@@ -1,20 +1,22 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#"
      xml:base="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#">
+     xmlns:object_diagram="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#"
+     xmlns:EarlyDesignSketching_corr="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr">
         <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#"/>
+        <oml:prefix>EarlyDesignSketching_corr</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -89,6 +91,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/cs_as#CorrespondenceModel"/>
         <object_diagram:hasName>EarlyDesignSketching_corr</object_diagram:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -101,6 +104,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#model"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -113,6 +117,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-10"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#ctrl_flow_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -125,6 +130,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-11"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#data_flow_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -137,6 +143,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-12"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#data_flow_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -149,6 +156,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-13"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#artifact_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -161,6 +169,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-14"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -173,6 +182,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-15"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_1_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -185,6 +195,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-16"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_1_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -197,6 +208,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-17"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_1_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -209,6 +221,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-18"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_1_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -221,6 +234,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-19"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#data_flow_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -233,6 +247,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-1"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#initial"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -245,6 +260,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-20"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#data_flow_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -257,6 +273,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-21"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#artifact_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -269,6 +286,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-22"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#data_flow_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -281,6 +299,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-23"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -293,6 +312,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-24"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_2_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -305,6 +325,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-25"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_2_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -317,6 +338,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-26"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_2_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -329,6 +351,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-27"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_2_port_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -341,6 +364,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-28"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_2_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -353,6 +377,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-29"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#ctrl_flow_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -365,6 +390,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-2"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -377,6 +403,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-30"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#ctrl_flow_4"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -389,6 +416,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-3"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_0_port_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -401,6 +429,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-4"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_0_port_2"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -413,6 +442,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-5"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_0_port_3"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -425,6 +455,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-6"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#activity_0_port_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -437,6 +468,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-7"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#ctrl_flow_0"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -449,6 +481,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-8"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#final"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -461,11 +494,12 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#cell_u6pOaN9qPa-NTVyj8-pj-9"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#ctrl_flow_1"/>
         <object_diagram:inModel rdf:resource="http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#model"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

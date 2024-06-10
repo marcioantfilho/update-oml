@@ -41,7 +41,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg {
 
 	// Data inputs/outputs are named:
 	aspect InputOrOutput [
-		restricts hasName to exactly 1
+		//restricts hasName to exactly 1
 	]
 	
 	scalar property hasName [

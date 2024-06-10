@@ -8,8 +8,8 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
 	aspect element < object_diagram:Object []
 	
 	aspect LayerElement [
-		restricts inLayer to exactly 1
-		restricts  hasText to exactly 1
+		//restricts inLayer to exactly 1
+		//restricts  hasText to exactly 1
 	]< element 
 	scalar property hasText [
 		domain LayerElement
@@ -33,7 +33,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
 	concept Stroke < LayerElement []
 	
 	concept Layer [
-		restricts inPage to exactly 1
+		//restricts inPage to exactly 1
 	]< element 
 	
 	relation entity HasLayerElement [
@@ -47,12 +47,12 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
 	] < object_diagram:Link 
 	
 	concept Page  [
-		restricts inFile to exactly 1
-		restricts hasWidth to exactly 1
-		restricts  hasHeight to exactly 1
-		restricts  hasBackgroundType to exactly 1
-		restricts  hasBackgroundColor to exactly 1
-		restricts hasBackgroundStyle to exactly 1
+		//restricts inFile to exactly 1
+		//restricts hasWidth to exactly 1
+		//restricts  hasHeight to exactly 1
+		//restricts  hasBackgroundType to exactly 1
+		//restricts  hasBackgroundColor to exactly 1
+		//restricts hasBackgroundStyle to exactly 1
 	]< element
 
 	scalar property hasWidth  [
@@ -123,7 +123,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/xopp#> as xopp {
 	]< object_diagram:Link
 	
 	// A Xournal++ file:
-	concept Model  [
+	concept Model < object_diagram:Model [
 		restricts all object_diagram:hasObject to element
-	]< object_diagram:Model
+	]
 }

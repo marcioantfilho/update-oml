@@ -4,7 +4,7 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#isRootOf>
-        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/drawio#isRootOf> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasRootCell> .
 
@@ -16,7 +16,7 @@
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasPageAttribute>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasPageAttribute> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasPageAttribute> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#ofPage> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity>
@@ -98,6 +98,10 @@
 <http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasColumnPosition>
         rdf:type            owl:DatatypeProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasColumnPosition> .
+
+<http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> .
 
 <http://bipm.org/jcgm/vim4#characterizes>
         rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
@@ -205,7 +209,7 @@
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasStyleEntry>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasStyleEntry> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasStyleEntry> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#styleEntryOf> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/script#MATLABScript>
@@ -247,7 +251,7 @@
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/base/base#isAggregatedIn> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#targetOf>
-        rdf:type            owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/drawio#targetOf> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasTarget> .
 
@@ -298,7 +302,7 @@
 
 <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo>
         rdf:type            owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkFrom> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#linksTo>
@@ -388,7 +392,7 @@ owl:topObjectProperty
         rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsActivity>
-        rdf:type            owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsActivity> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/pm#isTransformation> .
 
@@ -404,7 +408,7 @@ owl:topObjectProperty
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo>
         rdf:type            owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlTo> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/pm#ctrlFrom> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/script#hasParameterName>
@@ -443,13 +447,13 @@ owl:topObjectProperty
         rdfs:subPropertyOf  <http://bipm.org/jcgm/vim4#isReferenceValue> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#renderedAs>
-        rdf:type            owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkFrom> , <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#renderedAs> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#parsedAs> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/pm#hasPort> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/pm#ofActivity> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#HasRootCell>
@@ -504,7 +508,7 @@ owl:topObjectProperty
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasProperty>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasProperty> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasProperty> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#propertyOf> .
 
 <http://bipm.org/jcgm/vim4#SystemOfQuantities>
@@ -632,7 +636,7 @@ owl:topObjectProperty
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasParent>
         rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/base/acyclic#acyclicForward> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasParent> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/base/acyclic#acyclicForward> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasParent> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasChild> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link>
@@ -641,7 +645,7 @@ owl:topObjectProperty
 owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/tabular#isUnitOf>
-        rdf:type            owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/tabular#isUnitOf> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/tabular#hasUnit> .
 
@@ -679,7 +683,7 @@ owl:Thing  rdf:type  owl:Class .
         rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isArtifact>
-        rdf:type            owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isArtifact> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isModel> .
 
@@ -726,13 +730,13 @@ owl:Thing  rdf:type  owl:Class .
         rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsArtifact>
-        rdf:type            owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/pm#occursAsArtifact> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/pm#hasType> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#parsedAs>
         rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo> , <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#parsedAs> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo> , <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#parsedAs> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/cs_as#renderedAs> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#StartActivityEvent>
@@ -779,7 +783,7 @@ owl:Thing  rdf:type  owl:Class .
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasLayer> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasChild>
-        rdf:type            owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasChild> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasParent> .
 
@@ -912,9 +916,9 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/description/bundle/properties>
         rdf:type         owl:Ontology ;
-        rdfs:comment     "Generated by Owl Reason 1.1.5" ;
+        rdfs:comment     "Generated by Owl Reason 2.8.1" ;
         owl:imports      <http://ua.be/sdo2l/description/bundle> ;
-        owl:versionInfo  "1715340171" .
+        owl:versionInfo  "1717979530" .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#EdgeHasSource>
         rdf:type  owl:Class .
@@ -938,7 +942,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasLayer>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasLayer> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasLayer> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/xopp#inPage> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/richtext#StartsAt>
@@ -995,7 +999,7 @@ owl:Thing  rdf:type  owl:Class .
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/component#presents> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isPrecededBy>
-        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isPrecededBy> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isFollowedBy> .
 
@@ -1033,7 +1037,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#consumes>
         rdf:type            owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#consumes> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#consumes> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isConsumedBy> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#DataSink>
@@ -1106,7 +1110,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasElement>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasElement> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasElement> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/xopp#inLayer> .
 
 <http://bipm.org/jcgm/vim4#IsMultipleOf>
@@ -1148,12 +1152,12 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasAttribute>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasAttribute> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasAttribute> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/xopp#ofLayerElement> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasRootCell>
         rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasRootCell> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasRootCell> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#isRootOf> .
 
 <http://ua.be/sdo2l/vocabulary/federation#hasDescription>
@@ -1287,7 +1291,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isFollowedBy>
         rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/base/acyclic#acyclicForward> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isFollowedBy> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/base/acyclic#acyclicForward> , <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isFollowedBy> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isPrecededBy> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/component#presents>
@@ -1396,7 +1400,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasCellAttribute>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasCellAttribute> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasCellAttribute> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#attributeOf> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#RelatesToPM>
@@ -1417,7 +1421,7 @@ owl:Thing  rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo>
         rdf:type            owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/pm#dataTo> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/pm#dataFrom> .
 
 <http://bipm.org/jcgm/vim4#HasUnit>
@@ -1477,7 +1481,7 @@ owl:topDataProperty  rdf:type  owl:DatatypeProperty .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#produces>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#produces> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#produces> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/processtraces#isProducedBy> .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/pm#Port>
@@ -1515,7 +1519,7 @@ owl:sameAs  rdf:type        owl:ObjectProperty ;
 
 <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPage>
         rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> , <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPage> ;
+        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link> , <http://ua.be/sdo2l/vocabulary/formalisms/xopp#hasPage> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/xopp#inFile> .
 
 <http://bipm.org/jcgm/vim4#MeasurementUnit>
@@ -1544,7 +1548,7 @@ owl:sameAs  rdf:type        owl:ObjectProperty ;
         rdf:type  owl:Class .
 
 <http://ua.be/sdo2l/vocabulary/formalisms/drawio#sourceOf>
-        rdf:type            owl:ObjectProperty ;
+        rdf:type            owl:InverseFunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/drawio#sourceOf> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/drawio#hasSource> .
 
@@ -1577,10 +1581,6 @@ owl:sameAs  rdf:type        owl:ObjectProperty ;
         rdf:type            owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/cbd#outgoingConnection> ;
         owl:inverseOf       <http://ua.be/sdo2l/vocabulary/formalisms/cbd#incomingConnection> .
-
-<http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward>
-        rdf:type            owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward> .
 
 <http://ua.be/sdo2l/vocabulary/base/acyclic#derivedTransitiveRelation>
         rdf:type  owl:Class .

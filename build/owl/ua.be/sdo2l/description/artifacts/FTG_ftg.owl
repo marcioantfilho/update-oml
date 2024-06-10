@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/description/artifacts/FTG_ftg#"
      xml:base="http://ua.be/sdo2l/description/artifacts/FTG_ftg"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ftg="http://ua.be/sdo2l/vocabulary/formalisms/ftg#"
      xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,11 +8,14 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:base="http://ua.be/sdo2l/vocabulary/base/base#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:FTG_ftg="http://ua.be/sdo2l/description/artifacts/FTG_ftg#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg">
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/base/base"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#"/>
+        <oml:prefix>FTG_ftg</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -109,6 +111,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_CBD">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
         <base:hasGUID>CBD</base:hasGUID>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -119,6 +122,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Code">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
         <base:hasGUID>Code</base:hasGUID>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -129,6 +133,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Profile">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
         <base:hasGUID>Profile</base:hasGUID>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -139,6 +144,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Script">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
         <base:hasGUID>Script</base:hasGUID>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -149,6 +155,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
         <base:hasGUID>TabularData</base:hasGUID>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -159,6 +166,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
         <base:hasGUID>TextDocument</base:hasGUID>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -169,6 +177,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
         <base:hasGUID>file</base:hasGUID>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -179,6 +188,7 @@
     <owl:NamedIndividual rdf:about="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp">
         <rdf:type rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/ftg#Formalism"/>
         <base:hasGUID>xopp</base:hasGUID>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -191,6 +201,7 @@
         <base:hasGUID>BuildControlSettings</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -203,6 +214,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_BuildControlSettings"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -215,6 +227,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_BuildControlSettings"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -227,6 +240,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_BuildControlSettings"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Code"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -240,6 +254,7 @@
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>bad</ftg:hasCtrlOutput>
         <ftg:hasCtrlOutput>good</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -252,6 +267,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_CheckDesign"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp"/>
         <ftg:hasName>initial_design</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -264,6 +280,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_CheckDesign"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>requirements</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -276,6 +293,7 @@
         <base:hasGUID>CreateRequirements</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -288,6 +306,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_CreateRequirements"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>requirements</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -302,6 +321,7 @@
         <ftg:hasCtrlInput>error</ftg:hasCtrlInput>
         <ftg:hasCtrlInput>rec</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -314,6 +334,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DefineCBDModel"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -326,6 +347,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DefineCBDModel"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_CBD"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -341,6 +363,7 @@
         <ftg:hasCtrlOutput>error</ftg:hasCtrlOutput>
         <ftg:hasCtrlOutput>ok</ftg:hasCtrlOutput>
         <ftg:hasEndpoint>http://localhost:7999/octiva/</ftg:hasEndpoint>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -353,6 +376,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DetectParallelRails"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>algorithm</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -365,6 +389,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DetectParallelRails"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>image</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -377,6 +402,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DetectParallelRails"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>data</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -389,6 +415,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_DetectParallelRails"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>image</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -402,6 +429,7 @@
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>notOk</ftg:hasCtrlOutput>
         <ftg:hasCtrlOutput>ok</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -414,6 +442,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_FailuresResolved"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -426,6 +455,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_FailuresResolved"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -438,6 +468,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_FailuresResolved"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -450,6 +481,7 @@
         <base:hasGUID>GenerateControlParameters</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -462,6 +494,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_GenerateControlParameters"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Profile"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -474,6 +507,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_GenerateControlParameters"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Script"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -486,6 +520,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_GenerateControlParameters"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -498,6 +533,7 @@
         <base:hasGUID>InitialDesign</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -510,6 +546,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_InitialDesign"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>requirements</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -522,6 +559,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_InitialDesign"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp"/>
         <ftg:hasName>initial_design</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -534,6 +572,7 @@
         <base:hasGUID>Initialization</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -546,6 +585,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Initialization"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -558,6 +598,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Initialization"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -570,6 +611,7 @@
         <base:hasGUID>LookAtSketch</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -582,6 +624,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_LookAtSketch"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp"/>
         <ftg:hasName>sketch</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -594,6 +637,7 @@
         <base:hasGUID>Preparation</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -606,6 +650,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Preparation"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -618,6 +663,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Preparation"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -630,6 +676,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Preparation"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Script"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -642,6 +689,7 @@
         <base:hasGUID>RedesignAlgorithm</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -654,6 +702,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RedesignAlgorithm"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -666,6 +715,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RedesignAlgorithm"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -678,6 +728,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RedesignAlgorithm"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_file"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -690,6 +741,7 @@
         <base:hasGUID>RunCBDSimulation</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -702,6 +754,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunCBDSimulation"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_CBD"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -714,6 +767,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunCBDSimulation"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -726,6 +780,7 @@
         <base:hasGUID>RunExperiment</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -738,6 +793,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunExperiment"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Code"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -750,6 +806,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunExperiment"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -762,6 +819,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_RunExperiment"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -775,6 +833,7 @@
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlInput>cinRec</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -787,6 +846,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_SetupProfile"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -799,6 +859,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_SetupProfile"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TextDocument"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -811,6 +872,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_SetupProfile"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_Profile"/>
         <ftg:hasName>dout</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -823,6 +885,7 @@
         <base:hasGUID>Sketch</base:hasGUID>
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -835,6 +898,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_Sketch"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_xopp"/>
         <ftg:hasName>sketch</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -850,6 +914,7 @@
         <ftg:hasCtrlOutput>notOk</ftg:hasCtrlOutput>
         <ftg:hasCtrlOutput>ok</ftg:hasCtrlOutput>
         <ftg:hasEndpoint>http://localhost:7999</ftg:hasEndpoint>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -862,6 +927,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_ValidateCBDSimulationResults"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -875,6 +941,7 @@
         <ftg:hasCtrlInput>cin</ftg:hasCtrlInput>
         <ftg:hasCtrlOutput>cout</ftg:hasCtrlOutput>
         <ftg:hasCtrlOutput>coutRec</ftg:hasCtrlOutput>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -887,6 +954,7 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_VerifyData"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -899,11 +967,12 @@
         <oml:hasSource rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#t_VerifyData"/>
         <oml:hasTarget rdf:resource="http://ua.be/sdo2l/description/artifacts/FTG_ftg#f_TabularData"/>
         <ftg:hasName>din</ftg:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

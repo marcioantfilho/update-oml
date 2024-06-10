@@ -1,19 +1,40 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#"
      xml:base="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:traceability_model="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#">
     <owl:Ontology rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model">
-        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
         <owl:imports rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+        <oml:namespace rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#"/>
+        <oml:prefix>traceability_model</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://opencaesar.io/oml#name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://opencaesar.io/oml#name"/>
     
 
 
@@ -34,7 +55,11 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#hasLink">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#linksTo"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink_"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#LinkedObject"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -46,7 +71,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink_"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#LinkedObject"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -56,7 +82,12 @@
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkFrom">
         <owl:inverseOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
+        <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
+        <oml:relationBase rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ReverseRelation"/>
     </owl:ObjectProperty>
     
 
@@ -65,12 +96,13 @@
 
 
     <owl:ObjectProperty rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo">
-        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#hasLinkForward"/>
+        <rdfs:subPropertyOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#link"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
         <rdfs:range rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Object"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+        <oml:relationEntity rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ForwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -94,7 +126,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#LinkedObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -106,7 +137,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#LinkedObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -127,7 +157,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#LinkedObject">
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -137,7 +167,7 @@
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink">
         <rdfs:subClassOf rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#Link"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -146,13 +176,7 @@
 
 
     <owl:Class rdf:about="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink_">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#linksTo"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -168,7 +192,7 @@
                 <owl:allValuesFrom rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
@@ -211,10 +235,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#LinkedObject"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -222,9 +245,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#LinkedObject"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -261,64 +285,8 @@
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label>traceLinkTo derivation</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:label>virtualObject</rdfs:label>
+        <oml:name>http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#virtualObject</oml:name>
+        <oml:type>http://opencaesar.io/oml#Rule</oml:type>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -387,10 +355,67 @@
             </rdf:Description>
         </swrl:head>
     </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>traceLinkTo derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#TraceabilityLink"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ua.be/sdo2l/vocabulary/formalisms/traceability_model#traceLinkTo"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 

@@ -9,8 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vim4="http://bipm.org/jcgm/vim4#"
-     xmlns:viewpoint="http://opencaesar.io/viewpoint#"
-     xmlns:iso-1087-1="http://iso.org/iso-1087-1#">
+     xmlns:iso-1087-1="http://iso.org/iso-1087-1#"
+     xmlns:iso-80000-3.15="http://iso.org/iso-80000-3.15#">
     <owl:Ontology rdf:about="http://iso.org/iso-80000-3.15">
         <owl:imports rdf:resource="http://bipm.org/jcgm/vim4"/>
         <owl:imports rdf:resource="http://iso.org/iso-80000-1"/>
@@ -18,11 +18,14 @@
         <owl:imports rdf:resource="http://iso.org/iso-80000-3.14"/>
         <owl:imports rdf:resource="http://iso.org/iso-80000-3.7"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <oml:namespace rdf:resource="http://iso.org/iso-80000-3.15#"/>
+        <oml:prefix>iso-80000-3.15</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
         <dc:creator>Jet Propulsion Laboratory</dc:creator>
         <dc:description>The ISO-80000-3 library.</dc:description>
-        <dc:rights>Copyright 2021, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology. This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.</dc:rights>
+        <dc:rights>Copyright 2021, by the California Institute of Technology. ALL RIGHTS RESERVED. United States Government Sponsorship acknowledged. Any commercial use must be negotiated with the Office of Technology Transfer at the California Institute of Technology. 
+This software may be subject to U.S. export control laws. By accepting this software, the user agrees to comply with all applicable U.S. export laws and regulations. User has the responsibility to obtain export licenses, or other export authority as may be required before exporting such information to foreign countries or providing access to foreign persons.</dc:rights>
         <dc:title>ISO-80000-3.15 frequency, hertz</dc:title>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -120,6 +123,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.15#frequency"/>
         <vim4:isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isDimensionless>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -132,6 +136,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#ISQ7-frequency"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.12#ISQ7-period-duration"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -144,6 +149,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.15#rotational-frequency"/>
         <vim4:isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isDimensionless>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -156,6 +162,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#ISQ7-rotational-frequency"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.7#ISQ7-time"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -168,6 +175,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#ISQ7-rotational-frequency"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.14#ISQ7-rotation"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -180,6 +188,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.15#frequency"/>
         <vim4:isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isDimensionless>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -192,6 +201,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#ISQ8-frequency"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.12#ISQ8-period-duration"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -204,6 +214,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#ISQ8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.15#rotational-frequency"/>
         <vim4:isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isDimensionless>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -216,6 +227,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#ISQ8-rotational-frequency"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.7#ISQ8-time"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -228,6 +240,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#ISQ8-rotational-frequency"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.14#ISQ8-rotation"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -240,6 +253,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.15#hertz"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -252,6 +266,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#SI7-hertz"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.7#SI7-second"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -264,6 +279,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI7"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.15#revolution-per-second"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -276,6 +292,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#SI7-revolution-per-second"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.7#SI7-second"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -288,6 +305,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#SI7-revolution-per-second"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.14#SI7-revolution"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -300,6 +318,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.15#hertz"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -312,6 +331,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#SI8-hertz"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.7#SI8-second"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -324,6 +344,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-1#SI8"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.15#revolution-per-second"/>
         <vim4:isOffSystemUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vim4:isOffSystemUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -336,6 +357,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#SI8-revolution-per-second"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.7#SI8-second"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">-1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -348,6 +370,7 @@
         <oml:hasSource rdf:resource="http://iso.org/iso-80000-3.15#SI8-revolution-per-second"/>
         <oml:hasTarget rdf:resource="http://iso.org/iso-80000-3.14#SI8-revolution"/>
         <vim4:exponent rdf:datatype="http://www.w3.org/2002/07/owl#rational">1/1</vim4:exponent>
+        <oml:type rdf:resource="http://opencaesar.io/oml#RelationInstance"/>
     </owl:NamedIndividual>
     
 
@@ -358,6 +381,7 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.15#frequency">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#GeneralUnitaryQuantity"/>
         <vim4:id>frequency</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-15.1</dc:source>
     </owl:NamedIndividual>
     
@@ -370,6 +394,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#UnprefixedMeasurementUnit"/>
         <vim4:instantiates rdf:resource="http://iso.org/iso-80000-3.15#frequency"/>
         <vim4:id>hertz</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-15.a</dc:source>
     </owl:NamedIndividual>
     
@@ -382,6 +407,7 @@
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#UnprefixedMeasurementUnit"/>
         <vim4:instantiates rdf:resource="http://iso.org/iso-80000-3.15#rotational-frequency"/>
         <vim4:id>revolution-per-second</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-15.b</dc:source>
     </owl:NamedIndividual>
     
@@ -393,12 +419,13 @@
     <owl:NamedIndividual rdf:about="http://iso.org/iso-80000-3.15#rotational-frequency">
         <rdf:type rdf:resource="http://bipm.org/jcgm/vim4#GeneralUnitaryQuantity"/>
         <vim4:id>rotational-frequency</vim4:id>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
         <dc:source>3-15.2</dc:source>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 
