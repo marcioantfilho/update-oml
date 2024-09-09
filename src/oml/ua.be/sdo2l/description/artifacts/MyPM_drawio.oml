@@ -8,6 +8,7 @@ description <http://ua.be/sdo2l/description/artifacts/MyPM_drawio#> as MyPM_draw
   uses <http://ua.be/sdo2l/vocabulary/formalisms/drawio#> as drawio
   uses <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
   uses <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict
+  
 
   instance model : drawio:Model [
     drawio:hasDrawioId "prYNwPAbIUO19HUZXAOh"
