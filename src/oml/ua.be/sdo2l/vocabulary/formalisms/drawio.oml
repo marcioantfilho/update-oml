@@ -71,7 +71,8 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/drawio#> as drawio {
 	concept CellStyleEntry < dict:DictEntry, element []
 	concept CellAttribute < dict:DictEntry, element []
 	
-	structure Point //[
+	structure Point
+	 //[
 		//restricts hasX to exactly 1
 		//restricts hasY to exactly 1
 	//]
