@@ -71,7 +71,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/drawio#> as drawio {
 	concept CellStyleEntry < dict:DictEntry, element []
 	concept CellAttribute < dict:DictEntry, element []
 	
-	structure Point
+	concept Point
 	 //[
 		//restricts hasX to exactly 1
 		//restricts hasY to exactly 1
@@ -88,7 +88,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/drawio#> as drawio {
 		functional
 	]< object_diagram:hasField 
 	
-	structure VertexGeometry < Point //[
+	concept VertexGeometry < Point //[
 		//restricts hasWidth to exactly 1
 		//restricts hasHeight to exactly 1
 	
@@ -105,7 +105,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/drawio#> as drawio {
 	
 	// An edge may have an ordered sequence of 'waypoints'
 	// We'll add a 'list index' property to store the order.
-	structure PointListItem < Point
+	concept PointListItem < Point
 		//restricts hasListIndex to exactly 1
 	
 	scalar property hasListIndex [
@@ -114,34 +114,35 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/drawio#> as drawio {
 		functional
 	]
 	
-	structure EdgeGeometry 
-	structured property hasPoint [
-		domain EdgeGeometry
-		range PointListItem
+	concept EdgeGeometry 
+	
+	relation hasPoint [
+		from EdgeGeometry
+		to PointListItem
 		// not functional: any number of points allowed
 	]
-	structured property hasSourcePoint [
-		domain EdgeGeometry
-		range Point
+	relation hasSourcePoint [
+		from EdgeGeometry
+		to Point
 		functional
 	]
-	structured property hasTargetPoint [
-		domain EdgeGeometry
-		range Point
+	relation hasTargetPoint [
+		from EdgeGeometry
+		to Point
 		functional
 	]
 	
 	concept Vertex < Cell []
 	concept Edge < Cell []
 	
-	structured property hasVertexGeometry [
-		domain Vertex
-		range VertexGeometry
+	relation hasVertexGeometry [
+		from Vertex
+		to VertexGeometry
 		functional
 	]
-	structured property hasEdgeGeometry [
-		domain Edge
-		range EdgeGeometry
+	relation hasEdgeGeometry [
+		from Edge
+		to EdgeGeometry
 		functional
 	]
 	
