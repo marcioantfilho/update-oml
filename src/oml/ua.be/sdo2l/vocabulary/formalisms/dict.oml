@@ -15,7 +15,7 @@ vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/dict#> as dict {
 	scalar property hasKey [
 		domain DictEntry
 		range xsd:string
-		functional
+	    functional
 	]< object_diagram:hasField 
 	scalar property hasValue  [
 		domain DictEntry

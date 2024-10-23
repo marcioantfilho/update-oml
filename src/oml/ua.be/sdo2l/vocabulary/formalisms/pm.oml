@@ -1,144 +1,160 @@
 vocabulary <http://ua.be/sdo2l/vocabulary/formalisms/pm#> as pm {
 
-	extends <http://www.w3.org/2001/XMLSchema#> as xsd
-	extends <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
-	extends <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+    extends <http://ua.be/sdo2l/vocabulary/formalisms/object_diagram#> as object_diagram
+    extends <http://ua.be/sdo2l/vocabulary/formalisms/ftg#> as ftg
 
-	aspect CtrlSource []
-	aspect CtrlSink []
-	aspect DataSource []
-	aspect DataSink []
+    aspect CtrlSource []
+    aspect CtrlSink []
+    aspect DataSource []
+    aspect DataSink []
 
-	relation entity CtrlFlow [
-		from CtrlSource
-		to CtrlSink
-		forward ctrlTo
-		reverse ctrlFrom
-		asymmetric
-		irreflexive
-	]< object_diagram:Link 
+    relation entity CtrlFlow [
+        from CtrlSource
+        to CtrlSink
+        forward ctrlTo
+        reverse ctrlFrom
+        asymmetric
+        irreflexive
+    ]< object_diagram:Link 
 
-	relation entity DataFlow [
-		from DataSource
-		to DataSink
-		forward dataTo
-		reverse dataFrom
-		asymmetric
-		irreflexive
-	]< object_diagram:Link 
+    relation entity DataFlow [
+        from DataSource
+        to DataSink
+        forward dataTo
+        reverse dataFrom
+        asymmetric
+        irreflexive
+    ]< object_diagram:Link 
 
-	aspect Named [
-		//restricts hasName to exactly 1
-	]
-	scalar property hasName  [
-		domain Named
-		range xsd:string
-		functional
-	]< object_diagram:hasField
+    aspect Named [
+        // restricts hasName to exactly 1
+    ]
+    scalar property hasName  [
+        domain Named
+        range xsd:string
+        functional
+    ]< object_diagram:hasField
 
-	aspect element < object_diagram:Object []
-	
-	aspect abstractActivity < element, object_diagram:Object, Named [
-		// must have at least one of the following port types:
-		restricts some hasPort to CtrlInputPort
-		restricts some hasPort to CtrlOutputPort
-	]
+    aspect element < object_diagram:Object []
+    
+    aspect abstractActivity < element, object_diagram:Object, Named [
+        // must have at least one of the following port types:
+        restricts some hasPort to CtrlInputPort
+        restricts some hasPort to CtrlOutputPort
+    ]
 
-	// Non-automated activity
-	concept Activity < abstractActivity [
-		restricts all  isTransformation to ftg:Transformation
-	]
+    // Non-automated activity
+    concept Activity < abstractActivity [
+        restricts all  isTransformation to ftg:Transformation
+    ]
 
-	concept AutomatedActivity < abstractActivity [
-		restricts all isTransformation to ftg:AutomatedTransformation
-		restricts  hasTimeout to exactly 1
-	]
+    concept AutomatedActivity < abstractActivity [
+        restricts all isTransformation to ftg:AutomatedTransformation
+        restricts  hasTimeout to exactly 1
+    ]
 
-	scalar property hasTimeout [
-		domain AutomatedActivity
-		range xsd:unsignedLong // milliseconds (usually you'll want a timeout of multiple seconds up to maybe multiple hours or even days, but for testing purposes a millisecond timeout could be more useful)
-	]
+    scalar property hasTimeout [
+        domain AutomatedActivity
+        range xsd:unsignedLong // milliseconds (usually you'll want a timeout of multiple seconds up to maybe multiple hours or even days, but for testing purposes a millisecond timeout could be more useful)
+    ]
 
-	// An activity may (optionally) point to a ftg:Transformation
-	relation entity IsTransformation [
-		from abstractActivity
-		to ftg:abstractTransformation
-		forward isTransformation
-		reverse occursAsActivity
-		functional
-		asymmetric
-		irreflexive
-	]
+    // An activity may (optionally) point to a ftg:Transformation
+    relation entity IsTransformation [
+        from abstractActivity
+        to ftg:abstractTransformation
+        forward isTransformation
+        reverse occursAsActivity
+        functional
+        asymmetric
+        irreflexive
+    ]
 
-	aspect Port < element, Named [
-		restricts ofActivity to exactly 1
-	]
+    aspect Port < element, Named [
+        restricts ofActivity to exactly 1
+    ]
 
-	relation entity HasPort  [
-		from abstractActivity
-		to Port
-		forward hasPort
-		reverse ofActivity
-		asymmetric
-		irreflexive
-		inverse functional
-	]< object_diagram:Link
-	
-	// Every port can only have one incoming/outgoing connection
-	concept CtrlOutputPort < CtrlSource, Port [
-		restricts  ctrlTo to exactly 1
-	]
-	concept CtrlInputPort < CtrlSink, Port [
-		restricts  ctrlFrom to exactly 1
-	]
-	concept DataOutputPort < DataSource, Port [
-		restricts  dataTo to exactly 1
-	]
-	concept DataInputPort < DataSink, Port [
-		restricts  dataFrom to exactly 1
-	]
-	
-	concept Initial < element, CtrlSource [
-		restricts  ctrlTo to exactly 1
-	]
-	concept Final < element, CtrlSink 
+    relation entity HasPort  [
+        from abstractActivity
+        to Port
+        forward hasPort
+        reverse ofActivity
+        asymmetric
+        irreflexive
+        inverse functional
+    ]< object_diagram:Link
+    
+    // Every port can only have one incoming/outgoing connection
+    concept CtrlOutputPort < CtrlSource, Port [
+        restricts  ctrlTo to exactly 1
+    ]
+    concept CtrlInputPort < CtrlSink, Port [
+        restricts  ctrlFrom to exactly 1
+    ]
+    concept DataOutputPort < DataSource, Port [
+        restricts  dataTo to exactly 1
+    ]
+    concept DataInputPort < DataSink, Port [
+        restricts  dataFrom to exactly 1
+    ]
+    
+    concept Initial < element, CtrlSource [
+        restricts  ctrlTo to exactly 1
+    ]
+    concept Final < element, CtrlSink 
 
-	concept Artifact < element, Named, DataSource, DataSink [
-		// an artifact must come from somewhere :)
-		restricts  dataFrom to min 1
-	]
+    concept Artifact < element, Named, DataSource, DataSink [
+        // an artifact must come from somewhere :)
+        restricts  dataFrom to min 1
+    ]
 
-	relation entity HasType [
-		from Artifact
-		to ftg:Formalism
-		forward hasType
-		reverse occursAsArtifact
-		functional
-		asymmetric
-		irreflexive
-	]
+    relation entity HasType [
+        from Artifact
+        to ftg:Formalism
+        forward hasType
+        reverse occursAsArtifact
+        functional
+        asymmetric
+        irreflexive
+    ]
 
-	concept ForkJoin < element, CtrlSink, CtrlSource [
-		restricts  ctrlFrom to min 1
-		restricts  ctrlTo to min 1
-	]
+    concept ForkJoin < element, CtrlSink, CtrlSource [
+        restricts  ctrlFrom to min 1
+        restricts  ctrlTo to min 1
+    ]
 
-	concept Merge < element, CtrlSink, CtrlSource [
-		// Only one outgoing control flow link:
-		restricts  ctrlTo to exactly 1
-	]
+    concept Merge < element, CtrlSink, CtrlSource [
+        // Only one outgoing control flow link:
+        restricts  ctrlTo to exactly 1
+    ]
 
-	concept Model < object_diagram:Model, element [
-		restricts all object_diagram:hasObject to element
-	]
-	// Relação para hierarquia de PMs
-	relation entity HasSubPM [
-		from element
-		to element
-		forward hasSubPM
-		reverse isSubPMOf
-		asymmetric
-		irreflexive
-	]< object_diagram:Link
+    concept Model < object_diagram:Model, element [
+        restricts all object_diagram:hasObject to element
+    ]
+    
+    relation entity HasSubPM [
+        from element
+        to element
+        forward hasSubPM
+        reverse isSubPMOf
+        asymmetric
+        irreflexive
+    ]< object_diagram:Link
 
+    // Criação do conceito InvokingActivity
+    concept InvokingActivity < abstractActivity [
+        restricts all invokesPM to Model
+    ]
+
+    // Relação entre InvokingActivity e Model
+    relation entity InvokesPM [
+        from InvokingActivity
+        to Model
+        forward invokesPM
+        reverse isInvokedBy
+        asymmetric
+        irreflexive
+        functional
+    ]< object_diagram:Link
+    
 }

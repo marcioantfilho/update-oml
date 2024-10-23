@@ -16,19 +16,18 @@ description <http://ua.be/sdo2l/description/artifacts/MyPM_pm#> as MyPM_pm {
 
   instance initial : pm:Initial [
     object_diagram:inModel model
-    pm:ctrlTo activity_0_port_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+    pm:ctrlTo activity_0_port_0 // Fluxo inicial para a atividade 0
   ]
 
   instance final : pm:Final [
     object_diagram:inModel model
-    //pm:ctrlFrom activity_1_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
   instance artifact_0 : pm:Artifact [
     pm:hasName "sketch"
     pm:hasType ftg_instance:f_xopp
     object_diagram:inModel model
-    pm:dataTo activity_1_port_2 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+    pm:dataTo activity_1_port_2 // Fluxo de dados para a atividade 1
   ]
 
   instance activity_0 : pm:Activity [
@@ -41,15 +40,19 @@ description <http://ua.be/sdo2l/description/artifacts/MyPM_pm#> as MyPM_pm {
     pm:hasName "cout"
     pm:ofActivity activity_0
     object_diagram:inModel model
-    pm:ctrlTo activity_1_port_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+    pm:ctrlTo activity_1_port_0 // Fluxo de controle para a atividade 1
   ]
-  
 
   instance activity_0_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_0
     object_diagram:inModel model
-    //pm:ctrlFrom initial // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+  ]
+  
+  instance activity_0_port_3 : pm:CtrlInputPort [
+    pm:hasName "cin_2"
+    pm:ofActivity activity_0
+    object_diagram:inModel model
   ]
   
 
@@ -57,9 +60,8 @@ description <http://ua.be/sdo2l/description/artifacts/MyPM_pm#> as MyPM_pm {
     pm:hasName "sketch"
     pm:ofActivity activity_0
     object_diagram:inModel model
-    pm:dataTo artifact_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+    pm:dataTo artifact_0 // Fluxo de dados para o artefato
   ]
-  
 
   instance activity_1 : pm:Activity [
     pm:hasName "look_at_sketch"
@@ -71,26 +73,50 @@ description <http://ua.be/sdo2l/description/artifacts/MyPM_pm#> as MyPM_pm {
     pm:hasName "cout"
     pm:ofActivity activity_1
     object_diagram:inModel model
-    pm:ctrlTo final // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
+    pm:ctrlTo invoking_activity_port_0 // Fluxo final
   ]
-  
 
   instance activity_1_port_0 : pm:CtrlInputPort [
     pm:hasName "cin"
     pm:ofActivity activity_1
     object_diagram:inModel model
-    //pm:ctrlFrom activity_0_port_1 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
-  
-  
 
   instance activity_1_port_2 : pm:DataInputPort [
     pm:hasName "sketch"
     pm:ofActivity activity_1
     object_diagram:inModel model
-    //pm:dataFrom artifact_0 // for some reason, we have to explicitly create the unreified relations on top of the reified relations (at the end of this file) or we get a reasoner error
   ]
 
+  // Adicionando InvokingActivity
+  instance invoking_activity : pm:InvokingActivity [
+    pm:hasName "self_invoke"
+    pm:invokesPM model 
+    object_diagram:inModel model
+  ]
+  
+  
+  instance invoking_activity_port_1 : pm:CtrlOutputPort [
+    pm:hasName "cout_2"
+    pm:ofActivity invoking_activity
+    object_diagram:inModel model
+    pm:ctrlTo activity_0_port_3 // Fluxo de controle para a atividade 1
+  ]
+  
+  instance invoking_activity_port_2 : pm:CtrlOutputPort [
+    pm:hasName "cout"
+    pm:ofActivity invoking_activity
+    object_diagram:inModel model
+    pm:ctrlTo final // Fluxo de controle para a atividade 2
+  ]
+
+  instance invoking_activity_port_0 : pm:CtrlInputPort [
+    pm:hasName "cin"
+    pm:ofActivity invoking_activity
+    object_diagram:inModel model
+  ]
+ 
+  // Relações de fluxo de controle
   relation instance ctrl_flow_0 : pm:CtrlFlow [
     from initial
     to activity_0_port_0
@@ -105,10 +131,23 @@ description <http://ua.be/sdo2l/description/artifacts/MyPM_pm#> as MyPM_pm {
 
   relation instance ctrl_flow_2 : pm:CtrlFlow [
     from activity_1_port_1
+    to invoking_activity_port_0
+    object_diagram:inModel model
+  ]
+  
+  relation instance ctrl_flow_3 : pm:CtrlFlow [
+    from invoking_activity_port_1
+    to activity_0_port_3
+    object_diagram:inModel model
+  ]
+  
+  relation instance ctrl_flow_4 : pm:CtrlFlow [
+    from invoking_activity_port_2
     to final
     object_diagram:inModel model
   ]
 
+  // Fluxo de dados
   relation instance data_flow_0 : pm:DataFlow [
     from artifact_0
     to activity_1_port_2

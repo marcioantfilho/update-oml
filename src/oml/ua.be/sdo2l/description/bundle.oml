@@ -1,29 +1,29 @@
 description bundle <http://ua.be/sdo2l/description/bundle#> as ^bundle {
   uses <http://ua.be/sdo2l/vocabulary/bundle#>
   includes <http://ua.be/sdo2l/description/artifacts/Drawing_drawio#>
-  includes <http://ua.be/sdo2l/description/artifacts/drivetrain_corr#>
-  includes <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#>
-  includes <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#>
   includes <http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_corr#>
   includes <http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/EarlyDesignSketching_pm#>
   includes <http://ua.be/sdo2l/description/artifacts/FTG_corr#>
   includes <http://ua.be/sdo2l/description/artifacts/FTG_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/FTG_ftg#>
-  includes <http://ua.be/sdo2l/description/artifacts/imabox_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/MinimalPM_corr#>
   includes <http://ua.be/sdo2l/description/artifacts/MinimalPM_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/MinimalPM_pm#>
   includes <http://ua.be/sdo2l/description/artifacts/MyPM_corr#>
   includes <http://ua.be/sdo2l/description/artifacts/MyPM_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/MyPM_pm#>
+  includes <http://ua.be/sdo2l/description/artifacts/RecPM_corr#>
+  includes <http://ua.be/sdo2l/description/artifacts/RecPM_drawio#>
+  includes <http://ua.be/sdo2l/description/artifacts/RecPM_pm#>
+  includes <http://ua.be/sdo2l/description/artifacts/drivetrain_corr#>
+  includes <http://ua.be/sdo2l/description/artifacts/drivetrain_drawio#>
+  includes <http://ua.be/sdo2l/description/artifacts/drivetrain_pm#>
+  includes <http://ua.be/sdo2l/description/artifacts/imabox_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/octiva_corr#>
   includes <http://ua.be/sdo2l/description/artifacts/octiva_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/octiva_pm#>
   includes <http://ua.be/sdo2l/description/artifacts/operations#>
-  includes <http://ua.be/sdo2l/description/artifacts/RecPM_corr#>
-  includes <http://ua.be/sdo2l/description/artifacts/RecPM_drawio#>
-  includes <http://ua.be/sdo2l/description/artifacts/RecPM_pm#>
   includes <http://ua.be/sdo2l/description/artifacts/springDamper_corr#>
   includes <http://ua.be/sdo2l/description/artifacts/springDamper_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/springDamper_pm#>
