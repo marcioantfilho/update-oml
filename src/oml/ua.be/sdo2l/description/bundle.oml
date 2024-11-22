@@ -28,4 +28,7 @@ description bundle <http://ua.be/sdo2l/description/bundle#> as ^bundle {
   includes <http://ua.be/sdo2l/description/artifacts/springDamper_drawio#>
   includes <http://ua.be/sdo2l/description/artifacts/springDamper_pm#>
   includes <http://ua.be/sdo2l/description/artifacts/traceabilityLinks#>
+  includes <http://ua.be/sdo2l/description/artifacts/MyPM_pm_pt_1_drawio#>
+  includes <http://ua.be/sdo2l/description/artifacts/MyPM_pm_pt_0_drawio#>
+  includes <http://ua.be/sdo2l/description/artifacts/MyPM_pm_pt_2_drawio#>
 }
