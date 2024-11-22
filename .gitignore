@@ -1,2 +1,3 @@
 /.gradle/
 /build/
+.fuseki/run/databases/DB2/Data-0001/*
